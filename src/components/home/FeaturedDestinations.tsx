@@ -67,9 +67,9 @@ const FeaturedDestinations = () => {
         </div>
 
         <div className="text-center mt-12">
-          <Link to="/featured">
+          <Link to="/all-destinations">
             <Button variant="outline" className="border-india-blue text-india-blue hover:bg-india-blue hover:text-white">
-              View All Destinations
+              View All 48 Destinations
               <ArrowRight size={16} className="ml-2" />
             </Button>
           </Link>

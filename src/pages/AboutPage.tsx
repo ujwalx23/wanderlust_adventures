@@ -1,0 +1,190 @@
+
+import React from 'react';
+import { Link } from 'react-router-dom';
+import Layout from '@/components/layout/Layout';
+import { Linkedin, Mail, Phone } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+
+const AboutPage = () => {
+  return (
+    <Layout>
+      <div className="bg-gray-50 py-12 md:py-16">
+        <div className="container mx-auto px-4">
+          {/* Hero Section */}
+          <div className="bg-india-blue rounded-xl overflow-hidden mb-16">
+            <div className="grid md:grid-cols-2 gap-0">
+              <div className="p-8 md:p-12 flex flex-col justify-center">
+                <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">About Wanderlust Adventures</h1>
+                <p className="text-white/80 text-lg mb-6">
+                  We're passionate about helping travelers discover the incredible beauty and rich heritage of India
+                </p>
+                <p className="text-white/80 mb-8">
+                  Our mission is simple: to connect travelers with authentic experiences that showcase the best of India's diverse landscapes, cultures, and traditions.
+                </p>
+                <Link to="/contact">
+                  <Button className="bg-white text-india-blue hover:bg-white/90">
+                    Get in Touch
+                  </Button>
+                </Link>
+              </div>
+              <div className="h-60 md:h-auto">
+                <img 
+                  src="https://images.unsplash.com/photo-1648298147169-71d3d6e8ca60?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aW5kaWFuJTIwdHJhdmVsfGVufDB8fDB8fHww" 
+                  alt="Wanderlust Adventures Team" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+          </div>
+          
+          {/* Our Story */}
+          <div className="max-w-4xl mx-auto mb-16">
+            <h2 className="text-2xl md:text-3xl font-bold text-center text-india-blue mb-8">Our Story</h2>
+            <div className="prose prose-lg max-w-none text-gray-700">
+              <p>
+                Wanderlust Adventures was born from a deep love for India's diverse landscapes and rich cultural tapestry. What began as a passion project has evolved into a dedicated travel advisory service with a mission to showcase the authentic side of India to travelers from around the world.
+              </p>
+              <p>
+                Unlike traditional travel agencies, we don't book your tickets or accommodations. Instead, we focus on what we do best: providing expert recommendations, detailed destination insights, and personalized travel advice to help you plan the perfect Indian adventure.
+              </p>
+              <p>
+                Our team of travel enthusiasts has personally explored every region we recommend, from the snow-capped Himalayas to the tropical beaches of Goa, from bustling metropolises to serene villages. This firsthand experience allows us to offer genuine advice tailored to your preferences and travel style.
+              </p>
+            </div>
+          </div>
+          
+          {/* Meet the Founder */}
+          <div className="bg-white rounded-xl shadow-sm p-8 mb-16">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-2xl md:text-3xl font-bold text-center text-india-blue mb-8">Meet Our Founder</h2>
+              
+              <div className="flex flex-col md:flex-row items-center gap-8">
+                <div className="md:w-1/3">
+                  <div className="rounded-full overflow-hidden w-48 h-48 mx-auto border-4 border-india-saffron">
+                    <img 
+                      src="https://randomuser.me/api/portraits/men/45.jpg" 
+                      alt="Ujwal Singh" 
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                </div>
+                
+                <div className="md:w-2/3 text-center md:text-left">
+                  <h3 className="text-xl font-semibold mb-2">Ujwal Singh</h3>
+                  <p className="text-gray-600 mb-4">Founder & Chief Travel Enthusiast</p>
+                  
+                  <p className="text-gray-700 mb-6">
+                    With over a decade of exploring India's diverse landscapes and cultures, Ujwal founded Wanderlust Adventures with a vision to help travelers discover the authentic essence of India. His personal journey through every state in the country has given him unique insights that he loves sharing with fellow travel enthusiasts.
+                  </p>
+                  
+                  <div className="flex justify-center md:justify-start space-x-4">
+                    <a 
+                      href="https://www.linkedin.com/in/ujwalsingh23" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="flex items-center text-india-blue hover:text-india-saffron transition-colors"
+                    >
+                      <Linkedin size={20} className="mr-1" />
+                      <span>LinkedIn</span>
+                    </a>
+                    <a 
+                      href="mailto:info@wanderlustadventures.in" 
+                      className="flex items-center text-india-blue hover:text-india-saffron transition-colors"
+                    >
+                      <Mail size={20} className="mr-1" />
+                      <span>Email</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          {/* Our Approach */}
+          <div className="max-w-4xl mx-auto mb-16">
+            <h2 className="text-2xl md:text-3xl font-bold text-center text-india-blue mb-8">Our Approach</h2>
+            
+            <div className="grid md:grid-cols-3 gap-8">
+              <div className="bg-white p-6 rounded-lg shadow-sm text-center">
+                <div className="w-16 h-16 bg-india-saffron/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-india-saffron">
+                    <path d="M3 11l18-5v12L3 14v-3z"></path>
+                    <path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"></path>
+                  </svg>
+                </div>
+                <h3 className="text-lg font-semibold mb-2">Local Expertise</h3>
+                <p className="text-gray-600">
+                  We provide insights and recommendations based on authentic local knowledge and firsthand experience.
+                </p>
+              </div>
+              
+              <div className="bg-white p-6 rounded-lg shadow-sm text-center">
+                <div className="w-16 h-16 bg-india-saffron/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-india-saffron">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+                    <path d="M2 12h20"></path>
+                  </svg>
+                </div>
+                <h3 className="text-lg font-semibold mb-2">Cultural Immersion</h3>
+                <p className="text-gray-600">
+                  We emphasize authentic cultural experiences that connect travelers with local communities and traditions.
+                </p>
+              </div>
+              
+              <div className="bg-white p-6 rounded-lg shadow-sm text-center">
+                <div className="w-16 h-16 bg-india-saffron/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-india-saffron">
+                    <path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9-4.03-9-9-9z"></path>
+                    <path d="M12 16v-3"></path>
+                    <path d="M12 8h0"></path>
+                  </svg>
+                </div>
+                <h3 className="text-lg font-semibold mb-2">Personalized Guidance</h3>
+                <p className="text-gray-600">
+                  We understand that each traveler is unique, so we tailor our recommendations to suit individual preferences.
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          {/* Connect With Us */}
+          <div className="bg-india-saffron/10 rounded-xl p-8 text-center">
+            <h2 className="text-2xl md:text-3xl font-bold text-india-blue mb-4">Connect With Us</h2>
+            <p className="text-gray-700 mb-8 max-w-2xl mx-auto">
+              Have questions or want personalized travel suggestions? We'd love to hear from you! Connect with us on social media or reach out directly.
+            </p>
+            
+            <div className="flex flex-wrap justify-center gap-4">
+              <a 
+                href="https://www.linkedin.com/in/ujwalsingh23" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center px-6 py-3 bg-white rounded-md shadow-sm hover:bg-india-saffron hover:text-white transition-colors"
+              >
+                <Linkedin size={20} className="mr-2" />
+                LinkedIn
+              </a>
+              <a 
+                href="mailto:info@wanderlustadventures.in" 
+                className="inline-flex items-center px-6 py-3 bg-white rounded-md shadow-sm hover:bg-india-saffron hover:text-white transition-colors"
+              >
+                <Mail size={20} className="mr-2" />
+                Email Us
+              </a>
+              <a 
+                href="tel:+919876543210" 
+                className="inline-flex items-center px-6 py-3 bg-white rounded-md shadow-sm hover:bg-india-saffron hover:text-white transition-colors"
+              >
+                <Phone size={20} className="mr-2" />
+                Call Us
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </Layout>
+  );
+};
+
+export default AboutPage;
