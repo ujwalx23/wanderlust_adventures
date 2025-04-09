@@ -38,10 +38,8 @@ const Navbar = () => {
             <Link to="/featured" className="text-gray-800 hover:text-india-saffron transition-colors">Featured</Link>
             <Link to="/blog" className="text-gray-800 hover:text-india-saffron transition-colors">Travel Blog</Link>
             <Link to="/about" className="text-gray-800 hover:text-india-saffron transition-colors">About Us</Link>
-            <Link to="/travel-quiz" className="text-gray-800 hover:text-india-saffron transition-colors">Travel Quiz</Link>
-            <Link to="/pick-a-trip" className="text-gray-800 hover:text-india-saffron transition-colors">Pick a Trip</Link>
-            <Link to="/movies" className="text-gray-800 hover:text-india-saffron transition-colors">Movies</Link>
-            <Link to="/music" className="text-gray-800 hover:text-india-saffron transition-colors">Music</Link>
+            <Link to="/travel-quiz" className="text-gray-800 hover:text-india-saffron transition-colors">Quiz</Link>
+            <Link to="/games" className="text-gray-800 hover:text-india-saffron transition-colors">Games</Link>
             <Link to="/faq" className="text-gray-800 hover:text-india-saffron transition-colors">FAQ</Link>
             <Link to="/contact" className="text-gray-800 hover:text-india-saffron transition-colors">Contact</Link>
           </nav>
@@ -56,18 +54,17 @@ const Navbar = () => {
               <Search size={20} />
             </button>
             
-            {/* Chat Button - Hidden on mobile */}
-            <a 
-              href="#" 
+            {/* Chat Button - Visible on all screens */}
+            <button 
               onClick={(e) => {
                 e.preventDefault();
                 document.getElementById('chat-options-modal')?.classList.remove('hidden');
               }}
-              className="hidden sm:flex p-2 text-india-green hover:text-india-saffron rounded-full hover:bg-gray-100 transition-colors"
+              className="flex p-2 text-india-green hover:text-india-saffron rounded-full hover:bg-gray-100 transition-colors"
               aria-label="Chat with us"
             >
               <MessageCircle size={20} />
-            </a>
+            </button>
 
             {/* Login/Signup - Hidden on mobile */}
             <Link to="/auth" className="hidden sm:block">
@@ -160,7 +157,28 @@ const Navbar = () => {
               className="px-4 py-2 text-gray-800 hover:text-india-saffron hover:bg-gray-50 rounded-md transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
-              Travel Quiz
+              Quiz
+            </Link>
+            <Link 
+              to="/games"
+              className="px-4 py-2 text-gray-800 hover:text-india-saffron hover:bg-gray-50 rounded-md transition-colors"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Games
+            </Link>
+            <Link 
+              to="/faq"
+              className="px-4 py-2 text-gray-800 hover:text-india-saffron hover:bg-gray-50 rounded-md transition-colors"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              FAQ
+            </Link>
+            <Link 
+              to="/contact"
+              className="px-4 py-2 text-gray-800 hover:text-india-saffron hover:bg-gray-50 rounded-md transition-colors"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Contact
             </Link>
             <Link 
               to="/pick-a-trip"
@@ -184,20 +202,6 @@ const Navbar = () => {
               Music
             </Link>
             <Link 
-              to="/faq"
-              className="px-4 py-2 text-gray-800 hover:text-india-saffron hover:bg-gray-50 rounded-md transition-colors"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              FAQ
-            </Link>
-            <Link 
-              to="/contact"
-              className="px-4 py-2 text-gray-800 hover:text-india-saffron hover:bg-gray-50 rounded-md transition-colors"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Contact
-            </Link>
-            <Link 
               to="/auth"
               className="px-4 py-2 text-india-saffron font-medium hover:bg-india-saffron hover:text-white rounded-md transition-colors"
               onClick={() => setIsMenuOpen(false)}
@@ -207,8 +211,7 @@ const Navbar = () => {
           </nav>
           
           <div className="mt-auto p-4 border-t border-gray-100">
-            <a 
-              href="#"
+            <button 
               onClick={(e) => {
                 e.preventDefault();
                 setIsMenuOpen(false);
@@ -218,7 +221,7 @@ const Navbar = () => {
             >
               <MessageCircle size={18} className="mr-2" />
               <span>Chat with us</span>
-            </a>
+            </button>
           </div>
         </div>
       </div>
@@ -267,11 +270,24 @@ const Navbar = () => {
       </div>
 
       {/* Basic Chat Modal */}
-      <div id="basic-chat-modal" className="fixed inset-0 z-50 flex items-center justify-center p-4 hidden">
-        <div className="absolute inset-0 bg-black/50" onClick={() => document.getElementById('basic-chat-modal')?.classList.add('hidden')}></div>
-        <div className="relative bg-white rounded-lg shadow-lg w-full max-w-lg p-6 h-[80vh] flex flex-col">
-          <h3 className="text-lg font-semibold text-gray-800 mb-4">Basic Travel Chat</h3>
-          <div className="flex-1 overflow-y-auto border rounded-md p-3 mb-4 bg-gray-50">
+      <div id="basic-chat-modal" className="fixed bottom-4 right-4 z-50 hidden">
+        <div className="relative bg-white rounded-lg shadow-lg w-full max-w-lg flex flex-col" style={{ height: "500px", width: "350px" }}>
+          <div className="flex items-center justify-between bg-india-blue text-white p-4 rounded-t-lg">
+            <h3 className="text-lg font-semibold">Basic Travel Chat</h3>
+            <div className="flex">
+              <button 
+                className="text-white hover:text-gray-200 mr-2"
+                onClick={() => {
+                  document.getElementById('basic-chat-modal')?.classList.add('hidden');
+                  document.getElementById('chat-options-modal')?.classList.remove('hidden');
+                }}
+              >
+                <X size={18} />
+              </button>
+            </div>
+          </div>
+          
+          <div className="flex-1 overflow-y-auto p-4 bg-gray-50">
             <div className="space-y-4">
               <div className="flex items-start">
                 <div className="bg-india-blue text-white rounded-lg rounded-tl-none p-3 max-w-[80%] shadow-sm">
@@ -291,31 +307,95 @@ const Navbar = () => {
               </div>
             </div>
           </div>
-          <div className="flex">
-            <select className="mr-2 px-3 py-2 border rounded-md text-sm w-1/3">
-              <option value="">Common Questions</option>
-              <option value="best-time">Best time to visit?</option>
-              <option value="documentation">What documents do I need?</option>
-              <option value="budget">Budget recommendations?</option>
-              <option value="local-customs">Local customs?</option>
-            </select>
-            <input 
-              type="text" 
-              placeholder="Type your question..." 
-              className="flex-1 px-3 py-2 border rounded-md text-sm"
-              disabled
-            />
-            <button className="ml-2 bg-india-blue text-white px-4 py-2 rounded-md hover:bg-india-blue/90 transition-colors" disabled>
-              Send
-            </button>
+          
+          <div className="p-3 border-t">
+            <div className="flex flex-col space-y-2">
+              <div className="flex items-center space-x-2">
+                <button 
+                  className="bg-india-blue text-white px-3 py-1 rounded-lg text-sm"
+                  onClick={() => {
+                    const chatContainer = document.querySelector('#basic-chat-modal .overflow-y-auto');
+                    const userQuestion = document.createElement('div');
+                    userQuestion.className = 'flex items-start justify-end mt-4';
+                    userQuestion.innerHTML = `
+                      <div class="bg-gray-200 rounded-lg rounded-tr-none p-3 max-w-[80%] shadow-sm">
+                        <p class="text-sm">Best places to visit in Rajasthan?</p>
+                      </div>
+                    `;
+                    chatContainer?.appendChild(userQuestion);
+                    
+                    setTimeout(() => {
+                      const botResponse = document.createElement('div');
+                      botResponse.className = 'flex items-start mt-4';
+                      botResponse.innerHTML = `
+                        <div class="bg-india-blue text-white rounded-lg rounded-tl-none p-3 max-w-[80%] shadow-sm">
+                          <p class="text-sm">Rajasthan has many incredible places to visit including Jaipur (Pink City), Udaipur (City of Lakes), Jaisalmer (Golden City), Jodhpur (Blue City), and the Thar Desert. Each offers unique culture, architecture, and experiences.</p>
+                        </div>
+                      `;
+                      chatContainer?.appendChild(botResponse);
+                      chatContainer?.scrollTo(0, chatContainer.scrollHeight);
+                    }, 1000);
+                    
+                    chatContainer?.scrollTo(0, chatContainer.scrollHeight);
+                  }}
+                >
+                  Best places in Rajasthan
+                </button>
+                
+                <button 
+                  className="bg-india-blue text-white px-3 py-1 rounded-lg text-sm"
+                  onClick={() => {
+                    const chatContainer = document.querySelector('#basic-chat-modal .overflow-y-auto');
+                    const userQuestion = document.createElement('div');
+                    userQuestion.className = 'flex items-start justify-end mt-4';
+                    userQuestion.innerHTML = `
+                      <div class="bg-gray-200 rounded-lg rounded-tr-none p-3 max-w-[80%] shadow-sm">
+                        <p class="text-sm">What documents do I need for travel in India?</p>
+                      </div>
+                    `;
+                    chatContainer?.appendChild(userQuestion);
+                    
+                    setTimeout(() => {
+                      const botResponse = document.createElement('div');
+                      botResponse.className = 'flex items-start mt-4';
+                      botResponse.innerHTML = `
+                        <div class="bg-india-blue text-white rounded-lg rounded-tl-none p-3 max-w-[80%] shadow-sm">
+                          <p class="text-sm">For domestic travel in India, you'll need a government-issued photo ID (Aadhar, Voter ID, Driving License, etc.). For international visitors, a valid passport and visa are required. Always carry your accommodation details and a copy of your return ticket.</p>
+                        </div>
+                      `;
+                      chatContainer?.appendChild(botResponse);
+                      chatContainer?.scrollTo(0, chatContainer.scrollHeight);
+                    }, 1000);
+                    
+                    chatContainer?.scrollTo(0, chatContainer.scrollHeight);
+                  }}
+                >
+                  Travel documents
+                </button>
+              </div>
+              
+              <div className="flex">
+                <input 
+                  type="text" 
+                  placeholder="Type your question..." 
+                  className="flex-1 px-3 py-2 border rounded-l-md text-sm focus:outline-none focus:ring-1 focus:ring-india-blue"
+                />
+                <button className="bg-india-blue text-white px-4 py-2 rounded-r-md hover:bg-india-blue/90 transition-colors">
+                  Send
+                </button>
+              </div>
+              
+              <button 
+                onClick={() => {
+                  document.getElementById('basic-chat-modal')?.classList.add('hidden');
+                  document.getElementById('chat-options-modal')?.classList.remove('hidden');
+                }}
+                className="text-gray-500 hover:text-india-blue text-sm text-center"
+              >
+                Back to chat options
+              </button>
+            </div>
           </div>
-          <p className="text-xs text-gray-500 mt-2">For complex questions or personalized advice, please use our Advanced Chat option.</p>
-          <button 
-            className="absolute top-3 right-3 text-gray-400 hover:text-gray-600"
-            onClick={() => document.getElementById('basic-chat-modal')?.classList.add('hidden')}
-          >
-            <X size={20} />
-          </button>
         </div>
       </div>
     </header>

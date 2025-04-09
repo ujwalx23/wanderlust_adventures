@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { destinations } from '@/constants/destinations';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { StarIcon, MapPin, ArrowRight, Cloud } from 'lucide-react';
+import { StarIcon, MapPin, ArrowRight, Users } from 'lucide-react';
 
 const FeaturedDestinations = () => {
   // Take the first 3 destinations to display
@@ -43,8 +43,8 @@ const FeaturedDestinations = () => {
                     <span className="text-sm">{destination.location}</span>
                   </div>
                   <div className="flex items-center text-gray-500 mb-3">
-                    <Cloud size={16} className="mr-1" />
-                    <span className="text-sm">Weather: {destination.weather || "25°C, Sunny"}</span>
+                    <Users size={16} className="mr-1" />
+                    <span className="text-sm">Perfect for: {destination.suitableFor || "Everyone"}</span>
                   </div>
                   <p className="text-gray-600 mb-4 line-clamp-2">{destination.description}</p>
                   <div className="flex items-center justify-between">

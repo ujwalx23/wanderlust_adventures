@@ -3,9 +3,10 @@ import React, { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import Layout from '@/components/layout/Layout';
 import { Button } from '@/components/ui/button';
-import { StarIcon, MapPin, Calendar, Clock, Users, ArrowLeft } from 'lucide-react';
+import { StarIcon, MapPin, Calendar, Users, ArrowLeft } from 'lucide-react';
 import { destinations, Destination } from '@/constants/destinations';
 import { useToast } from '@/hooks/use-toast';
+import GoogleMapComponent from '@/components/maps/GoogleMapComponent';
 
 const DestinationDetail = () => {
   const { id } = useParams<{ id: string }>();
@@ -21,13 +22,6 @@ const DestinationDetail = () => {
       setLoading(false);
     }, 500);
   }, [id]);
-
-  const handleBookNow = () => {
-    toast({
-      title: "Booking Request Received",
-      description: `Your booking request for ${destination?.name} has been submitted successfully!`,
-    });
-  };
 
   if (loading) {
     return (
@@ -137,51 +131,48 @@ const DestinationDetail = () => {
               </div>
               
               <div>
-                <h3 className="text-xl font-semibold text-gray-800 mb-3">Included in the Package</h3>
-                <ul className="list-disc list-inside text-gray-600 space-y-2">
-                  <li>Guided tours with experienced local guides</li>
-                  <li>Comfortable accommodation</li>
-                  <li>Transportation between attractions</li>
-                  <li>Selected meals featuring local cuisine</li>
-                  <li>All entrance fees to monuments and attractions</li>
-                </ul>
+                <h3 className="text-xl font-semibold text-gray-800 mb-3">Perfect For</h3>
+                <div className="flex items-center text-gray-600 space-x-2">
+                  <Users size={18} className="text-india-blue" />
+                  <span>{destination.suitableFor || "Families, Couples, Friends, Solo Travelers"}</span>
+                </div>
+              </div>
+
+              <div>
+                <h3 className="text-xl font-semibold text-gray-800 mb-3">Location</h3>
+                <div className="h-64 rounded-lg overflow-hidden">
+                  <GoogleMapComponent 
+                    location={destination.location} 
+                    name={destination.name}
+                  />
+                </div>
               </div>
             </div>
           </div>
           
-          {/* Booking widget */}
+          {/* Sidebar information */}
           <div>
             <div className="bg-white rounded-lg border border-gray-200 shadow-sm p-6 sticky top-24">
-              <div className="flex items-center justify-between mb-4">
-                <h3 className="text-xl font-semibold text-gray-800">Book Your Adventure</h3>
-                <p className="text-2xl font-bold text-india-saffron">{destination.price}</p>
-              </div>
+              <h3 className="text-xl font-semibold text-gray-800 mb-4">Destination Information</h3>
               
               <div className="space-y-4 mb-6">
                 <div className="flex items-center text-gray-600">
                   <Calendar size={18} className="mr-3 text-india-blue" />
-                  <span>Available all year round</span>
-                </div>
-                <div className="flex items-center text-gray-600">
-                  <Clock size={18} className="mr-3 text-india-blue" />
-                  <span>Duration: 1-3 days recommended</span>
+                  <span>Best time to visit: {destination.bestTimeToVisit || "October to March"}</span>
                 </div>
                 <div className="flex items-center text-gray-600">
                   <Users size={18} className="mr-3 text-india-blue" />
-                  <span>Perfect for families & groups</span>
+                  <span>Perfect for: {destination.suitableFor || "Everyone"}</span>
                 </div>
               </div>
               
-              <Button 
-                onClick={handleBookNow}
-                className="w-full bg-india-saffron hover:bg-india-marigold text-white font-medium"
-              >
-                Book Now
-              </Button>
-              
-              <p className="text-center text-sm text-gray-500 mt-4">
-                Free cancellation up to 24 hours before the tour
-              </p>
+              <Link to="/pick-a-trip">
+                <Button 
+                  className="w-full bg-india-saffron hover:bg-india-marigold text-white font-medium"
+                >
+                  Discover More Destinations
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
