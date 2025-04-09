@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import Layout from '@/components/layout/Layout';
@@ -134,7 +133,7 @@ const DestinationDetail = () => {
                 <h3 className="text-xl font-semibold text-gray-800 mb-3">Perfect For</h3>
                 <div className="flex items-center text-gray-600 space-x-2">
                   <Users size={18} className="text-india-blue" />
-                  <span>{destination.suitableFor || "Families, Couples, Friends, Solo Travelers"}</span>
+                  <span>{destination.suitableFor}</span>
                 </div>
               </div>
 

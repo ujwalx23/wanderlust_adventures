@@ -33,11 +33,6 @@ const HeroSection = () => {
                 <ArrowRight size={18} className="ml-2" />
               </Button>
             </Link>
-            <Link to="/auth">
-              <Button variant="outline" size="lg" className="border-white text-white hover:bg-white/10">
-                Plan Your Journey
-              </Button>
-            </Link>
           </div>
         </div>
       </div>

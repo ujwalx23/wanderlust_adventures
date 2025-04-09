@@ -1,4 +1,3 @@
-
 export interface Destination {
   id: string;
   name: string;
@@ -15,6 +14,7 @@ export interface Destination {
   howToReach?: string;
   latitude?: number;
   longitude?: number;
+  suitableFor: string; // Adding the missing property
 }
 
 export const destinations: Destination[] = [
@@ -33,7 +33,8 @@ export const destinations: Destination[] = [
     thingsToDo: ["Guided heritage tour", "Photography at sunrise or sunset", "Visit nearby Agra Fort", "Explore local Mughlai cuisine"],
     howToReach: "Agra is well-connected by air, train and road. The nearest airport is Agra Airport, about 10 km from the Taj Mahal. You can also take a train to Agra Cantt Railway Station or drive from Delhi (230 km).",
     latitude: 27.1751,
-    longitude: 78.0421
+    longitude: 78.0421,
+    suitableFor: "All"
   },
   {
     id: "2",
@@ -50,7 +51,8 @@ export const destinations: Destination[] = [
     thingsToDo: ["Attend evening Ganga Aarti", "Take a sunrise boat ride on the Ganges", "Explore narrow lanes and ancient temples", "Sample local street food specialties"],
     howToReach: "Varanasi is accessible by air (Lal Bahadur Shastri Airport), train (Varanasi Junction), and road. Several domestic flights connect Varanasi to major Indian cities.",
     latitude: 25.3176,
-    longitude: 83.0062
+    longitude: 83.0062,
+    suitableFor: "All"
   },
   {
     id: "3",
@@ -67,7 +69,8 @@ export const destinations: Destination[] = [
     thingsToDo: ["Elephant ride to Amber Fort", "Shopping for handicrafts and textiles", "Experience traditional Rajasthani cuisine", "Attend cultural performances"],
     howToReach: "Jaipur International Airport connects to major Indian cities. Jaipur Junction railway station is well-connected to all major cities. National highways link Jaipur to nearby cities like Delhi (281 km).",
     latitude: 26.9124,
-    longitude: 75.7873
+    longitude: 75.7873,
+    suitableFor: "All"
   },
   {
     id: "4",
@@ -84,7 +87,8 @@ export const destinations: Destination[] = [
     thingsToDo: ["Relax on famous beaches like Baga, Calangute, or Palolem", "Try water sports like parasailing and jet-skiing", "Explore Old Goa's historic churches", "Experience the vibrant nightlife"],
     howToReach: "Dabolim Airport connects Goa to major Indian cities and some international destinations. Madgaon and Thivim are the major railway stations. Good road connectivity from Mumbai, Bangalore, and other cities.",
     latitude: 15.2993,
-    longitude: 74.1240
+    longitude: 74.1240,
+    suitableFor: "All"
   },
   {
     id: "5",
@@ -101,7 +105,8 @@ export const destinations: Destination[] = [
     thingsToDo: ["Overnight houseboat cruise with authentic Kerala meals", "Canoe rides through narrow canals", "Visit villages along the backwaters", "Ayurvedic spa treatments"],
     howToReach: "The nearest airport is Cochin International Airport (85 km from Alleppey). Alleppey has a railway station connected to major cities. Road connections are good from Kochi (55 km) and Trivandrum (160 km).",
     latitude: 9.4981,
-    longitude: 76.3388
+    longitude: 76.3388,
+    suitableFor: "All"
   },
   {
     id: "6",
@@ -118,7 +123,8 @@ export const destinations: Destination[] = [
     thingsToDo: ["Ride the historic 'toy train'", "Visit tea estates and taste authentic Darjeeling tea", "Sunrise view from Tiger Hill", "Visit Padmaja Naidu Himalayan Zoological Park"],
     howToReach: "The nearest airport is Bagdogra Airport (70 km), with connections to major Indian cities. New Jalpaiguri is the nearest major railway station. Shared jeeps and taxis connect Darjeeling to Siliguri and other nearby towns.",
     latitude: 27.0410,
-    longitude: 88.2663
+    longitude: 88.2663,
+    suitableFor: "All"
   },
   {
     id: "7",
@@ -130,7 +136,8 @@ export const destinations: Destination[] = [
     rating: 4.7,
     category: "Cultural",
     latitude: 23.8362,
-    longitude: 69.5345
+    longitude: 69.5345,
+    suitableFor: "All"
   },
   {
     id: "8",
@@ -142,7 +149,8 @@ export const destinations: Destination[] = [
     rating: 4.8,
     category: "Historical",
     latitude: 24.8318,
-    longitude: 79.9199
+    longitude: 79.9199,
+    suitableFor: "All"
   },
   {
     id: "9",
@@ -154,7 +162,8 @@ export const destinations: Destination[] = [
     rating: 4.9,
     category: "Beach",
     latitude: 11.7401,
-    longitude: 92.6586
+    longitude: 92.6586,
+    suitableFor: "All"
   },
   {
     id: "10",
@@ -166,7 +175,8 @@ export const destinations: Destination[] = [
     rating: 4.7,
     category: "Historical",
     latitude: 15.3350,
-    longitude: 76.4600
+    longitude: 76.4600,
+    suitableFor: "All"
   },
   {
     id: "11",
@@ -178,7 +188,8 @@ export const destinations: Destination[] = [
     rating: 4.9,
     category: "Adventure",
     latitude: 34.1526,
-    longitude: 77.5771
+    longitude: 77.5771,
+    suitableFor: "All"
   },
   {
     id: "12",
@@ -190,7 +201,8 @@ export const destinations: Destination[] = [
     rating: 4.6,
     category: "Nature",
     latitude: 12.4244,
-    longitude: 75.7382
+    longitude: 75.7382,
+    suitableFor: "All"
   },
   {
     id: "13",
@@ -202,7 +214,8 @@ export const destinations: Destination[] = [
     rating: 4.8,
     category: "Historical",
     latitude: 20.5519,
-    longitude: 75.7000
+    longitude: 75.7000,
+    suitableFor: "All"
   },
   {
     id: "14",
@@ -214,7 +227,8 @@ export const destinations: Destination[] = [
     rating: 4.5,
     category: "Wildlife",
     latitude: 21.9497,
-    longitude: 89.1833
+    longitude: 89.1833,
+    suitableFor: "All"
   },
   {
     id: "15",
@@ -226,7 +240,8 @@ export const destinations: Destination[] = [
     rating: 4.7,
     category: "Spiritual",
     latitude: 30.0869,
-    longitude: 78.2676
+    longitude: 78.2676,
+    suitableFor: "All"
   },
   {
     id: "16",
@@ -238,7 +253,8 @@ export const destinations: Destination[] = [
     rating: 4.6,
     category: "Wildlife",
     latitude: 26.0173,
-    longitude: 76.5026
+    longitude: 76.5026,
+    suitableFor: "All"
   },
   {
     id: "17",
@@ -250,7 +266,8 @@ export const destinations: Destination[] = [
     rating: 4.5,
     category: "Mountain",
     latitude: 31.1048,
-    longitude: 77.1734
+    longitude: 77.1734,
+    suitableFor: "All"
   },
   {
     id: "18",
@@ -262,7 +279,8 @@ export const destinations: Destination[] = [
     rating: 4.7,
     category: "Historical",
     latitude: 12.3052,
-    longitude: 76.6551
+    longitude: 76.6551,
+    suitableFor: "All"
   },
   {
     id: "19",
@@ -274,7 +292,8 @@ export const destinations: Destination[] = [
     rating: 4.8,
     category: "Nature",
     latitude: 10.0889,
-    longitude: 77.0595
+    longitude: 77.0595,
+    suitableFor: "All"
   },
   {
     id: "20",
@@ -286,7 +305,8 @@ export const destinations: Destination[] = [
     rating: 4.7,
     category: "Wildlife",
     latitude: 26.5806,
-    longitude: 93.1753
+    longitude: 93.1753,
+    suitableFor: "All"
   },
   {
     id: "21",
@@ -298,7 +318,8 @@ export const destinations: Destination[] = [
     rating: 4.9,
     category: "Adventure",
     latitude: 30.7283,
-    longitude: 79.6244
+    longitude: 79.6244,
+    suitableFor: "All"
   },
   {
     id: "22",
@@ -310,7 +331,8 @@ export const destinations: Destination[] = [
     rating: 4.5,
     category: "Cultural",
     latitude: 8.0883,
-    longitude: 77.5385
+    longitude: 77.5385,
+    suitableFor: "All"
   },
   {
     id: "23",
@@ -322,7 +344,8 @@ export const destinations: Destination[] = [
     rating: 4.6,
     category: "Mountain",
     latitude: 11.4102,
-    longitude: 76.6950
+    longitude: 76.6950,
+    suitableFor: "All"
   },
   {
     id: "24",
@@ -334,7 +357,8 @@ export const destinations: Destination[] = [
     rating: 4.7,
     category: "Historical",
     latitude: 19.8876,
-    longitude: 86.0945
+    longitude: 86.0945,
+    suitableFor: "All"
   },
   {
     id: "25",
@@ -346,7 +370,8 @@ export const destinations: Destination[] = [
     rating: 4.9,
     category: "Spiritual",
     latitude: 31.6200,
-    longitude: 74.8765
+    longitude: 74.8765,
+    suitableFor: "All"
   },
   {
     id: "26",
@@ -358,7 +383,8 @@ export const destinations: Destination[] = [
     rating: 4.6,
     category: "Wildlife",
     latitude: 29.5300,
-    longitude: 78.7747
+    longitude: 78.7747,
+    suitableFor: "All"
   },
   {
     id: "27",
@@ -370,7 +396,8 @@ export const destinations: Destination[] = [
     rating: 4.5,
     category: "Beach",
     latitude: 8.3988,
-    longitude: 76.9727
+    longitude: 76.9727,
+    suitableFor: "All"
   },
   {
     id: "28",
@@ -382,7 +409,8 @@ export const destinations: Destination[] = [
     rating: 4.8,
     category: "Cultural",
     latitude: 24.5765,
-    longitude: 73.6823
+    longitude: 73.6823,
+    suitableFor: "All"
   },
   {
     id: "29",
@@ -394,7 +422,8 @@ export const destinations: Destination[] = [
     rating: 4.7,
     category: "Adventure",
     latitude: 34.2788,
-    longitude: 77.6038
+    longitude: 77.6038,
+    suitableFor: "All"
   },
   {
     id: "30",
@@ -406,7 +435,8 @@ export const destinations: Destination[] = [
     rating: 4.6,
     category: "Spiritual",
     latitude: 29.9457,
-    longitude: 78.1642
+    longitude: 78.1642,
+    suitableFor: "All"
   },
   {
     id: "31",
@@ -418,7 +448,8 @@ export const destinations: Destination[] = [
     rating: 4.8,
     category: "Historical",
     latitude: 20.0268,
-    longitude: 75.1779
+    longitude: 75.1779,
+    suitableFor: "All"
   },
   {
     id: "32",
@@ -430,7 +461,8 @@ export const destinations: Destination[] = [
     rating: 4.7,
     category: "Spiritual",
     latitude: 27.5874,
-    longitude: 91.8588
+    longitude: 91.8588,
+    suitableFor: "All"
   },
   {
     id: "33",
@@ -442,7 +474,8 @@ export const destinations: Destination[] = [
     rating: 4.8,
     category: "Spiritual",
     latitude: 9.9195,
-    longitude: 78.1193
+    longitude: 78.1193,
+    suitableFor: "All"
   },
   {
     id: "34",
@@ -454,7 +487,8 @@ export const destinations: Destination[] = [
     rating: 4.5,
     category: "Historical",
     latitude: 18.9634,
-    longitude: 72.9311
+    longitude: 72.9311,
+    suitableFor: "All"
   },
   {
     id: "35",
@@ -466,7 +500,8 @@ export const destinations: Destination[] = [
     rating: 4.9,
     category: "Adventure",
     latitude: 32.2458,
-    longitude: 78.2344
+    longitude: 78.2344,
+    suitableFor: "All"
   },
   {
     id: "36",
@@ -478,7 +513,8 @@ export const destinations: Destination[] = [
     rating: 4.6,
     category: "Historical",
     latitude: 12.6269,
-    longitude: 80.1927
+    longitude: 80.1927,
+    suitableFor: "All"
   },
   {
     id: "37",
@@ -490,7 +526,8 @@ export const destinations: Destination[] = [
     rating: 4.7,
     category: "Beach",
     latitude: 15.0103,
-    longitude: 74.0233
+    longitude: 74.0233,
+    suitableFor: "All"
   },
   {
     id: "38",
@@ -502,7 +539,8 @@ export const destinations: Destination[] = [
     rating: 4.6,
     category: "Wildlife",
     latitude: 21.1390,
-    longitude: 70.8293
+    longitude: 70.8293,
+    suitableFor: "All"
   },
   {
     id: "39",
@@ -514,7 +552,8 @@ export const destinations: Destination[] = [
     rating: 4.7,
     category: "Mountain",
     latitude: 32.2432,
-    longitude: 77.1892
+    longitude: 77.1892,
+    suitableFor: "All"
   },
   {
     id: "40",
@@ -526,7 +565,8 @@ export const destinations: Destination[] = [
     rating: 4.8,
     category: "Spiritual",
     latitude: 24.6959,
-    longitude: 84.9911
+    longitude: 84.9911,
+    suitableFor: "All"
   },
   {
     id: "41",
@@ -538,7 +578,8 @@ export const destinations: Destination[] = [
     rating: 4.7,
     category: "Adventure",
     latitude: 15.3145,
-    longitude: 74.3146
+    longitude: 74.3146,
+    suitableFor: "All"
   },
   {
     id: "42",
@@ -550,7 +591,8 @@ export const destinations: Destination[] = [
     rating: 4.6,
     category: "Cultural",
     latitude: 26.9499,
-    longitude: 94.1667
+    longitude: 94.1667,
+    suitableFor: "All"
   },
   {
     id: "43",
@@ -562,7 +604,8 @@ export const destinations: Destination[] = [
     rating: 4.5,
     category: "Spiritual",
     latitude: 26.4902,
-    longitude: 74.5508
+    longitude: 74.5508,
+    suitableFor: "All"
   },
   {
     id: "44",
@@ -574,7 +617,8 @@ export const destinations: Destination[] = [
     rating: 4.8,
     category: "Adventure",
     latitude: 34.6938,
-    longitude: 77.5598
+    longitude: 77.5598,
+    suitableFor: "All"
   },
   {
     id: "45",
@@ -586,7 +630,8 @@ export const destinations: Destination[] = [
     rating: 4.7,
     category: "Wildlife",
     latitude: 22.2707,
-    longitude: 80.6345
+    longitude: 80.6345,
+    suitableFor: "All"
   },
   {
     id: "46",
@@ -598,7 +643,8 @@ export const destinations: Destination[] = [
     rating: 4.6,
     category: "Cultural",
     latitude: 27.5369,
-    longitude: 93.8288
+    longitude: 93.8288,
+    suitableFor: "All"
   },
   {
     id: "47",
@@ -610,7 +656,8 @@ export const destinations: Destination[] = [
     rating: 4.5,
     category: "Beach",
     latitude: 9.1550,
-    longitude: 79.4183
+    longitude: 79.4183,
+    suitableFor: "All"
   },
   {
     id: "48",
@@ -622,7 +669,8 @@ export const destinations: Destination[] = [
     rating: 4.6,
     category: "Wildlife",
     latitude: 11.7671,
-    longitude: 76.6353
+    longitude: 76.6353,
+    suitableFor: "All"
   }
 ];
 
@@ -731,4 +779,3 @@ export const testimonials = [
     image: "https://randomuser.me/api/portraits/women/75.jpg"
   }
 ];
-
