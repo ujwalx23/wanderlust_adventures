@@ -16,6 +16,11 @@ import AllDestinationsPage from "./pages/AllDestinationsPage";
 import ReviewsPage from "./pages/ReviewsPage";
 import BlogPage from "./pages/BlogPage";
 import GalleryPage from "./pages/GalleryPage";
+import TravelQuizPage from "./pages/TravelQuizPage";
+import PickTripPage from "./pages/PickTripPage";
+import MoviesPage from "./pages/MoviesPage";
+import MusicPage from "./pages/MusicPage";
+import BlogDetailPage from "./pages/BlogDetailPage";
 
 const queryClient = new QueryClient();
 
@@ -36,7 +41,12 @@ const App = () => (
           <Route path="/about" element={<AboutPage />} />
           <Route path="/reviews" element={<ReviewsPage />} />
           <Route path="/blog" element={<BlogPage />} />
+          <Route path="/blog/:id" element={<BlogDetailPage />} />
           <Route path="/gallery" element={<GalleryPage />} />
+          <Route path="/travel-quiz" element={<TravelQuizPage />} />
+          <Route path="/pick-a-trip" element={<PickTripPage />} />
+          <Route path="/movies" element={<MoviesPage />} />
+          <Route path="/music" element={<MusicPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

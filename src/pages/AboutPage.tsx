@@ -27,11 +27,11 @@ const AboutPage = () => {
                   </Button>
                 </Link>
               </div>
-              <div className="h-60 md:h-auto">
+              <div className="h-60 md:h-auto bg-white flex items-center justify-center p-4">
                 <img 
-                  src="https://images.unsplash.com/photo-1648298147169-71d3d6e8ca60?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aW5kaWFuJTIwdHJhdmVsfGVufDB8fDB8fHww" 
-                  alt="Wanderlust Adventures Team" 
-                  className="w-full h-full object-cover"
+                  src="/lovable-uploads/6197a3de-efa5-4123-a99f-fc3bbc2e0d2f.png" 
+                  alt="Wanderlust Logo" 
+                  className="max-h-full w-auto object-contain"
                 />
               </div>
             </div>

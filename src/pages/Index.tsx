@@ -4,8 +4,7 @@ import Layout from '@/components/layout/Layout';
 import HeroSection from '@/components/home/HeroSection';
 import FeaturedDestinations from '@/components/home/FeaturedDestinations';
 import AboutIndia from '@/components/home/AboutIndia';
-import Categories from '@/components/home/Categories';
-import Testimonials from '@/components/home/Testimonials';
+import TravelBlogs from '@/components/home/TravelBlogs';
 import SubscribeSection from '@/components/home/SubscribeSection';
 
 const Index = () => {
@@ -14,8 +13,7 @@ const Index = () => {
       <HeroSection />
       <AboutIndia />
       <FeaturedDestinations />
-      <Categories />
-      <Testimonials />
+      <TravelBlogs />
       <SubscribeSection />
     </Layout>
   );

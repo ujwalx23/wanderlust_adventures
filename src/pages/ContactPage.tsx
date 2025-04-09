@@ -2,7 +2,7 @@
 import React from 'react';
 import Layout from '@/components/layout/Layout';
 import ContactForm from '@/components/contact/ContactForm';
-import { MapPin, Phone, Mail, Clock } from 'lucide-react';
+import { Phone, Mail, Clock } from 'lucide-react';
 
 const ContactPage = () => {
   return (
@@ -18,27 +18,32 @@ const ContactPage = () => {
             </p>
           </div>
           
+          {/* Friendly Tags at the top */}
+          <div className="flex flex-wrap justify-center gap-4 mb-12">
+            <a href="#general-inquiries" className="px-4 py-2 bg-india-saffron/10 text-india-saffron rounded-full hover:bg-india-saffron/20 transition-colors">
+              General Inquiries
+            </a>
+            <a href="#destination-advice" className="px-4 py-2 bg-india-blue/10 text-india-blue rounded-full hover:bg-india-blue/20 transition-colors">
+              Destination Advice
+            </a>
+            <a href="#collaboration" className="px-4 py-2 bg-india-green/10 text-india-green rounded-full hover:bg-india-green/20 transition-colors">
+              Collaboration Opportunities
+            </a>
+            <a href="#feedback" className="px-4 py-2 bg-purple-100 text-purple-600 rounded-full hover:bg-purple-200 transition-colors">
+              Feedback & Suggestions
+            </a>
+            <a href="#careers" className="px-4 py-2 bg-blue-100 text-blue-600 rounded-full hover:bg-blue-200 transition-colors">
+              Careers
+            </a>
+          </div>
+          
           <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
             {/* Contact Information */}
             <div>
               <h2 className="text-2xl font-semibold text-gray-800 mb-6">Get in Touch</h2>
               
-              <div className="space-y-6">
-                <div className="flex">
-                  <div className="bg-india-saffron/10 p-3 rounded-full mr-4">
-                    <MapPin className="text-india-saffron" size={24} />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-gray-800 mb-1">Our Address</h3>
-                    <address className="text-gray-600 not-italic">
-                      42 Travel House, MG Road, <br />
-                      Bangalore - 560001, Karnataka, <br />
-                      India
-                    </address>
-                  </div>
-                </div>
-                
-                <div className="flex">
+              <div className="space-y-6">                
+                <div className="flex" id="general-inquiries">
                   <div className="bg-india-green/10 p-3 rounded-full mr-4">
                     <Phone className="text-india-green" size={24} />
                   </div>
@@ -57,7 +62,7 @@ const ContactPage = () => {
                   </div>
                 </div>
                 
-                <div className="flex">
+                <div className="flex" id="destination-advice">
                   <div className="bg-india-blue/10 p-3 rounded-full mr-4">
                     <Mail className="text-india-blue" size={24} />
                   </div>
@@ -76,7 +81,7 @@ const ContactPage = () => {
                   </div>
                 </div>
                 
-                <div className="flex">
+                <div className="flex" id="collaboration">
                   <div className="bg-india-marigold/10 p-3 rounded-full mr-4">
                     <Clock className="text-india-marigold" size={24} />
                   </div>
@@ -89,7 +94,7 @@ const ContactPage = () => {
                 </div>
               </div>
               
-              <div className="mt-8">
+              <div className="mt-8" id="feedback">
                 <h3 className="font-semibold text-gray-800 mb-3">Connect With Us</h3>
                 <div className="flex space-x-4">
                   <a href="#" className="bg-gray-200 hover:bg-india-saffron hover:text-white p-2 rounded-full transition-colors">
@@ -117,25 +122,9 @@ const ContactPage = () => {
             </div>
             
             {/* Contact Form */}
-            <div className="bg-white p-6 rounded-lg shadow-sm">
+            <div className="bg-white p-6 rounded-lg shadow-sm" id="careers">
               <h2 className="text-2xl font-semibold text-gray-800 mb-6">Send us a Message</h2>
               <ContactForm />
-            </div>
-          </div>
-          
-          {/* Map */}
-          <div className="mt-16 max-w-5xl mx-auto">
-            <div className="aspect-[16/9] w-full rounded-lg overflow-hidden shadow-sm">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.9976945765135!2d77.6094956!3d12.9756598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae16a3bdd6b791%3A0x73137e168463bb29!2sMG%20Road%2C%20Bengaluru%2C%20Karnataka%2C%20India!5e0!3m2!1sen!2sus!4v1649523235323!5m2!1sen!2sus"
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title="Wanderlust Adventures Office Location"
-              ></iframe>
             </div>
           </div>
         </div>

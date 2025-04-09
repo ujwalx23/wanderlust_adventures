@@ -10,9 +10,13 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
-            <Link to="/" className="flex items-center space-x-2 mb-4">
-              <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center">
-                <span className="text-india-blue font-bold text-lg">W</span>
+            <Link to="/about" className="flex items-center space-x-2 mb-4">
+              <div className="w-10 h-10">
+                <img 
+                  src="/lovable-uploads/6197a3de-efa5-4123-a99f-fc3bbc2e0d2f.png" 
+                  alt="Wanderlust Adventures" 
+                  className="w-full h-full object-contain bg-white rounded-full"
+                />
               </div>
               <span className="font-bold text-xl">
                 Wanderlust <span className="text-india-saffron">Adventures</span>
@@ -54,22 +58,25 @@ const Footer = () => {
                 <Link to="/all-destinations" className="text-gray-300 hover:text-india-saffron transition-colors">All Destinations</Link>
               </li>
               <li>
-                <Link to="/gallery" className="text-gray-300 hover:text-india-saffron transition-colors">Gallery</Link>
-              </li>
-              <li>
                 <Link to="/blog" className="text-gray-300 hover:text-india-saffron transition-colors">Travel Blog</Link>
               </li>
               <li>
-                <Link to="/reviews" className="text-gray-300 hover:text-india-saffron transition-colors">Traveler Reviews</Link>
+                <Link to="/travel-quiz" className="text-gray-300 hover:text-india-saffron transition-colors">Travel Quiz</Link>
+              </li>
+              <li>
+                <Link to="/pick-a-trip" className="text-gray-300 hover:text-india-saffron transition-colors">Pick a Trip</Link>
+              </li>
+              <li>
+                <Link to="/movies" className="text-gray-300 hover:text-india-saffron transition-colors">Movies</Link>
+              </li>
+              <li>
+                <Link to="/music" className="text-gray-300 hover:text-india-saffron transition-colors">Music</Link>
               </li>
               <li>
                 <Link to="/about" className="text-gray-300 hover:text-india-saffron transition-colors">About Us</Link>
               </li>
               <li>
                 <Link to="/faq" className="text-gray-300 hover:text-india-saffron transition-colors">FAQs</Link>
-              </li>
-              <li>
-                <Link to="/contact" className="text-gray-300 hover:text-india-saffron transition-colors">Contact Us</Link>
               </li>
             </ul>
           </div>
@@ -141,9 +148,11 @@ const Footer = () => {
 
       {/* Chat Button - Fixed */}
       <a 
-        href="https://cutt.cx/wanderlust" 
-        target="_blank"
-        rel="noopener noreferrer"
+        href="#"
+        onClick={(e) => {
+          e.preventDefault();
+          document.getElementById('chat-options-modal')?.classList.remove('hidden');
+        }} 
         className="fixed bottom-6 right-6 bg-india-green text-white p-4 rounded-full shadow-lg hover:bg-india-saffron transition-colors z-40"
         aria-label="Chat with us"
       >
