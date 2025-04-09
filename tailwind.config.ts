@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,7 +62,18 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// India-inspired color palette
+				india: {
+					saffron: '#FF9933',
+					green: '#138808',
+					blue: '#000080',
+					white: '#FFFFFF',
+					ashoka: '#0000FF',
+					soil: '#964B00',
+					spice: '#D2691E',
+					marigold: '#FFC000',
+				},
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -89,7 +101,11 @@ export default {
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out'
-			}
+			},
+			backgroundImage: {
+				'gradient-india': 'linear-gradient(90deg, #FF9933 0%, #FFFFFF 50%, #138808 100%)',
+				'hero-pattern': "url('/src/assets/hero-bg.jpg')",
+			},
 		}
 	},
 	plugins: [require("tailwindcss-animate")],
