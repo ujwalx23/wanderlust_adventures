@@ -21,16 +21,10 @@ const Index = () => {
             <p className="text-gray-600 max-w-2xl mx-auto mb-8">
               Not sure where to go? Let our trip finder help you discover the perfect destination for your next adventure.
             </p>
-            <div className="flex justify-center gap-4 flex-wrap">
-              <Link to="/pick-a-trip">
-                <Button className="bg-india-saffron hover:bg-india-marigold text-white">
-                  Pick a Trip for Me
-                  <ChevronRight size={16} />
-                </Button>
-              </Link>
+            <div className="flex justify-center">
               <Link to="/featured">
-                <Button variant="outline" className="border-india-blue text-india-blue hover:bg-india-blue hover:text-white">
-                  Explore Destinations
+                <Button className="bg-india-saffron hover:bg-india-marigold text-white">
+                  Choose a Card
                   <ChevronRight size={16} />
                 </Button>
               </Link>

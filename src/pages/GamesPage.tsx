@@ -2,9 +2,9 @@
 import React, { useState } from 'react';
 import Layout from '@/components/layout/Layout';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import SpotTheDifference from '@/components/games/SpotTheDifference';
 import GuessTheFlag from '@/components/games/GuessTheFlag';
-import FlightSimulator from '@/components/games/FlightSimulator';
+import GuessTheLanguage from '@/components/games/GuessTheLanguage';
+import WouldYouRather from '@/components/games/WouldYouRather';
 
 const GamesPage = () => {
   return (
@@ -19,23 +19,23 @@ const GamesPage = () => {
           </p>
         </div>
         
-        <Tabs defaultValue="spot-the-difference" className="w-full max-w-4xl mx-auto">
+        <Tabs defaultValue="guess-the-flag" className="w-full max-w-4xl mx-auto">
           <TabsList className="grid w-full grid-cols-3 mb-8">
-            <TabsTrigger value="spot-the-difference">Spot the Difference</TabsTrigger>
             <TabsTrigger value="guess-the-flag">Guess the Flag</TabsTrigger>
-            <TabsTrigger value="flight-simulator">Flight Simulator</TabsTrigger>
+            <TabsTrigger value="guess-the-language">Guess the Language</TabsTrigger>
+            <TabsTrigger value="would-you-rather">Would You Rather</TabsTrigger>
           </TabsList>
-          
-          <TabsContent value="spot-the-difference">
-            <SpotTheDifference />
-          </TabsContent>
           
           <TabsContent value="guess-the-flag">
             <GuessTheFlag />
           </TabsContent>
           
-          <TabsContent value="flight-simulator">
-            <FlightSimulator />
+          <TabsContent value="guess-the-language">
+            <GuessTheLanguage />
+          </TabsContent>
+          
+          <TabsContent value="would-you-rather">
+            <WouldYouRather />
           </TabsContent>
         </Tabs>
       </div>

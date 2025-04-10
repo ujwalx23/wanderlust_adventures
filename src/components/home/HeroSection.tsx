@@ -3,8 +3,11 @@ import React from 'react';
 import { ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
+import { useIsMobile } from '@/hooks/use-mobile';
 
 const HeroSection = () => {
+  const isMobile = useIsMobile();
+  
   return (
     <section className="relative overflow-hidden">
       {/* Hero Background with Overlay */}
@@ -19,7 +22,7 @@ const HeroSection = () => {
       {/* Content */}
       <div className="relative container mx-auto px-4 py-24 md:py-32 lg:py-40 flex flex-col justify-center items-center text-center text-white">
         <div className="max-w-4xl">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+          <h1 className={`${isMobile ? 'text-3xl' : 'text-4xl md:text-5xl lg:text-6xl'} font-bold mb-6`}>
             Discover the Magic of <span className="text-india-saffron">Incredible India</span>
           </h1>
           <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto">
@@ -28,7 +31,7 @@ const HeroSection = () => {
           
           <div className="flex flex-wrap justify-center gap-4">
             <Link to="/featured">
-              <Button size="lg" className="bg-india-saffron hover:bg-india-marigold text-white">
+              <Button size={isMobile ? "default" : "lg"} className="bg-india-saffron hover:bg-india-marigold text-white">
                 Explore Destinations
                 <ArrowRight size={18} className="ml-2" />
               </Button>

@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Card, CardContent, CardFooter } from "@/components/ui/card"
@@ -16,7 +17,7 @@ const DestinationCard: React.FC<DestinationCardProps> = ({ destination }) => {
       <CardContent className="p-0 relative">
         <div className="h-48 overflow-hidden rounded-t-md">
           <img
-            src={destination.imageUrl}
+            src={destination.imageUrl || '/placeholder.svg'}
             alt={destination.name}
             className="object-cover w-full h-full"
           />
