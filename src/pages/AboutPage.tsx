@@ -70,7 +70,7 @@ const AboutPage = () => {
                 </div>
                 
                 <div className="md:w-2/3 text-center md:text-left">
-                  <h3 className="text-xl font-semibold mb-2">Ujwal Singh</h3>
+                  <h3 className="text-xl font-semibold mb-2">Ujwal Singh (Matt)</h3>
                   <p className="text-gray-600 mb-4">Founder & Nature Enthusiast</p>
                   
                   <p className="text-gray-700 mb-6">
