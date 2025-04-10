@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { useToast } from '@/hooks/use-toast';
@@ -13,7 +13,16 @@ const SubscribeSection = () => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate API call
+    // Get existing emails from localStorage
+    const existingEmails = JSON.parse(localStorage.getItem('subscribers') || '[]');
+    
+    // Add new email
+    const updatedEmails = [...existingEmails, { email, date: new Date().toISOString() }];
+    
+    // Save back to localStorage
+    localStorage.setItem('subscribers', JSON.stringify(updatedEmails));
+    
+    // Show success message
     setTimeout(() => {
       toast({
         title: "Successfully subscribed!",
@@ -22,6 +31,9 @@ const SubscribeSection = () => {
       setEmail('');
       setIsSubmitting(false);
     }, 1000);
+    
+    // For development: log the emails that have been saved
+    console.log('Current subscribers:', updatedEmails);
   };
 
   return (

@@ -22,6 +22,8 @@ import MoviesPage from "./pages/MoviesPage";
 import MusicPage from "./pages/MusicPage";
 import BlogDetailPage from "./pages/BlogDetailPage";
 import GamesPage from "./pages/GamesPage";
+import SongsPage from "./pages/SongsPage";
+import DownloadPage from "./pages/DownloadPage";
 
 const queryClient = new QueryClient();
 
@@ -49,6 +51,8 @@ const App = () => (
           <Route path="/movies" element={<MoviesPage />} />
           <Route path="/music" element={<MusicPage />} />
           <Route path="/games" element={<GamesPage />} />
+          <Route path="/songs" element={<SongsPage />} />
+          <Route path="/download" element={<DownloadPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

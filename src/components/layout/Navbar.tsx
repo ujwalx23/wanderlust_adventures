@@ -18,7 +18,7 @@ const Navbar = () => {
           <Link to="/about" className="flex items-center">
             <div className="bg-india-blue rounded-full p-2 mr-2">
               <img 
-                src="/lovable-uploads/f8e30de7-4eb0-447a-bee4-9678a9b58b91.png" 
+                src="/lovable-uploads/2f687f4c-4315-4c08-afc9-80a3b62e550d.png" 
                 alt="Wanderlust Logo" 
                 className="h-6 w-6"
               />
@@ -41,9 +41,11 @@ const Navbar = () => {
                   <Link to="/blog" className="text-lg font-medium hover:text-india-saffron">Blog</Link>
                   <Link to="/travel-quiz" className="text-lg font-medium hover:text-india-saffron">Quiz</Link>
                   <Link to="/games" className="text-lg font-medium hover:text-india-saffron">Games</Link>
+                  <Link to="/songs" className="text-lg font-medium hover:text-india-saffron">Songs</Link>
                   <Link to="/faq" className="text-lg font-medium hover:text-india-saffron">FAQ</Link>
                   <Link to="/gallery" className="text-lg font-medium hover:text-india-saffron">Gallery</Link>
                   <Link to="/contact" className="text-lg font-medium hover:text-india-saffron">Contact</Link>
+                  <Link to="/download" className="text-lg font-medium hover:text-india-saffron">Download PDF</Link>
                   <Link to="/auth" className="text-lg font-medium hover:text-india-saffron">Sign In</Link>
                 </nav>
               </SheetContent>
@@ -57,9 +59,11 @@ const Navbar = () => {
                 <Link to="/blog" className="font-medium text-gray-700 hover:text-india-saffron">Blog</Link>
                 <Link to="/travel-quiz" className="font-medium text-gray-700 hover:text-india-saffron">Quiz</Link>
                 <Link to="/games" className="font-medium text-gray-700 hover:text-india-saffron">Games</Link>
+                <Link to="/songs" className="font-medium text-gray-700 hover:text-india-saffron">Songs</Link>
                 <Link to="/faq" className="font-medium text-gray-700 hover:text-india-saffron">FAQ</Link>
                 <Link to="/contact" className="font-medium text-gray-700 hover:text-india-saffron">Contact</Link>
                 <Link to="/gallery" className="font-medium text-gray-700 hover:text-india-saffron">Gallery</Link>
+                <Link to="/download" className="font-medium text-gray-700 hover:text-india-saffron">Download PDF</Link>
               </nav>
               <div className="flex items-center space-x-2">
                 <Button variant="ghost" size="icon" onClick={() => setIsSearchOpen(!isSearchOpen)}>
