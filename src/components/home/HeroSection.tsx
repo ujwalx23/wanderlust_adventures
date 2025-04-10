@@ -40,7 +40,7 @@ const HeroSection = () => {
         </div>
       </div>
        <div className="flex flex-wrap justify-center gap-4">
-            <Link to="/">
+            <Link to="/Music">
               <Button size={isMobile ? "default" : "lg"} className="bg-india-saffron hover:bg-india-marigold text-white">
                 Travel Quiz
                 <ArrowRight size={18} className="ml-2" />
