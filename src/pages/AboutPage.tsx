@@ -62,7 +62,7 @@ const AboutPage = () => {
                 <div className="md:w-1/3">
                   <div className="rounded-full overflow-hidden w-48 h-48 mx-auto border-4 border-india-saffron">
                     <img 
-                      src="https://randomuser.me/api/portraits/men/45.jpg" 
+                      src="https://media.licdn.com/dms/image/v2/D4D03AQHEI27vrtkFXw/profile-displayphoto-shrink_400_400/B4DZX_iUwhHIAg-/0/1743748944165?e=1749686400&v=beta&t=22W5SPSQdW0PQf835Td2LWvsfGCpqyn57X5fegBr9E8" 
                       alt="Ujwal Singh" 
                       className="w-full h-full object-cover"
                     />
@@ -71,7 +71,7 @@ const AboutPage = () => {
                 
                 <div className="md:w-2/3 text-center md:text-left">
                   <h3 className="text-xl font-semibold mb-2">Ujwal Singh</h3>
-                  <p className="text-gray-600 mb-4">Founder & Chief Travel Enthusiast</p>
+                  <p className="text-gray-600 mb-4">Founder & Nature Enthusiast</p>
                   
                   <p className="text-gray-700 mb-6">
                     With over a decade of exploring India's diverse landscapes and cultures, Ujwal founded Wanderlust Adventures with a vision to help travelers discover the authentic essence of India. His personal journey through every state in the country has given him unique insights that he loves sharing with fellow travel enthusiasts.
@@ -88,7 +88,8 @@ const AboutPage = () => {
                       <span>LinkedIn</span>
                     </a>
                     <a 
-                      href="mailto:wanderlustadaventures23@gmail.com" 
+                      href="https://mail.google.com/mail/?view=cm&fs=1&to=ujwalsingh164@gmail.com
+" 
                       className="flex items-center text-india-blue hover:text-india-saffron transition-colors"
                     >
                       <Mail size={20} className="mr-1" />
@@ -166,7 +167,8 @@ const AboutPage = () => {
                 LinkedIn
               </a>
               <a 
-                href="mailto:wanderlustadaventures23@gmail.com" 
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=ujwalsingh164@gmail.com
+" 
                 className="inline-flex items-center px-6 py-3 bg-white rounded-md shadow-sm hover:bg-india-saffron hover:text-white transition-colors"
               >
                 <Mail size={20} className="mr-2" />
