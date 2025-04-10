@@ -5,7 +5,6 @@ import { Card, CardContent, CardFooter } from "@/components/ui/card"
 import { Button } from '@/components/ui/button';
 import { MapPin, ArrowRight } from 'lucide-react';
 import { Destination } from '@/constants/destinations';
-import GoogleMapComponent from '@/components/maps/GoogleMapComponent';
 
 interface DestinationCardProps {
   destination: Destination;

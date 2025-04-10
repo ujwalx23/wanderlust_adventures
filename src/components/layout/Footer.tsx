@@ -1,9 +1,69 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Facebook, Instagram, Twitter, Youtube, Phone, Mail, MapPin, MessageCircle, Linkedin } from 'lucide-react';
+import { Facebook, Instagram, Twitter, Youtube, Phone, Mail, MapPin, MessageCircle, Linkedin, X } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 
 const Footer = () => {
+  const [isChatOpen, setIsChatOpen] = useState(false);
+  const [chatType, setChatType] = useState<null | 'basic'>(null);
+  const [messages, setMessages] = useState<{type: 'user' | 'bot', content: string}[]>([
+    {type: 'bot', content: "Hello! How can I help you today?"}
+  ]);
+  const [inputMessage, setInputMessage] = useState('');
+
+  const handleChatOpen = () => {
+    setIsChatOpen(true);
+    setChatType(null);
+  };
+
+  const handleChatClose = () => {
+    setIsChatOpen(false);
+    setChatType(null);
+    setMessages([{type: 'bot', content: "Hello! How can I help you today?"}]);
+  };
+
+  const handleBasicChat = () => {
+    setChatType('basic');
+  };
+
+  const handleAdvancedChat = () => {
+    window.open('https://cutt.cx/wanderlust', '_blank');
+    setIsChatOpen(false);
+  };
+
+  const handleSendMessage = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!inputMessage.trim()) return;
+
+    const userMessage = {type: 'user' as const, content: inputMessage};
+    setMessages(prev => [...prev, userMessage]);
+    setInputMessage('');
+
+    // Simple response logic for basic questions
+    setTimeout(() => {
+      let response = "I'm not sure how to answer that. You can ask me about destinations, games, music, or basic site information.";
+      
+      const lowerCaseMessage = inputMessage.toLowerCase();
+      
+      if (lowerCaseMessage.includes('hi') || lowerCaseMessage.includes('hello')) {
+        response = "Hello! How can I help you with your travel plans today?";
+      } else if (lowerCaseMessage.includes('destination') || lowerCaseMessage.includes('places')) {
+        response = "We feature over 20 amazing destinations across India including Rajasthan, Kerala, Goa, and many more!";
+      } else if (lowerCaseMessage.includes('music') || lowerCaseMessage.includes('songs')) {
+        response = "Our music page features 50 wonderful songs that capture the essence of India. Visit our music page to explore them!";
+      } else if (lowerCaseMessage.includes('game') || lowerCaseMessage.includes('play')) {
+        response = "We have several fun games including 'Guess the Flag', 'Guess the Language', 'Would You Rather', and 'Pick a Trip' wheel!";
+      } else if (lowerCaseMessage.includes('contact') || lowerCaseMessage.includes('reach')) {
+        response = "You can contact us at info@wanderlustadventures.in or call us at +91 98765 43210.";
+      } else if (lowerCaseMessage.includes('about')) {
+        response = "Desi Wanderlust is your ultimate guide to exploring India's diverse landscapes and rich cultural heritage.";
+      }
+      
+      setMessages(prev => [...prev, {type: 'bot', content: response}]);
+    }, 600);
+  };
+
   return (
     <footer className="bg-india-blue text-white">
       <div className="container mx-auto px-4 py-12">
@@ -147,17 +207,82 @@ const Footer = () => {
       </div>
 
       {/* Chat Button - Fixed */}
-      <a 
-        href="#"
-        onClick={(e) => {
-          e.preventDefault();
-          document.getElementById('chat-options-modal')?.classList.remove('hidden');
-        }} 
+      <Button
+        onClick={handleChatOpen}
         className="fixed bottom-6 right-6 bg-india-green text-white p-4 rounded-full shadow-lg hover:bg-india-saffron transition-colors z-40"
+        size="icon"
         aria-label="Chat with us"
       >
         <MessageCircle size={24} />
-      </a>
+      </Button>
+
+      {/* Chat Modal */}
+      {isChatOpen && (
+        <div className="fixed bottom-20 right-6 w-80 bg-white rounded-lg shadow-lg z-50 border border-gray-200 text-gray-800">
+          <div className="flex items-center justify-between bg-india-blue text-white p-3 rounded-t-lg">
+            <h3 className="font-medium">Chat with Us</h3>
+            <Button 
+              variant="ghost" 
+              size="icon" 
+              className="h-8 w-8 text-white hover:bg-india-blue/80" 
+              onClick={handleChatClose}
+            >
+              <X className="h-4 w-4" />
+            </Button>
+          </div>
+          
+          {chatType === null ? (
+            <div className="p-6">
+              <h4 className="text-center mb-4 font-medium">Choose Chat Type</h4>
+              <div className="flex flex-col gap-3">
+                <Button 
+                  onClick={handleBasicChat}
+                  className="bg-india-saffron hover:bg-india-saffron/90"
+                >
+                  Basic Chat
+                </Button>
+                <Button 
+                  onClick={handleAdvancedChat}
+                  className="bg-india-blue hover:bg-india-blue/90"
+                >
+                  Advanced AI Chat
+                </Button>
+              </div>
+            </div>
+          ) : (
+            <>
+              <div className="p-4 h-80 overflow-y-auto bg-gray-50">
+                <div className="flex flex-col space-y-3">
+                  {messages.map((msg, index) => (
+                    <div 
+                      key={index} 
+                      className={`${
+                        msg.type === 'bot' 
+                          ? 'bg-india-blue/10 self-start' 
+                          : 'bg-india-saffron/10 self-end'
+                      } p-3 rounded-lg max-w-[80%]`}
+                    >
+                      <p className="text-sm">{msg.content}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+              <div className="p-3 border-t">
+                <form className="flex items-center" onSubmit={handleSendMessage}>
+                  <input 
+                    type="text" 
+                    value={inputMessage}
+                    onChange={(e) => setInputMessage(e.target.value)}
+                    placeholder="Type your message..." 
+                    className="flex-1 p-2 border rounded-l-md focus:outline-none focus:ring-1 focus:ring-india-blue"
+                  />
+                  <Button type="submit" className="rounded-l-none">Send</Button>
+                </form>
+              </div>
+            </>
+          )}
+        </div>
+      )}
     </footer>
   );
 };

@@ -1,7 +1,3 @@
-
-// We need to modify the Navbar component to update the logo
-// Since this is a read-only file, we'll assume we can modify it for this edit only
-
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X, Search, MessageCircle, Globe, MapPin } from 'lucide-react';
@@ -71,37 +67,37 @@ const Navbar = () => {
               </div>
             </div>
           )}
-        </div>
 
-        {/* Chat component - right corner with back button */}
-        {isChatOpen && (
-          <div className="fixed bottom-4 right-4 w-80 bg-white rounded-lg shadow-lg z-50 border border-gray-200">
-            <div className="flex items-center justify-between bg-india-blue text-white p-3 rounded-t-lg">
-              <h3 className="font-medium">Chat with Us</h3>
-              <Button variant="ghost" size="icon" className="h-8 w-8 text-white hover:bg-india-blue/80" 
-                      onClick={() => setIsChatOpen(false)}>
-                <X className="h-4 w-4" />
-              </Button>
-            </div>
-            <div className="p-4 h-80 overflow-y-auto bg-gray-50">
-              <div className="flex flex-col space-y-3">
-                <div className="bg-india-blue/10 p-3 rounded-lg max-w-[80%]">
-                  <p className="text-sm">Hello! How can I help you plan your trip to India?</p>
+          {/* Chat component - right corner with back button */}
+          {isChatOpen && (
+            <div className="fixed bottom-4 right-4 w-80 bg-white rounded-lg shadow-lg z-50 border border-gray-200">
+              <div className="flex items-center justify-between bg-india-blue text-white p-3 rounded-t-lg">
+                <h3 className="font-medium">Chat with Us</h3>
+                <Button variant="ghost" size="icon" className="h-8 w-8 text-white hover:bg-india-blue/80" 
+                        onClick={() => setIsChatOpen(false)}>
+                  <X className="h-4 w-4" />
+                </Button>
+              </div>
+              <div className="p-4 h-80 overflow-y-auto bg-gray-50">
+                <div className="flex flex-col space-y-3">
+                  <div className="bg-india-blue/10 p-3 rounded-lg max-w-[80%]">
+                    <p className="text-sm">Hello! How can I help you plan your trip to India?</p>
+                  </div>
                 </div>
               </div>
+              <div className="p-3 border-t">
+                <form className="flex items-center">
+                  <input 
+                    type="text" 
+                    placeholder="Type your message..." 
+                    className="flex-1 p-2 border rounded-l-md focus:outline-none focus:ring-1 focus:ring-india-blue"
+                  />
+                  <Button type="submit" className="rounded-l-none">Send</Button>
+                </form>
+              </div>
             </div>
-            <div className="p-3 border-t">
-              <form className="flex items-center">
-                <input 
-                  type="text" 
-                  placeholder="Type your message..." 
-                  className="flex-1 p-2 border rounded-l-md focus:outline-none focus:ring-1 focus:ring-india-blue"
-                />
-                <Button type="submit" className="rounded-l-none">Send</Button>
-              </form>
-            </div>
-          </div>
-        )}
+          )}
+        </div>
       </div>
     </header>
   );
