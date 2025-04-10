@@ -63,7 +63,7 @@ const AboutPage = () => {
                   <div className="rounded-full overflow-hidden w-48 h-48 mx-auto border-4 border-india-saffron">
                     <img 
                       src="https://media.licdn.com/dms/image/v2/D4D03AQHEI27vrtkFXw/profile-displayphoto-shrink_400_400/B4DZX_iUwhHIAg-/0/1743748944165?e=1749686400&v=beta&t=22W5SPSQdW0PQf835Td2LWvsfGCpqyn57X5fegBr9E8" 
-                      alt="Ujwal Singh" 
+                      alt="Ujwal Singh (Matt)" 
                       className="w-full h-full object-cover"
                     />
                   </div>
