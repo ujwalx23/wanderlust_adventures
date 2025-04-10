@@ -25,7 +25,7 @@ const SubscribeSection = () => {
     // Show success message
     setTimeout(() => {
       toast({
-        title: "Successfully subscribed!",
+        title: "Successfully subscribed dear!",
         description: "Thank you for subscribing to our newsletter.",
       });
       setEmail('');
