@@ -1,3 +1,4 @@
+
 import React from 'react';
 import DestinationCard from '@/components/featured/DestinationCard';
 import { Destination } from '@/constants/destinations';
@@ -12,25 +13,34 @@ const FeaturedDestinations: React.FC<FeaturedDestinationsProps> = ({ destination
       id: '1',
       name: 'Jaipur',
       location: 'Rajasthan',
-      imageUrl: '/lovable-uploads/6499599a-6529-4969-89ef-c5830389383b.jpg',
+      image: '/lovable-uploads/6499599a-6529-4969-89ef-c5830389383b.jpg',
       description: 'Explore the Pink City with its majestic forts and vibrant culture.',
       suitableFor: 'History and Culture',
+      category: 'Historic',
+      rating: 4.7,
+      bestTimeToVisit: 'October to March',
     },
     {
       id: '2',
       name: 'Udaipur',
       location: 'Rajasthan',
-      imageUrl: '/lovable-uploads/64995a4a-4969-499d-a951-549964549a92.jpg',
+      image: '/lovable-uploads/64995a4a-4969-499d-a951-549964549a92.jpg',
       description: 'Discover the romantic City of Lakes with its stunning palaces and serene beauty.',
       suitableFor: 'Romantic Getaways',
+      category: 'Romantic',
+      rating: 4.8,
+      bestTimeToVisit: 'September to March',
     },
     {
       id: '3',
       name: 'Jaisalmer',
       location: 'Rajasthan',
-      imageUrl: '/lovable-uploads/64995ab1-ff59-4942-956d-2a9199e52397.jpg',
+      image: '/lovable-uploads/64995ab1-ff59-4942-956d-2a9199e52397.jpg',
       description: 'Experience the Golden City with its mesmerizing desert landscapes and ancient forts.',
       suitableFor: 'Adventure and Desert',
+      category: 'Adventure',
+      rating: 4.6,
+      bestTimeToVisit: 'October to March',
     },
   ];
 

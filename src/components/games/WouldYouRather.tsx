@@ -1,9 +1,8 @@
-
 import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Progress } from '@/components/ui/progress';
-import { Timer, Award, RotateCcw, Waves, Mountain, Tent, Ferris } from 'lucide-react';
+import { Timer, Award, RotateCcw, Waves, Mountain, Tent, FerrisWheel } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 import { useIsMobile } from '@/hooks/use-mobile';
 
@@ -56,7 +55,7 @@ const WouldYouRather = () => {
       },
       option2: {
         text: "Theme Park",
-        icon: <Ferris className="h-8 w-8 text-purple-500" />,
+        icon: <FerrisWheel className="h-8 w-8 text-purple-500" />,
         trait: "adventure"
       }
     },
@@ -141,9 +140,8 @@ const WouldYouRather = () => {
       timer = setInterval(() => {
         setTimeRemaining(prevTime => {
           if (prevTime <= 1) {
-            // Time's up for this question
             handleTimeout();
-            return 10; // Reset timer for next question
+            return 10;
           }
           return prevTime - 1;
         });
@@ -156,7 +154,6 @@ const WouldYouRather = () => {
   }, [gameActive, gameOver, currentQuestion]);
   
   const handleTimeout = () => {
-    // If time runs out, move to next question
     if (currentQuestion < questions.length - 1) {
       setCurrentQuestion(currentQuestion + 1);
       setTimeRemaining(10);
@@ -188,7 +185,6 @@ const WouldYouRather = () => {
     
     setAnswered(answered + 1);
     
-    // Move to next question or end the game
     if (currentQuestion < questions.length - 1) {
       setCurrentQuestion(currentQuestion + 1);
       setTimeRemaining(10);
@@ -201,8 +197,7 @@ const WouldYouRather = () => {
     setGameActive(false);
     setGameOver(true);
     
-    // Calculate results
-    const totalAnswered = answered + 1; // +1 for the current choice
+    const totalAnswered = answered + 1;
     const percentages = {
       adventure: Math.round((choices.adventure / totalAnswered) * 100),
       relaxation: Math.round((choices.relaxation / totalAnswered) * 100),
@@ -210,7 +205,6 @@ const WouldYouRather = () => {
       luxury: Math.round((choices.luxury / totalAnswered) * 100)
     };
     
-    // Find dominant trait
     let dominantTrait = "adventure";
     let highestPercentage = percentages.adventure;
     
@@ -227,7 +221,6 @@ const WouldYouRather = () => {
       highestPercentage = percentages.luxury;
     }
     
-    // Generate result message
     let resultMessage = "";
     switch(dominantTrait) {
       case "adventure":

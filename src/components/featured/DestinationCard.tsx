@@ -17,7 +17,7 @@ const DestinationCard: React.FC<DestinationCardProps> = ({ destination }) => {
       <CardContent className="p-0 relative">
         <div className="h-48 overflow-hidden rounded-t-md">
           <img
-            src={destination.imageUrl || '/placeholder.svg'}
+            src={destination.image || '/placeholder.svg'}
             alt={destination.name}
             className="object-cover w-full h-full"
           />
