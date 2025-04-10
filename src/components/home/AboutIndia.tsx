@@ -78,7 +78,7 @@ const AboutIndia = () => {
                   <Smile className="text-india-marigold" size={20} />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-gray-800">Warm Hospitality</h3>
+                  <h3 className="font-semibold text-gray-800">Warm Hospitality and love 💕</h3>
                   <p className="text-sm text-gray-600">Experience 'Atithi Devo Bhava'</p>
                 </div>
               </div>
