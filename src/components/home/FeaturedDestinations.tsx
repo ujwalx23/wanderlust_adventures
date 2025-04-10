@@ -14,8 +14,8 @@ const FeaturedDestinations: React.FC<FeaturedDestinationsProps> = ({ destination
   const featuredDestinations = destinations || [
     {
       id: '1',
-      name: 'Jaipur',
-      location: 'Rajasthan',
+      name: 'Mumbai',
+      location: 'Uttar Pradesh',
       image: '/lovable-uploads/6499599a-6529-4969-89ef-c5830389383b.jpg',
       description: 'Explore the Pink City with its majestic forts and vibrant culture.',
       suitableFor: 'History and Culture',
