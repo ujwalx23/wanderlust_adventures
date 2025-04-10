@@ -32,23 +32,14 @@ const HeroSection = () => {
           <div className="flex flex-wrap justify-center gap-4">
             <Link to="/featured">
               <Button size={isMobile ? "default" : "lg"} className="bg-india-saffron hover:bg-india-marigold text-white">
-                Explore Destinatio
+                Explore Destinations
                 <ArrowRight size={18} className="ml-2" />
               </Button>
             </Link>
           </div>
         </div>
       </div>
-       <div className="flex flex-wrap justify-center gap-4">
-            <Link to="/Music">
-              <Button size={isMobile ? "default" : "lg"} className="bg-india-saffron hover:bg-india-marigold text-white">
-                Travel Quiz
-                <ArrowRight size={18} className="ml-2" />
-              </Button>
-            </Link>
-          </div>
-        </div>
-      </div>
+       
 
       {/* Decorative triangle pattern (saffron and green) */}
       <div className="absolute bottom-0 left-0 right-0 h-12 overflow-hidden">
