@@ -3,7 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Card, CardContent, CardFooter } from "@/components/ui/card"
 import { Button } from '@/components/ui/button';
-import { MapPin, ArrowRight } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { Destination } from '@/constants/destinations';
 
 interface DestinationCardProps {
@@ -23,10 +23,6 @@ const DestinationCard: React.FC<DestinationCardProps> = ({ destination }) => {
         </div>
         <div className="p-4">
           <h3 className="text-lg font-semibold text-india-blue mb-2">{destination.name}</h3>
-          <div className="flex items-center text-gray-600 mb-2">
-            <MapPin className="mr-2 h-4 w-4" />
-            {destination.location}
-          </div>
           <p className="text-sm text-gray-700">{destination.description.substring(0, 100)}...</p>
         </div>
       </CardContent>

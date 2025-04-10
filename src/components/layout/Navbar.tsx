@@ -1,24 +1,29 @@
+
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Menu, X, Search, MessageCircle, Globe, MapPin } from 'lucide-react';
+import { Menu, X, Search, Linkedin, Globe } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useIsMobile } from '@/hooks/use-mobile';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import SearchBox from '@/components/shared/SearchBox';
 
 const Navbar = () => {
   const isMobile = useIsMobile();
   const [isSearchOpen, setIsSearchOpen] = useState(false);
-  const [isChatOpen, setIsChatOpen] = useState(false);
 
   return (
     <header className="bg-white shadow-sm py-4">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
-          <Link to="/" className="flex items-center">
+          <Link to="/about" className="flex items-center">
             <div className="bg-india-blue rounded-full p-2 mr-2">
-              <Globe className="h-6 w-6 text-white" />
+              <img 
+                src="/lovable-uploads/f8e30de7-4eb0-447a-bee4-9678a9b58b91.png" 
+                alt="Wanderlust Logo" 
+                className="h-6 w-6"
+              />
             </div>
-            <span className="text-xl font-bold text-india-blue">Desi Wanderlust</span>
+            <span className="text-xl font-bold text-india-blue">Wanderlust Adventures</span>
           </Link>
 
           {isMobile ? (
@@ -37,6 +42,7 @@ const Navbar = () => {
                   <Link to="/travel-quiz" className="text-lg font-medium hover:text-india-saffron">Quiz</Link>
                   <Link to="/games" className="text-lg font-medium hover:text-india-saffron">Games</Link>
                   <Link to="/faq" className="text-lg font-medium hover:text-india-saffron">FAQ</Link>
+                  <Link to="/gallery" className="text-lg font-medium hover:text-india-saffron">Gallery</Link>
                   <Link to="/contact" className="text-lg font-medium hover:text-india-saffron">Contact</Link>
                   <Link to="/auth" className="text-lg font-medium hover:text-india-saffron">Sign In</Link>
                 </nav>
@@ -53,14 +59,17 @@ const Navbar = () => {
                 <Link to="/games" className="font-medium text-gray-700 hover:text-india-saffron">Games</Link>
                 <Link to="/faq" className="font-medium text-gray-700 hover:text-india-saffron">FAQ</Link>
                 <Link to="/contact" className="font-medium text-gray-700 hover:text-india-saffron">Contact</Link>
+                <Link to="/gallery" className="font-medium text-gray-700 hover:text-india-saffron">Gallery</Link>
               </nav>
               <div className="flex items-center space-x-2">
-                <Button variant="ghost" size="icon" onClick={() => setIsSearchOpen(true)}>
+                <Button variant="ghost" size="icon" onClick={() => setIsSearchOpen(!isSearchOpen)}>
                   <Search className="h-5 w-5" />
                 </Button>
-                <Button variant="ghost" size="icon" onClick={() => setIsChatOpen(!isChatOpen)}>
-                  <MessageCircle className="h-5 w-5" />
-                </Button>
+                <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+                  <Button variant="ghost" size="icon">
+                    <Linkedin className="h-5 w-5" />
+                  </Button>
+                </a>
                 <Link to="/auth">
                   <Button variant="outline" size="sm">Sign In</Button>
                 </Link>
@@ -68,32 +77,17 @@ const Navbar = () => {
             </div>
           )}
 
-          {/* Chat component - right corner with back button */}
-          {isChatOpen && (
-            <div className="fixed bottom-4 right-4 w-80 bg-white rounded-lg shadow-lg z-50 border border-gray-200">
-              <div className="flex items-center justify-between bg-india-blue text-white p-3 rounded-t-lg">
-                <h3 className="font-medium">Chat with Us</h3>
-                <Button variant="ghost" size="icon" className="h-8 w-8 text-white hover:bg-india-blue/80" 
-                        onClick={() => setIsChatOpen(false)}>
-                  <X className="h-4 w-4" />
-                </Button>
-              </div>
-              <div className="p-4 h-80 overflow-y-auto bg-gray-50">
-                <div className="flex flex-col space-y-3">
-                  <div className="bg-india-blue/10 p-3 rounded-lg max-w-[80%]">
-                    <p className="text-sm">Hello! How can I help you plan your trip to India?</p>
-                  </div>
+          {/* Search Overlay */}
+          {isSearchOpen && (
+            <div className="fixed inset-0 bg-black/50 z-50 flex items-start justify-center pt-24">
+              <div className="bg-white p-6 rounded-lg shadow-lg w-full max-w-3xl">
+                <div className="flex justify-between items-center mb-6">
+                  <h2 className="text-xl font-semibold text-india-blue">Search</h2>
+                  <Button variant="ghost" size="icon" onClick={() => setIsSearchOpen(false)}>
+                    <X className="h-5 w-5" />
+                  </Button>
                 </div>
-              </div>
-              <div className="p-3 border-t">
-                <form className="flex items-center">
-                  <input 
-                    type="text" 
-                    placeholder="Type your message..." 
-                    className="flex-1 p-2 border rounded-l-md focus:outline-none focus:ring-1 focus:ring-india-blue"
-                  />
-                  <Button type="submit" className="rounded-l-none">Send</Button>
-                </form>
+                <SearchBox onClose={() => setIsSearchOpen(false)} />
               </div>
             </div>
           )}

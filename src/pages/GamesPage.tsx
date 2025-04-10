@@ -19,12 +19,16 @@ const GamesPage = () => {
           </p>
         </div>
         
-        <Tabs defaultValue="guess-the-flag" className="w-full max-w-4xl mx-auto">
+        <Tabs defaultValue="would-you-rather" className="w-full max-w-4xl mx-auto">
           <TabsList className="grid w-full grid-cols-3 mb-8">
+            <TabsTrigger value="would-you-rather">Would You Rather</TabsTrigger>
             <TabsTrigger value="guess-the-flag">Guess the Flag</TabsTrigger>
             <TabsTrigger value="guess-the-language">Guess the Language</TabsTrigger>
-            <TabsTrigger value="would-you-rather">Would You Rather</TabsTrigger>
           </TabsList>
+          
+          <TabsContent value="would-you-rather">
+            <WouldYouRather />
+          </TabsContent>
           
           <TabsContent value="guess-the-flag">
             <GuessTheFlag />
@@ -32,10 +36,6 @@ const GamesPage = () => {
           
           <TabsContent value="guess-the-language">
             <GuessTheLanguage />
-          </TabsContent>
-          
-          <TabsContent value="would-you-rather">
-            <WouldYouRather />
           </TabsContent>
         </Tabs>
       </div>
