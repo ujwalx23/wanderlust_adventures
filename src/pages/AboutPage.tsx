@@ -2,7 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Layout from '@/components/layout/Layout';
-import { Linkedin, Mail, Phone } from 'lucide-react';
+import { Linkedin, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const AboutPage = () => {
@@ -88,7 +88,7 @@ const AboutPage = () => {
                       <span>LinkedIn</span>
                     </a>
                     <a 
-                      href="mailto:info@wanderlustadventures.in" 
+                      href="mailto:wanderlustadaventures23@gmail.com" 
                       className="flex items-center text-india-blue hover:text-india-saffron transition-colors"
                     >
                       <Mail size={20} className="mr-1" />
@@ -166,18 +166,11 @@ const AboutPage = () => {
                 LinkedIn
               </a>
               <a 
-                href="mailto:info@wanderlustadventures.in" 
+                href="mailto:wanderlustadaventures23@gmail.com" 
                 className="inline-flex items-center px-6 py-3 bg-white rounded-md shadow-sm hover:bg-india-saffron hover:text-white transition-colors"
               >
                 <Mail size={20} className="mr-2" />
                 Email Us
-              </a>
-              <a 
-                href="tel:+919876543210" 
-                className="inline-flex items-center px-6 py-3 bg-white rounded-md shadow-sm hover:bg-india-saffron hover:text-white transition-colors"
-              >
-                <Phone size={20} className="mr-2" />
-                Call Us
               </a>
             </div>
           </div>

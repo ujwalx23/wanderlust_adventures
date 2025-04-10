@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import Layout from '@/components/layout/Layout';
@@ -5,7 +6,6 @@ import { Button } from '@/components/ui/button';
 import { StarIcon, MapPin, Calendar, Users, ArrowLeft } from 'lucide-react';
 import { destinations, Destination } from '@/constants/destinations';
 import { useToast } from '@/hooks/use-toast';
-import GoogleMapComponent from '@/components/maps/GoogleMapComponent';
 
 const DestinationDetail = () => {
   const { id } = useParams<{ id: string }>();
@@ -134,16 +134,6 @@ const DestinationDetail = () => {
                 <div className="flex items-center text-gray-600 space-x-2">
                   <Users size={18} className="text-india-blue" />
                   <span>{destination.suitableFor}</span>
-                </div>
-              </div>
-
-              <div>
-                <h3 className="text-xl font-semibold text-gray-800 mb-3">Location</h3>
-                <div className="h-64 rounded-lg overflow-hidden">
-                  <GoogleMapComponent 
-                    location={destination.location} 
-                    name={destination.name}
-                  />
                 </div>
               </div>
             </div>

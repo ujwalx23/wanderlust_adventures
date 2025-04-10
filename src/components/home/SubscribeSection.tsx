@@ -37,7 +37,7 @@ const SubscribeSection = () => {
   };
 
   return (
-    <section className="bg-india-blue py-16">
+    <section id="subscribe" className="bg-india-blue py-16">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl font-bold text-white mb-4">

@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import Layout from '@/components/layout/Layout';
 import { Card, CardContent } from '@/components/ui/card';
@@ -19,6 +20,7 @@ const MusicPage = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [activeRegion, setActiveRegion] = useState<string | null>(null);
 
+  // This file already has 50+ songs, so we're good with the current list
   const travelSongs: TravelSong[] = [
     {
       title: "Ilahi",
@@ -520,7 +522,7 @@ const MusicPage = () => {
               Travel Music Collection
             </h1>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Enhance your travel experience with this curated collection of 50 songs that capture the essence of wanderlust, adventure, and the beauty of India.
+              Enhance your travel experience with this curated collection of songs that capture the essence of wanderlust, adventure, and the beauty of India.
             </p>
             
             <div className="mt-6 max-w-md mx-auto">

@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Menu, X, Search, Linkedin, Globe } from 'lucide-react';
+import { Menu, X, Search, Linkedin } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useIsMobile } from '@/hooks/use-mobile';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
@@ -16,9 +16,9 @@ const Navbar = () => {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
           <Link to="/about" className="flex items-center">
-            <div className="bg-india-blue rounded-full p-2 mr-2">
+            <div className="bg-white rounded-full p-2 mr-2">
               <img 
-                src="/lovable-uploads/2f687f4c-4315-4c08-afc9-80a3b62e550d.png" 
+                src="/lovable-uploads/14bb8d58-375d-4255-b8ec-c9aabf0dd567.png" 
                 alt="Wanderlust Logo" 
                 className="h-6 w-6"
               />
@@ -41,7 +41,7 @@ const Navbar = () => {
                   <Link to="/blog" className="text-lg font-medium hover:text-india-saffron">Blog</Link>
                   <Link to="/travel-quiz" className="text-lg font-medium hover:text-india-saffron">Quiz</Link>
                   <Link to="/games" className="text-lg font-medium hover:text-india-saffron">Games</Link>
-                  <Link to="/songs" className="text-lg font-medium hover:text-india-saffron">Songs</Link>
+                  <Link to="/music" className="text-lg font-medium hover:text-india-saffron">Music</Link>
                   <Link to="/faq" className="text-lg font-medium hover:text-india-saffron">FAQ</Link>
                   <Link to="/gallery" className="text-lg font-medium hover:text-india-saffron">Gallery</Link>
                   <Link to="/contact" className="text-lg font-medium hover:text-india-saffron">Contact</Link>
@@ -59,7 +59,7 @@ const Navbar = () => {
                 <Link to="/blog" className="font-medium text-gray-700 hover:text-india-saffron">Blog</Link>
                 <Link to="/travel-quiz" className="font-medium text-gray-700 hover:text-india-saffron">Quiz</Link>
                 <Link to="/games" className="font-medium text-gray-700 hover:text-india-saffron">Games</Link>
-                <Link to="/songs" className="font-medium text-gray-700 hover:text-india-saffron">Songs</Link>
+                <Link to="/music" className="font-medium text-gray-700 hover:text-india-saffron">Music</Link>
                 <Link to="/faq" className="font-medium text-gray-700 hover:text-india-saffron">FAQ</Link>
                 <Link to="/contact" className="font-medium text-gray-700 hover:text-india-saffron">Contact</Link>
                 <Link to="/gallery" className="font-medium text-gray-700 hover:text-india-saffron">Gallery</Link>

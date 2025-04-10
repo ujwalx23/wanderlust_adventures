@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import Layout from '@/components/layout/Layout';
 import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
 import { 
   Dialog,
   DialogContent,
@@ -130,9 +131,11 @@ const DownloadPage = () => {
               Our team is constantly creating new resources to help travelers explore India. 
               Subscribe to our newsletter to get notified when we release new guides.
             </p>
-            <Button className="bg-india-blue hover:bg-india-blue/90">
-              Subscribe Now
-            </Button>
+            <Link to="/#subscribe">
+              <Button className="bg-india-blue hover:bg-india-blue/90">
+                Subscribe Now
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
