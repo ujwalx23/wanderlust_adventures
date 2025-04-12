@@ -114,10 +114,10 @@ const Footer = () => {
                 <Link to="/" className="text-gray-300 hover:text-india-saffron transition-colors">Home</Link>
               </li>
               <li>
-                <Link to="/movies" className="text-gray-300 hover:text-india-saffron transition-colors">Movies</Link>
+                <Link to="/about" className="text-gray-300 hover:text-india-saffron transition-colors">About Us</Link>
               </li>
               <li>
-                <Link to="/blog" className="text-gray-300 hover:text-india-saffron transition-colors">Blog</Link>
+                <Link to="/all-destinations" className="text-gray-300 hover:text-india-saffron transition-colors">All Destinations</Link>
               </li>
               <li>
                 <Link to="/books" className="text-gray-300 hover:text-india-saffron transition-colors">Books</Link>
@@ -129,16 +129,16 @@ const Footer = () => {
                 <Link to="/pick-a-trip" className="text-gray-300 hover:text-india-saffron transition-colors">Pick a Trip</Link>
               </li>
               <li>
+                <Link to="/music" className="text-gray-300 hover:text-india-saffron transition-colors">Music</Link>
+              </li>
+              <li>
+                <Link to="/games" className="text-gray-300 hover:text-india-saffron transition-colors">Games</Link>
+              </li>
+              <li>
                 <Link to="/gallery" className="text-gray-300 hover:text-india-saffron transition-colors">Gallery</Link>
               </li>
               <li>
                 <Link to="/download" className="text-gray-300 hover:text-india-saffron transition-colors">Download PDF</Link>
-              </li>
-              <li>
-                <Link to="/music" className="text-gray-300 hover:text-india-saffron transition-colors">Music</Link>
-              </li>
-              <li>
-                <Link to="/about" className="text-gray-300 hover:text-india-saffron transition-colors">About Us</Link>
               </li>
               <li>
                 <Link to="/faq" className="text-gray-300 hover:text-india-saffron transition-colors">FAQs</Link>
@@ -204,6 +204,17 @@ const Footer = () => {
           </p>
         </div>
       </div>
+
+      {/* Fixed Search Button */}
+      <Button
+        onClick={() => document.querySelector<HTMLButtonElement>('[data-search-trigger="true"]')?.click()}
+        className="fixed bottom-24 right-6 bg-india-blue text-white p-4 rounded-full shadow-lg hover:bg-india-saffron transition-colors z-40"
+        size="icon"
+        aria-label="Search"
+        data-search-trigger="true"
+      >
+        <Search size={24} />
+      </Button>
 
       {/* Chat Button - Fixed */}
       <Button

@@ -8,11 +8,15 @@ import { ArrowRight } from 'lucide-react';
 
 interface FeaturedDestinationsProps {
   destinations?: Destination[];
+  limit?: number;
 }
 
-const FeaturedDestinations: React.FC<FeaturedDestinationsProps> = ({ destinations }) => {
-  // Just use the first 3 destinations
-  const featuredDestinations = destinations?.slice(0, 3) || [
+const FeaturedDestinations: React.FC<FeaturedDestinationsProps> = ({ 
+  destinations, 
+  limit = 3 
+}) => {
+  // Show limited destinations (3 on homepage, customizable via props)
+  const featuredDestinations = destinations?.slice(0, limit) || [
     {
       id: '1',
       name: 'Jaipur',

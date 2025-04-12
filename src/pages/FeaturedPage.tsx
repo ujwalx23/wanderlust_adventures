@@ -8,19 +8,24 @@ import SearchBox from '@/components/shared/SearchBox';
 import { destinations } from '@/constants/destinations';
 import { Destination } from '@/constants/destinations';
 
+const MAX_DESTINATIONS = 30; // Set maximum number of destinations to 30
+
 const FeaturedPage = () => {
   const [searchParams, setSearchParams] = useSearchParams();
   const initialCategory = searchParams.get('category') || 'All';
   
   const [selectedCategory, setSelectedCategory] = useState(initialCategory);
-  const [filteredDestinations, setFilteredDestinations] = useState<Destination[]>(destinations);
+  const [filteredDestinations, setFilteredDestinations] = useState<Destination[]>([]);
+
+  // Limit destinations to 30
+  const limitedDestinations = destinations.slice(0, MAX_DESTINATIONS);
 
   useEffect(() => {
     if (selectedCategory === 'All') {
-      setFilteredDestinations(destinations);
+      setFilteredDestinations(limitedDestinations);
     } else {
       setFilteredDestinations(
-        destinations.filter(dest => dest.category === selectedCategory)
+        limitedDestinations.filter(dest => dest.category === selectedCategory)
       );
     }
     

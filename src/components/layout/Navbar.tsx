@@ -38,12 +38,15 @@ const Navbar = () => {
                   <Link to="/" className="text-lg font-medium hover:text-india-saffron">Home</Link>
                   <Link to="/featured" className="text-lg font-medium hover:text-india-saffron">Featured</Link>
                   <Link to="/about" className="text-lg font-medium hover:text-india-saffron">About</Link>
+                  <Link to="/books" className="text-lg font-medium hover:text-india-saffron">Books</Link>
+                  <Link to="/blog" className="text-lg font-medium hover:text-india-saffron">Blog</Link>
                   <Link to="/travel-quiz" className="text-lg font-medium hover:text-india-saffron">Quiz</Link>
                   <Link to="/games" className="text-lg font-medium hover:text-india-saffron">Games</Link>
                   <Link to="/music" className="text-lg font-medium hover:text-india-saffron">Music</Link>
-                  <Link to="/books" className="text-lg font-medium hover:text-india-saffron">Books</Link>
-                  <Link to="/faq" className="text-lg font-medium hover:text-india-saffron">FAQ</Link>
+                  <Link to="/movies" className="text-lg font-medium hover:text-india-saffron">Movies</Link>
+                  <Link to="/gallery" className="text-lg font-medium hover:text-india-saffron">Gallery</Link>
                   <Link to="/download" className="text-lg font-medium hover:text-india-saffron">Download PDF</Link>
+                  <Link to="/faq" className="text-lg font-medium hover:text-india-saffron">FAQ</Link>
                 </nav>
               </SheetContent>
             </Sheet>
@@ -53,12 +56,15 @@ const Navbar = () => {
                 <Link to="/" className="font-medium text-gray-700 hover:text-india-saffron">Home</Link>
                 <Link to="/featured" className="font-medium text-gray-700 hover:text-india-saffron">Featured</Link>
                 <Link to="/about" className="font-medium text-gray-700 hover:text-india-saffron">About</Link>
+                <Link to="/books" className="font-medium text-gray-700 hover:text-india-saffron">Books</Link>
+                <Link to="/blog" className="font-medium text-gray-700 hover:text-india-saffron">Blog</Link>
                 <Link to="/travel-quiz" className="font-medium text-gray-700 hover:text-india-saffron">Quiz</Link>
                 <Link to="/games" className="font-medium text-gray-700 hover:text-india-saffron">Games</Link>
                 <Link to="/music" className="font-medium text-gray-700 hover:text-india-saffron">Music</Link>
-                <Link to="/books" className="font-medium text-gray-700 hover:text-india-saffron">Books</Link>
-                <Link to="/faq" className="font-medium text-gray-700 hover:text-india-saffron">FAQ</Link>
+                <Link to="/movies" className="font-medium text-gray-700 hover:text-india-saffron">Movies</Link>
+                <Link to="/gallery" className="font-medium text-gray-700 hover:text-india-saffron">Gallery</Link>
                 <Link to="/download" className="font-medium text-gray-700 hover:text-india-saffron">Download PDF</Link>
+                <Link to="/faq" className="font-medium text-gray-700 hover:text-india-saffron">FAQ</Link>
               </nav>
               <div className="flex items-center space-x-2">
                 <Button variant="ghost" size="icon" onClick={() => setIsSearchOpen(!isSearchOpen)}>
