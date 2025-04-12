@@ -16,6 +16,17 @@ const SubscribeSection = () => {
     // Get existing emails from localStorage
     const existingEmails = JSON.parse(localStorage.getItem('subscribers') || '[]');
     
+    // Check if email already exists
+    if (existingEmails.some((item: {email: string}) => item.email === email)) {
+      toast({
+        title: "Already subscribed",
+        description: "This email is already subscribed to our newsletter.",
+        variant: "destructive"
+      });
+      setIsSubmitting(false);
+      return;
+    }
+    
     // Add new email
     const updatedEmails = [...existingEmails, { email, date: new Date().toISOString() }];
     
@@ -25,7 +36,7 @@ const SubscribeSection = () => {
     // Show success message
     setTimeout(() => {
       toast({
-        title: "Successfully subscribed dear!",
+        title: "Successfully subscribed!",
         description: "Thank you for subscribing to our newsletter.",
       });
       setEmail('');

@@ -24,6 +24,7 @@ import BlogDetailPage from "./pages/BlogDetailPage";
 import GamesPage from "./pages/GamesPage";
 import DownloadPage from "./pages/DownloadPage";
 import BooksPage from "./pages/BooksPage";
+import AdminSubscribersPage from "./pages/AdminSubscribersPage";
 
 const queryClient = new QueryClient();
 
@@ -53,6 +54,7 @@ const App = () => (
           <Route path="/gallery" element={<GalleryPage />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/blog/:id" element={<BlogDetailPage />} />
+          <Route path="/admin/subscribers" element={<AdminSubscribersPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

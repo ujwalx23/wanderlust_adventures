@@ -11,7 +11,8 @@ interface FeaturedDestinationsProps {
 }
 
 const FeaturedDestinations: React.FC<FeaturedDestinationsProps> = ({ destinations }) => {
-  const featuredDestinations = destinations || [
+  // Just use the first 3 destinations
+  const featuredDestinations = destinations?.slice(0, 3) || [
     {
       id: '1',
       name: 'Jaipur',
@@ -56,8 +57,8 @@ const FeaturedDestinations: React.FC<FeaturedDestinationsProps> = ({ destination
         <p className="text-gray-600 text-center max-w-2xl mx-auto mb-12">
           Explore our curated selection of the most enchanting destinations across India, each offering a unique blend of history, culture, and natural beauty.
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {featuredDestinations.slice(0, 3).map(destination => (
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {featuredDestinations.map(destination => (
             <DestinationCard key={destination.id} destination={destination} />
           ))}
         </div>

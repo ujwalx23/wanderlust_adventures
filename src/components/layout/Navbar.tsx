@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Menu, X, Search, Linkedin, MessageCircle } from 'lucide-react';
+import { Menu, X, Search, Linkedin } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useIsMobile } from '@/hooks/use-mobile';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
@@ -10,7 +10,6 @@ import SearchBox from '@/components/shared/SearchBox';
 const Navbar = () => {
   const isMobile = useIsMobile();
   const [isSearchOpen, setIsSearchOpen] = useState(false);
-  const [isChatOpen, setIsChatOpen] = useState(false);
 
   return (
     <header className="bg-white shadow-sm py-4">
@@ -44,14 +43,7 @@ const Navbar = () => {
                   <Link to="/music" className="text-lg font-medium hover:text-india-saffron">Music</Link>
                   <Link to="/books" className="text-lg font-medium hover:text-india-saffron">Books</Link>
                   <Link to="/faq" className="text-lg font-medium hover:text-india-saffron">FAQ</Link>
-                  <Button 
-                    onClick={() => setIsChatOpen(!isChatOpen)} 
-                    className="text-lg font-medium hover:text-india-saffron justify-start p-0 h-auto"
-                    variant="ghost"
-                  >
-                    Chatbot
-                  </Button>
-                  <Link to="/auth" className="text-lg font-medium hover:text-india-saffron">Sign In</Link>
+                  <Link to="/download" className="text-lg font-medium hover:text-india-saffron">Download PDF</Link>
                 </nav>
               </SheetContent>
             </Sheet>
@@ -66,13 +58,7 @@ const Navbar = () => {
                 <Link to="/music" className="font-medium text-gray-700 hover:text-india-saffron">Music</Link>
                 <Link to="/books" className="font-medium text-gray-700 hover:text-india-saffron">Books</Link>
                 <Link to="/faq" className="font-medium text-gray-700 hover:text-india-saffron">FAQ</Link>
-                <Button 
-                  onClick={() => setIsChatOpen(!isChatOpen)}
-                  variant="ghost"
-                  className="font-medium text-gray-700 hover:text-india-saffron p-0 h-auto"
-                >
-                  Chatbot
-                </Button>
+                <Link to="/download" className="font-medium text-gray-700 hover:text-india-saffron">Download PDF</Link>
               </nav>
               <div className="flex items-center space-x-2">
                 <Button variant="ghost" size="icon" onClick={() => setIsSearchOpen(!isSearchOpen)}>
@@ -83,9 +69,6 @@ const Navbar = () => {
                     <Linkedin className="h-5 w-5" />
                   </Button>
                 </a>
-                <Link to="/auth">
-                  <Button variant="outline" size="sm">Sign In</Button>
-                </Link>
               </div>
             </div>
           )}

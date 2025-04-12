@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Facebook, Instagram, Twitter, Youtube, Phone, Mail, MapPin, MessageCircle, Linkedin, X } from 'lucide-react';
+import { Facebook, Instagram, Twitter, Youtube, Mail, MapPin, MessageCircle, Linkedin, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Footer = () => {
@@ -117,7 +117,7 @@ const Footer = () => {
                 <Link to="/movies" className="text-gray-300 hover:text-india-saffron transition-colors">Movies</Link>
               </li>
               <li>
-                <Link to="/all-destinations" className="text-gray-300 hover:text-india-saffron transition-colors">All Destinations</Link>
+                <Link to="/blog" className="text-gray-300 hover:text-india-saffron transition-colors">Blog</Link>
               </li>
               <li>
                 <Link to="/books" className="text-gray-300 hover:text-india-saffron transition-colors">Books</Link>
@@ -136,9 +136,6 @@ const Footer = () => {
               </li>
               <li>
                 <Link to="/music" className="text-gray-300 hover:text-india-saffron transition-colors">Music</Link>
-              </li>
-              <li>
-                <Link to="/blog" className="text-gray-300 hover:text-india-saffron transition-colors">Blog</Link>
               </li>
               <li>
                 <Link to="/about" className="text-gray-300 hover:text-india-saffron transition-colors">About Us</Link>
@@ -215,7 +212,7 @@ const Footer = () => {
         size="icon"
         aria-label="Chat with us"
       >
-        <MessageCircle size={24} />
+        <MessageCircle size={32} />
       </Button>
 
       {/* Chat Modal */}
