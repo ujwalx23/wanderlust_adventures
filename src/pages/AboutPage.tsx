@@ -29,7 +29,7 @@ const AboutPage = () => {
               </div>
               <div className="h-60 md:h-auto bg-white flex items-center justify-center p-4">
                 <img 
-                  src="/lovable-uploads/ea89fa20-831f-420b-b00b-b8079603df6e.png" 
+                  src="/lovable-uploads/8b1902a9-0732-4915-b409-5a6f610d3a26.png" 
                   alt="Wanderlust Logo" 
                   className="max-h-full w-auto object-contain"
                 />
@@ -62,19 +62,19 @@ const AboutPage = () => {
                 <div className="md:w-1/3">
                   <div className="rounded-full overflow-hidden w-48 h-48 mx-auto border-4 border-india-saffron">
                     <img 
-                      src="/lovable-uploads/ea89fa20-831f-420b-b00b-b8079603df6e.png" 
-                      alt="Ujwal Singh (Matt)" 
+                      src="/lovable-uploads/8b1902a9-0732-4915-b409-5a6f610d3a26.png" 
+                      alt="Ujwal Singh" 
                       className="w-full h-full object-cover"
                     />
                   </div>
                 </div>
                 
                 <div className="md:w-2/3 text-center md:text-left">
-                  <h3 className="text-xl font-semibold mb-2">Ujwal Singh (Matt)</h3>
+                  <h3 className="text-xl font-semibold mb-2">Ujwal Singh</h3>
                   <p className="text-gray-600 mb-4">Founder & Nature Enthusiast</p>
                   
                   <p className="text-gray-700 mb-6">
-                    With over a decade of exploring India's diverse landscapes and cultures, Ujwal founded Wanderlust Adventures with a vision to help travelers discover the authentic essence of India. His personal journey through every state in the country has given him unique insights that he loves sharing with fellow travel enthusiasts.
+                    With over a decade of exploring India's diverse landscapes and cultures, Ujwal founded Wanderlust Adventures with a vision to help travelers discover the authentic essence of India. His expertise in Indian tourism and passion for sustainable travel has shaped the company's commitment to providing authentic travel experiences.
                   </p>
                   
                   <div className="flex justify-center md:justify-start space-x-4">
@@ -88,7 +88,7 @@ const AboutPage = () => {
                       <span>LinkedIn</span>
                     </a>
                     <a 
-                      href="mailto:wanderlustadaventures23@gmail.com" 
+                      href="https://mail.google.com/mail/?view=cm&fs=1&to=ujwalsingh164@gmail.com" 
                       className="flex items-center text-india-blue hover:text-india-saffron transition-colors"
                     >
                       <Mail size={20} className="mr-1" />
@@ -166,7 +166,7 @@ const AboutPage = () => {
                 LinkedIn
               </a>
               <a 
-                href="mailto:wanderlustadaventures23@gmail.com" 
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=ujwalsingh164@gmail.com" 
                 className="inline-flex items-center px-6 py-3 bg-white rounded-md shadow-sm hover:bg-india-saffron hover:text-white transition-colors"
               >
                 <Mail size={20} className="mr-2" />

@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Menu, X, Search, Linkedin } from 'lucide-react';
+import { Menu, X, Search, Linkedin, MessageCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useIsMobile } from '@/hooks/use-mobile';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
@@ -10,6 +10,7 @@ import SearchBox from '@/components/shared/SearchBox';
 const Navbar = () => {
   const isMobile = useIsMobile();
   const [isSearchOpen, setIsSearchOpen] = useState(false);
+  const [isChatOpen, setIsChatOpen] = useState(false);
 
   return (
     <header className="bg-white shadow-sm py-4">
@@ -18,7 +19,7 @@ const Navbar = () => {
           <Link to="/about" className="flex items-center">
             <div className="bg-white rounded-full p-2 mr-2">
               <img 
-                src="/lovable-uploads/ea89fa20-831f-420b-b00b-b8079603df6e.png" 
+                src="/lovable-uploads/8b1902a9-0732-4915-b409-5a6f610d3a26.png" 
                 alt="Wanderlust Logo" 
                 className="h-6 w-6"
               />
@@ -43,7 +44,13 @@ const Navbar = () => {
                   <Link to="/music" className="text-lg font-medium hover:text-india-saffron">Music</Link>
                   <Link to="/books" className="text-lg font-medium hover:text-india-saffron">Books</Link>
                   <Link to="/faq" className="text-lg font-medium hover:text-india-saffron">FAQ</Link>
-                  <Link to="/contact" className="text-lg font-medium hover:text-india-saffron">Contact</Link>
+                  <Button 
+                    onClick={() => setIsChatOpen(!isChatOpen)} 
+                    className="text-lg font-medium hover:text-india-saffron justify-start p-0 h-auto"
+                    variant="ghost"
+                  >
+                    Chatbot
+                  </Button>
                   <Link to="/auth" className="text-lg font-medium hover:text-india-saffron">Sign In</Link>
                 </nav>
               </SheetContent>
@@ -59,7 +66,13 @@ const Navbar = () => {
                 <Link to="/music" className="font-medium text-gray-700 hover:text-india-saffron">Music</Link>
                 <Link to="/books" className="font-medium text-gray-700 hover:text-india-saffron">Books</Link>
                 <Link to="/faq" className="font-medium text-gray-700 hover:text-india-saffron">FAQ</Link>
-                <Link to="/contact" className="font-medium text-gray-700 hover:text-india-saffron">Contact</Link>
+                <Button 
+                  onClick={() => setIsChatOpen(!isChatOpen)}
+                  variant="ghost"
+                  className="font-medium text-gray-700 hover:text-india-saffron p-0 h-auto"
+                >
+                  Chatbot
+                </Button>
               </nav>
               <div className="flex items-center space-x-2">
                 <Button variant="ghost" size="icon" onClick={() => setIsSearchOpen(!isSearchOpen)}>

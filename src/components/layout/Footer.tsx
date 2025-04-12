@@ -57,7 +57,7 @@ const Footer = () => {
       } else if (lowerCaseMessage.includes('books') || lowerCaseMessage.includes('read')) {
         response = "Check out our book recommendations page for great travel and adventure related books!";
       } else if (lowerCaseMessage.includes('contact') || lowerCaseMessage.includes('reach')) {
-        response = "You can contact us at wanderlustadaventures23@gmail.com.";
+        response = "You can contact us at ujwalsingh164@gmail.com.";
       } else if (lowerCaseMessage.includes('about')) {
         response = "Wanderlust Adventures is your ultimate guide to exploring India's diverse landscapes and rich cultural heritage.";
       }
@@ -75,7 +75,7 @@ const Footer = () => {
             <Link to="/about" className="flex items-center space-x-2 mb-4">
               <div className="w-10 h-10">
                 <img 
-                  src="/lovable-uploads/ea89fa20-831f-420b-b00b-b8079603df6e.png" 
+                  src="/lovable-uploads/8b1902a9-0732-4915-b409-5a6f610d3a26.png" 
                   alt="Wanderlust Adventures" 
                   className="w-full h-full object-contain bg-white rounded-full"
                 />
@@ -114,7 +114,7 @@ const Footer = () => {
                 <Link to="/" className="text-gray-300 hover:text-india-saffron transition-colors">Home</Link>
               </li>
               <li>
-                <Link to="/featured" className="text-gray-300 hover:text-india-saffron transition-colors">Featured Destinations</Link>
+                <Link to="/movies" className="text-gray-300 hover:text-india-saffron transition-colors">Movies</Link>
               </li>
               <li>
                 <Link to="/all-destinations" className="text-gray-300 hover:text-india-saffron transition-colors">All Destinations</Link>
@@ -136,6 +136,9 @@ const Footer = () => {
               </li>
               <li>
                 <Link to="/music" className="text-gray-300 hover:text-india-saffron transition-colors">Music</Link>
+              </li>
+              <li>
+                <Link to="/blog" className="text-gray-300 hover:text-india-saffron transition-colors">Blog</Link>
               </li>
               <li>
                 <Link to="/about" className="text-gray-300 hover:text-india-saffron transition-colors">About Us</Link>
@@ -184,8 +187,8 @@ const Footer = () => {
               </li>
               <li className="flex items-center">
                 <Mail className="mr-2 flex-shrink-0" size={18} />
-                <a href="mailto:wanderlustadaventures23@gmail.com" className="text-gray-300 hover:text-india-saffron transition-colors">
-                  wanderlustadaventures23@gmail.com
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ujwalsingh164@gmail.com" className="text-gray-300 hover:text-india-saffron transition-colors">
+                  ujwalsingh164@gmail.com
                 </a>
               </li>
               <li className="flex items-center mt-4">
