@@ -28,7 +28,7 @@ const DestinationCard: React.FC<DestinationCardProps> = ({ destination }) => {
       </CardContent>
       <CardFooter className="flex items-center justify-between p-4 bg-gray-50 border-t">
         <span className="text-sm text-gray-500">
-          Suitable for: {destination.suitableFor}
+          Perfect for: {destination.suitableFor}
         </span>
         <Link to={`/featured/${destination.id}`}>
           <Button size="sm" className="bg-india-saffron hover:bg-india-marigold text-white">

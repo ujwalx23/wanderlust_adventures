@@ -11,24 +11,24 @@ const AboutIndia = () => {
           <div className="grid grid-cols-2 gap-4">
             <div className="space-y-4">
               <img 
-                src="https://images.unsplash.com/photo-1598387993281-cecf8b71a8f8?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                src="https://images.unsplash.com/photo-1561361513-2d000a50f0dc?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3" 
                 alt="Holi Festival" 
                 className="rounded-lg shadow-md w-full h-40 object-cover"
               />
               <img 
-                src="https://images.unsplash.com/photo-1606298855672-1c604679a5a7?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                src="https://images.unsplash.com/photo-1601641875875-ed46ed11d9b4?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3" 
                 alt="Indian Street Food" 
                 className="rounded-lg shadow-md w-full h-48 object-cover"
               />
             </div>
             <div className="space-y-4 mt-6">
               <img 
-                src="https://images.unsplash.com/photo-1585264550248-1778be3b6368?q=80&w=1036&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                src="https://images.unsplash.com/photo-1583067950354-f3438ca5f47f?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3" 
                 alt="Traditional Dance" 
                 className="rounded-lg shadow-md w-full h-48 object-cover"
               />
               <img 
-                src="https://images.unsplash.com/photo-1625129098600-91d229410d11?q=80&w=1036&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                src="https://images.unsplash.com/photo-1580181572669-ea7a66a06cfb?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3" 
                 alt="Himalayan Mountains" 
                 className="rounded-lg shadow-md w-full h-40 object-cover"
               />
@@ -37,12 +37,12 @@ const AboutIndia = () => {
 
           {/* Content */}
           <div>
-            <h2 className="text-3xl font-bold text-india-blue mb-6">Experience the Diversity of India</h2>
+            <h2 className="text-2xl md:text-3xl font-bold text-india-blue mb-6">Experience the Diversity of India</h2>
             <p className="text-gray-600 mb-6">
               India is a land of incredible contrasts and diversity - from snow-capped Himalayan peaks in the north to tropical beaches in the south, from bustling modern cities to ancient temples and traditions. Every region offers distinct cultures, cuisines, languages, and landscapes.
             </p>
 
-            <div className="grid grid-cols-2 gap-6 mb-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
               <div className="flex items-start">
                 <div className="bg-india-saffron/20 p-2 rounded-md mr-3">
                   <Clock className="text-india-saffron" size={20} />

@@ -29,7 +29,7 @@ const AboutPage = () => {
               </div>
               <div className="h-60 md:h-auto bg-white flex items-center justify-center p-4">
                 <img 
-                  src="/lovable-uploads/6197a3de-efa5-4123-a99f-fc3bbc2e0d2f.png" 
+                  src="/lovable-uploads/ea89fa20-831f-420b-b00b-b8079603df6e.png" 
                   alt="Wanderlust Logo" 
                   className="max-h-full w-auto object-contain"
                 />
@@ -62,7 +62,7 @@ const AboutPage = () => {
                 <div className="md:w-1/3">
                   <div className="rounded-full overflow-hidden w-48 h-48 mx-auto border-4 border-india-saffron">
                     <img 
-                      src="https://media.licdn.com/dms/image/v2/D4D03AQHEI27vrtkFXw/profile-displayphoto-shrink_400_400/B4DZX_iUwhHIAg-/0/1743748944165?e=1749686400&v=beta&t=22W5SPSQdW0PQf835Td2LWvsfGCpqyn57X5fegBr9E8" 
+                      src="/lovable-uploads/ea89fa20-831f-420b-b00b-b8079603df6e.png" 
                       alt="Ujwal Singh (Matt)" 
                       className="w-full h-full object-cover"
                     />
@@ -88,8 +88,7 @@ const AboutPage = () => {
                       <span>LinkedIn</span>
                     </a>
                     <a 
-                      href="https://mail.google.com/mail/?view=cm&fs=1&to=ujwalsingh164@gmail.com
-" 
+                      href="mailto:wanderlustadaventures23@gmail.com" 
                       className="flex items-center text-india-blue hover:text-india-saffron transition-colors"
                     >
                       <Mail size={20} className="mr-1" />
@@ -167,8 +166,7 @@ const AboutPage = () => {
                 LinkedIn
               </a>
               <a 
-                href="https://mail.google.com/mail/?view=cm&fs=1&to=ujwalsingh164@gmail.com
-" 
+                href="mailto:wanderlustadaventures23@gmail.com" 
                 className="inline-flex items-center px-6 py-3 bg-white rounded-md shadow-sm hover:bg-india-saffron hover:text-white transition-colors"
               >
                 <Mail size={20} className="mr-2" />

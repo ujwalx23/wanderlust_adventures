@@ -20,7 +20,7 @@ const HeroSection = () => {
       </div>
 
       {/* Content */}
-      <div className="relative container mx-auto px-4 py-24 md:py-32 lg:py-40 flex flex-col justify-center items-center text-center text-white">
+      <div className="relative container mx-auto px-4 py-20 md:py-32 lg:py-40 flex flex-col justify-center items-center text-center text-white">
         <div className="max-w-4xl">
           <h1 className={`${isMobile ? 'text-3xl' : 'text-4xl md:text-5xl lg:text-6xl'} font-bold mb-6`}>
             Discover the Magic of <span className="text-india-saffron">Incredible India</span>
@@ -42,11 +42,11 @@ const HeroSection = () => {
        
 
       {/* Decorative triangle pattern (saffron and green) */}
-      <div className="absolute bottom-0 left-0 right-0 h-12 overflow-hidden">
-        <div className="absolute bottom-0 left-0 w-full h-12" style={{ 
+      <div className="absolute bottom-0 left-0 right-0 h-8 md:h-12 overflow-hidden">
+        <div className="absolute bottom-0 left-0 w-full h-8 md:h-12" style={{ 
           background: 'linear-gradient(135deg, transparent 50%, #FF9933 50%)'
         }}></div>
-        <div className="absolute bottom-0 right-0 w-full h-12" style={{ 
+        <div className="absolute bottom-0 right-0 w-full h-8 md:h-12" style={{ 
           background: 'linear-gradient(45deg, #138808 50%, transparent 50%)' 
         }}></div>
       </div>

@@ -40,7 +40,7 @@ const SubscribeSection = () => {
     <section id="subscribe" className="bg-india-blue py-16">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-white mb-4">
+          <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
             Subscribe to Our Newsletter
           </h2>
           <p className="text-blue-100 mb-8">

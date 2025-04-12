@@ -53,11 +53,13 @@ const Footer = () => {
       } else if (lowerCaseMessage.includes('music') || lowerCaseMessage.includes('songs')) {
         response = "Our music page features 50 wonderful songs that capture the essence of India. Visit our music page to explore them!";
       } else if (lowerCaseMessage.includes('game') || lowerCaseMessage.includes('play')) {
-        response = "We have several fun games including 'Guess the Flag', 'Guess the Language', 'Would You Rather', and 'Pick a Trip' wheel!";
+        response = "We have several fun games including 'Would You Rather', 'Guess the Flag', 'Guess the Language', and 'Pick a Trip' wheel!";
+      } else if (lowerCaseMessage.includes('books') || lowerCaseMessage.includes('read')) {
+        response = "Check out our book recommendations page for great travel and adventure related books!";
       } else if (lowerCaseMessage.includes('contact') || lowerCaseMessage.includes('reach')) {
-        response = "You can contact us at info@wanderlustadventures.in or call us at +91 98765 43210.";
+        response = "You can contact us at wanderlustadaventures23@gmail.com.";
       } else if (lowerCaseMessage.includes('about')) {
-        response = "Desi Wanderlust is your ultimate guide to exploring India's diverse landscapes and rich cultural heritage.";
+        response = "Wanderlust Adventures is your ultimate guide to exploring India's diverse landscapes and rich cultural heritage.";
       }
       
       setMessages(prev => [...prev, {type: 'bot', content: response}]);
@@ -73,7 +75,7 @@ const Footer = () => {
             <Link to="/about" className="flex items-center space-x-2 mb-4">
               <div className="w-10 h-10">
                 <img 
-                  src="/lovable-uploads/6197a3de-efa5-4123-a99f-fc3bbc2e0d2f.png" 
+                  src="/lovable-uploads/ea89fa20-831f-420b-b00b-b8079603df6e.png" 
                   alt="Wanderlust Adventures" 
                   className="w-full h-full object-contain bg-white rounded-full"
                 />
@@ -118,7 +120,7 @@ const Footer = () => {
                 <Link to="/all-destinations" className="text-gray-300 hover:text-india-saffron transition-colors">All Destinations</Link>
               </li>
               <li>
-                <Link to="/blog" className="text-gray-300 hover:text-india-saffron transition-colors">Travel Blog</Link>
+                <Link to="/books" className="text-gray-300 hover:text-india-saffron transition-colors">Books</Link>
               </li>
               <li>
                 <Link to="/travel-quiz" className="text-gray-300 hover:text-india-saffron transition-colors">Travel Quiz</Link>
@@ -127,7 +129,10 @@ const Footer = () => {
                 <Link to="/pick-a-trip" className="text-gray-300 hover:text-india-saffron transition-colors">Pick a Trip</Link>
               </li>
               <li>
-                <Link to="/movies" className="text-gray-300 hover:text-india-saffron transition-colors">Movies</Link>
+                <Link to="/gallery" className="text-gray-300 hover:text-india-saffron transition-colors">Gallery</Link>
+              </li>
+              <li>
+                <Link to="/download" className="text-gray-300 hover:text-india-saffron transition-colors">Download PDF</Link>
               </li>
               <li>
                 <Link to="/music" className="text-gray-300 hover:text-india-saffron transition-colors">Music</Link>
@@ -178,15 +183,9 @@ const Footer = () => {
                 </span>
               </li>
               <li className="flex items-center">
-                <Phone className="mr-2 flex-shrink-0" size={18} />
-                <a href="tel:+919876543210" className="text-gray-300 hover:text-india-saffron transition-colors">
-                  +91 98765 43210
-                </a>
-              </li>
-              <li className="flex items-center">
                 <Mail className="mr-2 flex-shrink-0" size={18} />
-                <a href="mailto:info@wanderlustadventures.in" className="text-gray-300 hover:text-india-saffron transition-colors">
-                  info@wanderlustadventures.in
+                <a href="mailto:wanderlustadaventures23@gmail.com" className="text-gray-300 hover:text-india-saffron transition-colors">
+                  wanderlustadaventures23@gmail.com
                 </a>
               </li>
               <li className="flex items-center mt-4">
