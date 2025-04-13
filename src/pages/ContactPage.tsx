@@ -78,7 +78,7 @@ const ContactPage = () => {
                   <div>
                     <h3 className="font-semibold text-gray-800 mb-1">Email</h3>
                     <p className="text-gray-600">
-                      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ujwalsingh164@gmail.com" className="hover:text-india-saffron transition-colors">
+                      <a href="mailto:ujwalsingh164@gmail.com" className="hover:text-india-saffron transition-colors">
                         ujwalsingh164@gmail.com
                       </a>
                     </p>
@@ -99,22 +99,22 @@ const ContactPage = () => {
               <div className="mt-8" id="feedback">
                 <h3 className="font-semibold text-gray-800 mb-3">Connect With Me</h3>
                 <div className="flex space-x-4">
+                  {/* Twitter (X) */}
                   <a href="https://x.com/UJWALSINGH23" target="_blank" rel="noopener noreferrer" className="bg-gray-200 hover:bg-india-saffron hover:text-white p-2 rounded-full transition-colors">
-                    {/* Twitter Icon */}
-                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                      <path d="M8.29 20.251c7.547 0 11.675-6.253..." />
+                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M22.46 6c-.77.34-1.6.56-2.47.66a4.3 4.3 0 001.88-2.37 8.59 8.59 0 01-2.72 1.03 4.28 4.28 0 00-7.3 3.9A12.14 12.14 0 013 4.79a4.28 4.28 0 001.33 5.72 4.28 4.28 0 01-1.94-.54v.05a4.29 4.29 0 003.43 4.2 4.3 4.3 0 01-1.93.07 4.29 4.29 0 004.01 2.98A8.6 8.6 0 012 19.54a12.14 12.14 0 006.56 1.92c7.88 0 12.2-6.53 12.2-12.2 0-.19 0-.39-.01-.58A8.72 8.72 0 0024 4.56a8.48 8.48 0 01-2.54.7z"/>
                     </svg>
                   </a>
+                  {/* GitHub */}
                   <a href="https://github.com/morningstarluci23" target="_blank" rel="noopener noreferrer" className="bg-gray-200 hover:bg-india-saffron hover:text-white p-2 rounded-full transition-colors">
-                    {/* GitHub Icon */}
-                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                      <path fillRule="evenodd" d="M12 2C6.477 2..." clipRule="evenodd" />
+                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                      <path fillRule="evenodd" clipRule="evenodd" d="M12 2C6.48 2 2 6.48 2 12a10 10 0 006.84 9.5c.5.09.66-.22.66-.48v-1.69c-2.78.61-3.37-1.34-3.37-1.34a2.66 2.66 0 00-1.11-1.46c-.91-.62.07-.6.07-.6a2.1 2.1 0 011.54 1.04 2.15 2.15 0 002.94.84 2.15 2.15 0 01.64-1.34c-2.22-.25-4.55-1.11-4.55-4.94a3.86 3.86 0 011.03-2.68 3.59 3.59 0 01.1-2.65s.84-.27 2.75 1.02a9.43 9.43 0 015 0c1.9-1.29 2.75-1.02 2.75-1.02.56 1.46.21 2.54.1 2.65a3.86 3.86 0 011.03 2.68c0 3.84-2.33 4.69-4.55 4.94a2.41 2.41 0 01.68 1.87v2.77c0 .27.17.58.67.48A10 10 0 0022 12c0-5.52-4.48-10-10-10z" />
                     </svg>
                   </a>
+                  {/* Discord */}
                   <a href="https://discordapp.com/users/1243952128272371764" target="_blank" rel="noopener noreferrer" className="bg-gray-200 hover:bg-india-saffron hover:text-white p-2 rounded-full transition-colors">
-                    {/* Discord Icon */}
-                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                      <path fillRule="evenodd" d="M12.315 2c2.43..." clipRule="evenodd" />
+                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M20.317 4.369a19.791 19.791 0 00-4.885-1.515.074.074 0 00-.079.037 13.868 13.868 0 00-.601 1.23 19.736 19.736 0 00-5.927 0 13.894 13.894 0 00-.602-1.23.077.077 0 00-.079-.037 19.736 19.736 0 00-4.885 1.515.07.07 0 00-.032.027C2.554 9.03 1.974 13.604 2.28 18.132a.082.082 0 00.031.056 19.9 19.9 0 005.993 3.028.077.077 0 00.084-.027c.462-.63.873-1.295 1.226-1.994a.076.076 0 00-.041-.105 13.131 13.131 0 01-1.872-.888.078.078 0 01-.008-.13c.126-.094.252-.192.373-.291a.075.075 0 01.077-.01c3.927 1.8 8.18 1.8 12.061 0a.075.075 0 01.078.009c.121.099.247.198.374.292a.078.078 0 01-.006.129 12.467 12.467 0 01-1.873.888.076.076 0 00-.04.106c.36.698.771 1.364 1.225 1.993a.076.076 0 00.084.028 19.876 19.876 0 005.994-3.028.077.077 0 00.03-.055c.347-5.063-.573-9.607-2.967-13.736a.061.061 0 00-.032-.028zM8.02 15.331c-1.183 0-2.157-1.085-2.157-2.419 0-1.334.955-2.419 2.157-2.419 1.21 0 2.176 1.094 2.157 2.42 0 1.334-.955 2.418-2.157 2.418zm7.974 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.334.955-2.419 2.157-2.419 1.21 0 2.176 1.094 2.157 2.42 0 1.334-.947 2.418-2.157 2.418z" />
                     </svg>
                   </a>
                 </div>
