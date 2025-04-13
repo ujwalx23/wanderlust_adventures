@@ -41,7 +41,7 @@ const BooksPage = () => {
       id: 5,
       title: "The Art of Happiness",
       author: "Dalai Lama & Howard C. Cutler",
-      image: "https://www.greatideasgreatlife.com/blog/wp-content/uploads/2022/10/16048499478278-51.png",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZevULBlih4VmmUQDetP-Or-AyQgeFjdEGsQ&s",
       description: "A book that presents the Dalai Lama's philosophical approach to achieving true happiness through developing inner peace.",
       link: "https://www.gutenberg.org/ebooks/search/?query=happiness&submit_search=Go%21"
     },
