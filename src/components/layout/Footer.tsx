@@ -94,10 +94,10 @@ const Footer = () => {
               Discover the rich cultural heritage and breathtaking landscapes of incredible India with our curated travel experiences.
             </p>
             <div className="flex space-x-4">
-              <a href="https://www.linkedin.com/in/ujwalsingh23" target="_blank" rel="noopener noreferrer" className="text-white hover:text-india-saffron transition-colors">
+              <a href="https://x.com/UJWALSINGH23" target="_blank" rel="noopener noreferrer" className="text-white hover:text-india-saffron transition-colors">
                 <Twitter size={20} />
               </a>
-              <a href="https://www.linkedin.com/in/ujwalsingh23" target="_blank" rel="noopener noreferrer" className="text-white hover:text-india-saffron transition-colors">
+              <a href="https://youtu.be/LGFX4Nccq9U?si=Uf4seCGq1UA_Qj7c" target="_blank" rel="noopener noreferrer" className="text-white hover:text-india-saffron transition-colors">
                 <Youtube size={20} />
               </a>
               <a href="https://www.linkedin.com/in/ujwalsingh23" target="_blank" rel="noopener noreferrer" className="text-white hover:text-india-saffron transition-colors">
