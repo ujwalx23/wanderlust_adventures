@@ -95,7 +95,7 @@ export const blogs: Blog[] = [
     date: "December 5, 2023",
     category: "Adventure",
     excerpt: "Braving sub-zero temperatures to walk on the frozen Zanskar River in Ladakh, one of India's most challenging and visually stunning winter adventures.",
-    image: "https://images.unsplash.com/photo-1544880560-8ebba19f0617?q=80&w=1000&auto=format&fit=crop",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTngOPOq1iqsFA0WrI7TWI5PQOhcCt73Cxa3w&s",
     content: []
   },
   {
@@ -155,7 +155,7 @@ export const blogs: Blog[] = [
     date: "June 22, 2023",
     category: "Nature",
     excerpt: "Venturing into lesser-known national parks and wildlife reserves to encounter India's magnificent tigers, sloth bears, and diverse bird species.",
-    image: "https://images.unsplash.com/photo-1598836532019-978ecedd2619?q=80&w=1000&auto=format&fit=crop",
+    image: "https://india-tours.com/wildlife/images/wildlife/national-parks/ranthambore-national-park.jpg",
     content: []
   },
   {
