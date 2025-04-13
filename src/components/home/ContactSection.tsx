@@ -23,19 +23,19 @@ const ContactSection = () => {
               </div>
               <h3 className="text-white font-medium mb-2">Email Me</h3>
               <a 
-                href="mailto:ujwalsingh164@gmail.com" 
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=ujwalsingh164@gmail.com" 
                 className="text-blue-100 hover:text-india-saffron transition-colors"
               >
-                ujwalsingh164@gmail.com
+                click here
               </a>
             </div>
           </div>
 
           <Link to="/contact">
             <Button 
-              className="bg-india-green hover:bg-india-marigold text-white font-medium px-8 py-6 h-auto text-lg"
+              className="bg-india-green hover:bg-india-green text-white font-medium px-8 py-6 h-auto text-lg"
             >
-              Contact Me Now
+              Contact Me 
             </Button>
           </Link>
 
