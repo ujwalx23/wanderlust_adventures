@@ -31,7 +31,7 @@ const FeaturedDestinations: React.FC<FeaturedDestinationsProps> = ({
       id: '2',
       name: 'Varanasi Ghats',
       location: 'Varanasi',
-      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2Hsc_YmmRPFc8ger-NODvUMr0cFG8z8oSBg&s',
+      image: 'https://t4.ftcdn.net/jpg/04/08/25/05/360_F_408250543_MVaEVGeWxb4FiFy7mEGKj8nfYkwoAZON.jpg',
       description: 'Experience spiritual awakening at the ancient ghats along the sacred Ganges River with traditional evening ceremonies.',
       suitableFor: 'Family',
       category: 'Spiritual',
