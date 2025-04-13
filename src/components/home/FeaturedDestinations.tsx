@@ -22,7 +22,7 @@ const FeaturedDestinations: React.FC<FeaturedDestinationsProps> = ({
       location: 'Uttar Pradesh',
       image: 'https://cdn.pixabay.com/photo/2020/06/05/21/09/cultural-tourism-5264542_1280.jpg',
       description: 'Explore the iconic symbol of eternal love, a UNESCO World Heritage site and one of the Seven Wonders of the World.',
-      suitableFor: 'Historical and Romantic',
+      suitableFor: 'Romantic',
       category: 'Romantic', // Corrected typo
       rating: 4.4,
       bestTimeToVisit: 'October to March',
@@ -33,7 +33,7 @@ const FeaturedDestinations: React.FC<FeaturedDestinationsProps> = ({
       location: 'Varanasi',
       image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2Hsc_YmmRPFc8ger-NODvUMr0cFG8z8oSBg&s',
       description: 'Experience spiritual awakening at the ancient ghats along the sacred Ganges River with traditional evening ceremonies.',
-      suitableFor: 'Family (All)',
+      suitableFor: 'Family',
       category: 'Spiritual',
       rating: 4.9,
       bestTimeToVisit: 'September to March',
