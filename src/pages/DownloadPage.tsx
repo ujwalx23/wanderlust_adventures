@@ -127,15 +127,11 @@ const DownloadPage = () => {
           
           <div className="bg-india-blue/5 p-8 rounded-lg border border-india-blue/20">
             <h3 className="text-xl font-semibold mb-4 text-india-blue">Need More Resources?</h3>
-            <p className="text-gray-600 mb-6">
+            <p className="text-gray-300 mb-5">
               I am constantly creating new resources to help travelers explore India.
-              Reach out me!
+              Reach out to me!
             </p>
-            <Link to="/#contact">
-              <Button className="bg-india-blue hover:bg-india-blue/90">
-                Contact 
-              </Button>
-            </Link>
+            
           </div>
         </div>
       </div>
