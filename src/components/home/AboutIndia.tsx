@@ -11,24 +11,24 @@ const AboutIndia = () => {
           <div className="grid grid-cols-2 gap-4">
             <div className="space-y-4">
               <img 
-                src="https://images.unsplash.com/photo-1561361513-2d000a50f0dc?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3" 
+                src="https://static.toiimg.com/photo/msid-92089121,width-96,height-65.cms" 
                 alt="Holi Festival" 
                 className="rounded-lg shadow-md w-full h-40 object-cover"
               />
               <img 
-                src="https://images.unsplash.com/photo-1601641875875-ed46ed11d9b4?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3" 
-                alt="Indian Street Food" 
+                src="https://hblimg.mmtcdn.com/content/hubble/img/goa/mmt/destination/m_destination-goa-landscape_l_400_640.jpg" 
+                alt="Beaches" 
                 className="rounded-lg shadow-md w-full h-48 object-cover"
               />
             </div>
             <div className="space-y-4 mt-6">
               <img 
-                src="https://images.unsplash.com/photo-1583067950354-f3438ca5f47f?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3" 
-                alt="Traditional Dance" 
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Prambanan_Temple_Yogyakarta_Indonesia.jpg/1200px-Prambanan_Temple_Yogyakarta_Indonesia.jpg" 
+                alt="Historical Temple" 
                 className="rounded-lg shadow-md w-full h-48 object-cover"
               />
               <img 
-                src="https://images.unsplash.com/photo-1580181572669-ea7a66a06cfb?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3" 
+                src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.oyorooms.com%2Fblog%2Fmountain-ranges-in-india%2F&psig=AOvVaw2VwU1dT6SS46CzAoJspfbU&ust=1744637773352000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKCF1aeQ1YwDFQAAAAAdAAAAABAE" 
                 alt="Himalayan Mountains" 
                 className="rounded-lg shadow-md w-full h-40 object-cover"
               />
