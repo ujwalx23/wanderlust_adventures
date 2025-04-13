@@ -9,42 +9,50 @@ const SubscribeSection = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Get existing emails from localStorage
-    const existingEmails = JSON.parse(localStorage.getItem('subscribers') || '[]');
-    
-    // Check if email already exists
-    if (existingEmails.some((item: {email: string}) => item.email === email)) {
-      toast({
-        title: "Already subscribed",
-        description: "This email is already subscribed to our newsletter.",
-        variant: "destructive"
+    try {
+      // Google Sheet script URL
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbwOogeBxZW1oSwzc73sWvxavRe0EzVY9eGMXcm5laQ/dev';
+      
+      // Create form data to send
+      const formData = new FormData();
+      formData.append('email', email);
+      formData.append('timestamp', new Date().toISOString());
+      
+      // Send data to Google Sheet
+      const response = await fetch(scriptURL, {
+        method: 'POST',
+        mode: 'no-cors', // This is important for Google Apps Script
+        body: formData
       });
-      setIsSubmitting(false);
-      return;
-    }
-    
-    // Add new email
-    const updatedEmails = [...existingEmails, { email, date: new Date().toISOString() }];
-    
-    // Save back to localStorage
-    localStorage.setItem('subscribers', JSON.stringify(updatedEmails));
-    
-    // Show success message
-    setTimeout(() => {
+      
+      // Show success message (note: response will be opaque due to no-cors)
       toast({
         title: "Successfully subscribed!",
         description: "Thank you for subscribing to our newsletter.",
       });
+      
+      // Clear form
       setEmail('');
+      
+      // Also save to localStorage as backup
+      const existingEmails = JSON.parse(localStorage.getItem('subscribers') || '[]');
+      const updatedEmails = [...existingEmails, { email, date: new Date().toISOString() }];
+      localStorage.setItem('subscribers', JSON.stringify(updatedEmails));
+      
+    } catch (error) {
+      console.error('Error during subscription:', error);
+      toast({
+        title: "Subscription error",
+        description: "There was a problem with your subscription. Please try again.",
+        variant: "destructive"
+      });
+    } finally {
       setIsSubmitting(false);
-    }, 1000);
-    
-    // For development: log the emails that have been saved
-    console.log('Current subscribers:', updatedEmails);
+    }
   };
 
   return (

@@ -1,13 +1,13 @@
 
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Search, X, MapPin, Bookmark, Calendar, MessageSquare } from 'lucide-react';
+import { Search, X, MapPin, Bookmark, Calendar, MessageSquare, Music, Film, Book } from 'lucide-react';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { destinations, faqs } from '@/constants/destinations';
 
 // Define search result types
-type SearchResultType = 'destination' | 'faq' | 'blog' | 'gallery';
+type SearchResultType = 'destination' | 'faq' | 'blog' | 'gallery' | 'music' | 'movie' | 'book';
 
 interface SearchResult {
   id: string;
@@ -52,6 +52,56 @@ const galleryItems = [
     title: "Sunset at Palolem Beach, Goa",
     category: "Beaches",
     image: "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z29hJTIwYmVhY2h8ZW58MHx8MHx8fDA%3D",
+  },
+];
+
+// Mock songs for searching
+const songItems = [
+  {
+    id: "1",
+    title: "Jai Ho",
+    artist: "A.R. Rahman",
+    album: "Slumdog Millionaire",
+    image: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3",
+  },
+  {
+    id: "2",
+    title: "Chaiyya Chaiyya",
+    artist: "Sukhwinder Singh",
+    album: "Dil Se",
+    image: "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3",
+  },
+];
+
+// Mock movies for searching
+const movieItems = [
+  {
+    id: "1",
+    title: "Lagaan",
+    director: "Ashutosh Gowariker",
+    image: "https://images.unsplash.com/photo-1536440136628-849c177e76a1?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3",
+  },
+  {
+    id: "2",
+    title: "3 Idiots",
+    director: "Rajkumar Hirani",
+    image: "https://images.unsplash.com/photo-1485846234645-a62644f84728?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3",
+  },
+];
+
+// Mock books for searching
+const bookItems = [
+  {
+    id: "1",
+    title: "The White Tiger",
+    author: "Aravind Adiga",
+    image: "https://images.unsplash.com/photo-1544947950-fa07a98d237f?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3",
+  },
+  {
+    id: "2",
+    title: "A Suitable Boy",
+    author: "Vikram Seth",
+    image: "https://images.unsplash.com/photo-1512820790803-83ca734da794?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3",
   },
 ];
 
@@ -133,12 +183,61 @@ const SearchBox: React.FC<SearchBoxProps> = ({ onClose, className }) => {
         url: `/gallery`
       }));
     
+    // Search songs
+    const songResults: SearchResult[] = songItems
+      .filter(song => 
+        song.title.toLowerCase().includes(term) || 
+        song.artist.toLowerCase().includes(term) ||
+        song.album.toLowerCase().includes(term)
+      )
+      .map(song => ({
+        id: song.id,
+        title: song.title,
+        subtitle: `${song.artist} - ${song.album}`,
+        image: song.image,
+        type: 'music',
+        url: `/music`
+      }));
+    
+    // Search movies
+    const movieResults: SearchResult[] = movieItems
+      .filter(movie => 
+        movie.title.toLowerCase().includes(term) || 
+        movie.director.toLowerCase().includes(term)
+      )
+      .map(movie => ({
+        id: movie.id,
+        title: movie.title,
+        subtitle: `Director: ${movie.director}`,
+        image: movie.image,
+        type: 'movie',
+        url: `/movies`
+      }));
+    
+    // Search books
+    const bookResults: SearchResult[] = bookItems
+      .filter(book => 
+        book.title.toLowerCase().includes(term) || 
+        book.author.toLowerCase().includes(term)
+      )
+      .map(book => ({
+        id: book.id,
+        title: book.title,
+        subtitle: `Author: ${book.author}`,
+        image: book.image,
+        type: 'book',
+        url: `/books`
+      }));
+    
     // Combine all results
     const allResults = [
       ...destinationResults, 
       ...faqResults, 
       ...blogResults, 
-      ...galleryResults
+      ...galleryResults,
+      ...songResults,
+      ...movieResults,
+      ...bookResults
     ];
     
     setSearchResults(allResults);
@@ -168,6 +267,9 @@ const SearchBox: React.FC<SearchBoxProps> = ({ onClose, className }) => {
     faq: searchResults.filter(r => r.type === 'faq').length,
     blog: searchResults.filter(r => r.type === 'blog').length,
     gallery: searchResults.filter(r => r.type === 'gallery').length,
+    music: searchResults.filter(r => r.type === 'music').length,
+    movie: searchResults.filter(r => r.type === 'movie').length,
+    book: searchResults.filter(r => r.type === 'book').length,
   };
 
   // Get type icon
@@ -181,6 +283,12 @@ const SearchBox: React.FC<SearchBoxProps> = ({ onClose, className }) => {
         return <Calendar size={16} className="mr-1 text-india-saffron" />;
       case 'gallery':
         return <Bookmark size={16} className="mr-1 text-purple-500" />;
+      case 'music':
+        return <Music size={16} className="mr-1 text-pink-500" />;
+      case 'movie':
+        return <Film size={16} className="mr-1 text-amber-500" />;
+      case 'book':
+        return <Book size={16} className="mr-1 text-emerald-500" />;
     }
   };
 
@@ -194,7 +302,7 @@ const SearchBox: React.FC<SearchBoxProps> = ({ onClose, className }) => {
           />
           <Input
             type="text"
-            placeholder="Search destinations, FAQs, blogs, or galleries..."
+            placeholder="Search destinations, FAQs, blogs, songs, movies, books..."
             value={searchTerm}
             onChange={handleSearch}
             className="pl-10 pr-4 py-2 w-full border-gray-200 focus:border-india-saffron focus:ring-1 focus:ring-india-saffron"
@@ -214,7 +322,7 @@ const SearchBox: React.FC<SearchBoxProps> = ({ onClose, className }) => {
 
       {/* Search Results */}
       {showResults && searchResults.length > 0 && (
-        <div className="absolute top-full left-0 right-0 mt-2 bg-white rounded-md shadow-lg z-50 max-h-[80vh] overflow-hidden flex flex-col">
+        <div className="absolute top-full left-0 right-0 mt-2 bg-white rounded-md shadow-lg z-50 max-h-[60vh] overflow-hidden flex flex-col">
           {/* Tabs */}
           <div className="flex items-center border-b border-gray-100 px-2 overflow-x-auto">
             <Button 
@@ -269,10 +377,43 @@ const SearchBox: React.FC<SearchBoxProps> = ({ onClose, className }) => {
                 Gallery ({resultCounts.gallery})
               </Button>
             )}
+            {resultCounts.music > 0 && (
+              <Button 
+                variant="ghost" 
+                size="sm" 
+                className={`flex items-center ${activeTab === 'music' ? 'text-india-blue font-medium' : 'text-gray-500'}`}
+                onClick={() => setActiveTab('music')}
+              >
+                <Music size={16} className="mr-1" />
+                Music ({resultCounts.music})
+              </Button>
+            )}
+            {resultCounts.movie > 0 && (
+              <Button 
+                variant="ghost" 
+                size="sm" 
+                className={`flex items-center ${activeTab === 'movie' ? 'text-india-blue font-medium' : 'text-gray-500'}`}
+                onClick={() => setActiveTab('movie')}
+              >
+                <Film size={16} className="mr-1" />
+                Movies ({resultCounts.movie})
+              </Button>
+            )}
+            {resultCounts.book > 0 && (
+              <Button 
+                variant="ghost" 
+                size="sm" 
+                className={`flex items-center ${activeTab === 'book' ? 'text-india-blue font-medium' : 'text-gray-500'}`}
+                onClick={() => setActiveTab('book')}
+              >
+                <Book size={16} className="mr-1" />
+                Books ({resultCounts.book})
+              </Button>
+            )}
           </div>
           
-          {/* Results List */}
-          <div className="overflow-y-auto max-h-[calc(80vh-40px)]">
+          {/* Results List - increased visible results without scrolling */}
+          <div className="overflow-y-auto max-h-[400px]">
             {filteredResults.length > 0 ? (
               <div className="p-2">
                 {filteredResults.map(result => (

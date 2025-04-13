@@ -94,6 +94,8 @@
     @apply bg-background text-foreground;
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden; /* Prevent horizontal scroll */
+    max-width: 100vw; /* Prevent horizontal scroll */
+    position: relative; /* For absolute positioned elements */
   }
   
   /* Improve mobile experience */
@@ -137,6 +139,27 @@
     p {
       font-size: 0.95rem !important;
       line-height: 1.5 !important;
+    }
+    
+    /* Fix mobile menu scrolling */
+    .overflow-y-auto {
+      -webkit-overflow-scrolling: touch;
+    }
+    
+    /* Fix fixed position buttons on mobile */
+    .fixed.bottom-24 {
+      bottom: 5rem !important;
+      right: 1rem !important;
+    }
+    
+    .fixed.bottom-6 {
+      bottom: 1rem !important;
+      right: 1rem !important;
+    }
+    
+    /* Ensure search results are visible */
+    .max-h-\[60vh\] {
+      max-height: 70vh !important;
     }
   }
 }
@@ -225,5 +248,25 @@
     .fixed.bottom-6 {
       bottom: 1rem;
     }
+    
+    /* Ensure forms adapt to mobile */
+    form input, 
+    form select,
+    form textarea {
+      font-size: 16px !important; /* Prevent iOS zoom on focus */
+    }
+    
+    /* Improve tap targets */
+    a, button, [role="button"] {
+      min-height: 44px;
+      min-width: 44px;
+    }
+  }
+  
+  /* Enhanced search results container */
+  .search-results-container {
+    max-height: 400px; /* Increased from default */
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
   }
 }

@@ -1,10 +1,15 @@
 
 import React from 'react';
 import Layout from '@/components/layout/Layout';
-import ContactForm from '@/components/contact/ContactForm';
-import { Phone, Mail, Clock } from 'lucide-react';
+import { Phone, Mail, Clock, ExternalLink } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 
 const ContactPage = () => {
+  // Open Google Form in a new tab
+  const openContactForm = () => {
+    window.open('https://forms.gle/mefzKQXMZcHHuvpU8', '_blank');
+  };
+  
   return (
     <Layout>
       <div className="bg-gray-50 py-12 md:py-16">
@@ -13,9 +18,23 @@ const ContactPage = () => {
             <h1 className="text-3xl md:text-4xl font-bold text-india-blue mb-4">
               Contact Us
             </h1>
-            <p className="text-gray-600">
+            <p className="text-gray-600 mb-6">
               Have questions or need assistance? Get in touch with our friendly team, and we'll be happy to help you plan your perfect Indian adventure.
             </p>
+            
+            {/* Google Form CTA */}
+            <div className="bg-white p-6 rounded-lg shadow-sm mb-8 max-w-2xl mx-auto">
+              <h2 className="text-xl font-semibold text-gray-800 mb-3">Submit Your Inquiry</h2>
+              <p className="text-gray-600 mb-4">
+                Please fill out our contact form to get in touch with us. We'll get back to you as soon as possible.
+              </p>
+              <Button 
+                onClick={openContactForm}
+                className="bg-india-saffron hover:bg-india-marigold text-white font-medium flex items-center gap-2"
+              >
+                Open Contact Form <ExternalLink size={16} />
+              </Button>
+            </div>
           </div>
           
           {/* Friendly Tags at the top */}
@@ -121,10 +140,28 @@ const ContactPage = () => {
               </div>
             </div>
             
-            {/* Contact Form */}
-            <div className="bg-white p-6 rounded-lg shadow-sm" id="careers">
-              <h2 className="text-2xl font-semibold text-gray-800 mb-6">Send us a Message</h2>
-              <ContactForm />
+            {/* Contact Form CTA - Right column */}
+            <div id="careers" className="bg-white p-6 rounded-lg shadow-sm">
+              <h2 className="text-2xl font-semibold text-gray-800 mb-6">Contact Form</h2>
+              <p className="text-gray-600 mb-6">
+                Please use our Google Form to submit your inquiries. This helps us organize your requests and respond more efficiently.
+              </p>
+              <div className="space-y-4">
+                <p className="text-gray-700">
+                  <strong>What to expect:</strong> After submitting the form, our team will review your inquiry and get back to you within 24-48 business hours.
+                </p>
+                <p className="text-gray-700">
+                  <strong>Required information:</strong> Please include your name, email, phone number, and the nature of your inquiry in the form.
+                </p>
+              </div>
+              <div className="mt-8">
+                <Button 
+                  onClick={openContactForm}
+                  className="w-full bg-india-saffron hover:bg-india-marigold text-white font-medium flex items-center justify-center gap-2 py-6"
+                >
+                  Open Contact Form <ExternalLink size={16} />
+                </Button>
+              </div>
             </div>
           </div>
         </div>
