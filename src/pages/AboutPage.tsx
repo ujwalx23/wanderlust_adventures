@@ -15,10 +15,10 @@ const AboutPage = () => {
               <div className="p-8 md:p-12 flex flex-col justify-center">
                 <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">About Wanderlust Adventures</h1>
                 <p className="text-white/80 text-lg mb-6">
-                  Driven by passion, I’m dedicated to helping travelers uncover the incredible beauty and rich cultural heritage of India
+                  Driven by passion, I’m dedicated to helping travelers uncover the incredible beauty and rich cultural heritage of India.
                 </p>
                 <p className="text-white/80 mb-8">
-                  My mission is clear: to connect travelers with authentic experiences that highlight the best of India’s diverse landscapes, vibrant cultures, and timeless traditions
+                  My mission is clear: to connect travelers with authentic experiences that highlight the best of India’s diverse landscapes, vibrant cultures, and timeless traditions.
                 </p>
                 <Link to="/contact">
                   <Button className="bg-white text-india-blue hover:bg-white/90">
@@ -44,7 +44,7 @@ const AboutPage = () => {
                 Wanderlust Adventures was born from a deep love for India's diverse landscapes and rich cultural tapestry. What began as a passion project has evolved into a dedicated travel advisory service with a mission to showcase the authentic side of India to travelers from around the world.
               </p>
               <p>
-                Unlike traditional travel agencies, I don't book your tickets or accommodations. Instead, I focus on what we do best: providing expert recommendations, detailed destination insights, and personalized travel advice to help you plan the perfect Indian adventure.
+                Unlike traditional travel agencies, I don't book your tickets or accommodations. Instead, I focus on what I do best: providing expert recommendations, detailed destination insights, and personalized travel advice to help you plan the perfect Indian adventure.
               </p>
               <p>
                 I provide genuine advice and recommendations tailored to your preferences and travel style, highlighting the best of India's diverse landscapes and cultures.
@@ -56,7 +56,6 @@ const AboutPage = () => {
           <div className="bg-white rounded-xl shadow-sm p-8 mb-16">
             <div className="max-w-4xl mx-auto">
               <h2 className="text-2xl md:text-3xl font-bold text-center text-india-blue mb-8">Meet Our Founder</h2>
-
               <div className="flex flex-col md:flex-row items-center gap-8">
                 <div className="md:w-1/3">
                   <div className="rounded-full overflow-hidden w-48 h-48 mx-auto border-4 border-india-saffron">
@@ -71,11 +70,9 @@ const AboutPage = () => {
                 <div className="md:w-2/3 text-center md:text-left">
                   <h3 className="text-xl font-semibold mb-2">Ujwal Singh</h3>
                   <p className="text-gray-600 mb-4">Founder & Nature Enthusiast</p>
-
                   <p className="text-gray-700 mb-6">
-                    Ujwal founded Wanderlust Adventures to inspire travelers to experience the authentic essence of India. With extensive knowledge of Indian tourism and a passion for sustainable travel, he has shaped the company’s mission to deliver meaningful and genuine travel experiences
+                    Ujwal founded Wanderlust Adventures to inspire travelers to experience the authentic essence of India. With extensive knowledge of Indian tourism and a passion for sustainable travel, he has shaped the company’s mission to deliver meaningful and genuine travel experiences.
                   </p>
-
                   <div className="flex justify-center md:justify-start space-x-4">
                     <a
                       href="https://www.linkedin.com/in/ujwalsingh23"
@@ -102,8 +99,7 @@ const AboutPage = () => {
           {/* Our Approach */}
           <div className="max-w-4xl mx-auto mb-16">
             <h2 className="text-2xl md:text-3xl font-bold text-center text-india-blue mb-8">Our Approach</h2>
-
-      
+            <div className="grid md:grid-cols-2 gap-6">
               <div className="bg-white p-6 rounded-lg shadow-sm text-center">
                 <div className="w-16 h-16 bg-india-saffron/10 rounded-full flex items-center justify-center mx-auto mb-4">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-india-saffron">
@@ -128,7 +124,7 @@ const AboutPage = () => {
                 </div>
                 <h3 className="text-lg font-semibold mb-2">Unique Destinations</h3>
                 <p className="text-gray-600">
-                  I understand that each traveler is unique, so I tailor our recommendations to suit individual preferences.
+                  I understand that each traveler is unique, so I tailor my recommendations to suit individual preferences.
                 </p>
               </div>
             </div>
@@ -138,9 +134,8 @@ const AboutPage = () => {
           <div className="bg-india-saffron/10 rounded-xl p-8 text-center">
             <h2 className="text-2xl md:text-3xl font-bold text-india-blue mb-4">Connect With Us</h2>
             <p className="text-gray-700 mb-8 max-w-2xl mx-auto">
-              Have questions or want personalized travel suggestions? I'd love to hear from you! Connect with us on social media or reach out directly.
+              Have questions or want personalized travel suggestions? I'd love to hear from you! Connect with me on social media or reach out directly.
             </p>
-
             <div className="flex flex-wrap justify-center gap-4">
               <a
                 href="https://www.linkedin.com/in/ujwalsingh23"
