@@ -66,6 +66,12 @@ const Footer = () => {
     }, 600);
   };
 
+  // Function to handle search button click
+  const handleSearchClick = () => {
+    // Find the search trigger button in the navbar and click it
+    document.querySelector<HTMLButtonElement>('[data-search-trigger="true"]')?.click();
+  };
+
   return (
     <footer className="bg-india-blue text-white">
       <div className="container mx-auto px-4 py-12">
@@ -207,11 +213,10 @@ const Footer = () => {
 
       {/* Fixed Search Button */}
       <Button
-        onClick={() => document.querySelector<HTMLButtonElement>('[data-search-trigger="true"]')?.click()}
+        onClick={handleSearchClick}
         className="fixed bottom-24 right-6 bg-india-blue text-white p-4 rounded-full shadow-lg hover:bg-india-saffron transition-colors z-40"
         size="icon"
         aria-label="Search"
-        data-search-trigger="true"
       >
         <Search size={24} />
       </Button>

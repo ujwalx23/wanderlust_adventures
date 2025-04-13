@@ -93,6 +93,7 @@
   body {
     @apply bg-background text-foreground;
     font-family: 'Poppins', sans-serif;
+    overflow-x: hidden; /* Prevent horizontal scroll */
   }
   
   /* Improve mobile experience */
@@ -110,6 +111,8 @@
     .container {
       padding-left: 1rem !important;
       padding-right: 1rem !important;
+      width: 100% !important;
+      max-width: 100% !important;
     }
     
     /* Fix image sizes on mobile */
@@ -127,6 +130,13 @@
     /* Better button sizing */
     .btn, button, [type="button"] {
       min-height: 2.8rem;
+      touch-action: manipulation;
+    }
+    
+    /* Improve readability on small screens */
+    p {
+      font-size: 0.95rem !important;
+      line-height: 1.5 !important;
     }
   }
 }
@@ -137,6 +147,7 @@
     background-size: cover;
     background-position: center;
     height: 90vh;
+    width: 100%;
     
     /* Mobile optimization for hero */
     @media (max-width: 768px) {
@@ -177,6 +188,42 @@
     /* Enhanced mobile grid */
     .grid {
       gap: 1.5rem !important;
+    }
+    
+    /* Fix overflow issues */
+    .overflow-x-auto {
+      -webkit-overflow-scrolling: touch;
+    }
+    
+    /* Make sure images don't break layout */
+    img {
+      max-width: 100%;
+      height: auto !important;
+    }
+    
+    /* Ensure content fits within the viewport */
+    .container {
+      width: 100% !important;
+      max-width: 100% !important;
+      overflow-x: hidden !important;
+    }
+    
+    /* Adjust text sizes for better readability */
+    .text-xl {
+      font-size: 1.1rem !important;
+    }
+    
+    .text-2xl {
+      font-size: 1.3rem !important;
+    }
+    
+    /* Fix search & chat buttons positioning */
+    .fixed.bottom-24 {
+      bottom: 5rem;
+    }
+    
+    .fixed.bottom-6 {
+      bottom: 1rem;
     }
   }
 }
