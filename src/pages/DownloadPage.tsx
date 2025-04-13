@@ -127,9 +127,8 @@ const DownloadPage = () => {
           
           <div className="bg-india-blue/5 p-8 rounded-lg border border-india-blue/20">
             <h3 className="text-xl font-semibold mb-4 text-india-blue">Need More Resources?</h3>
-            <p className="text-gray-300 mb-5">
-              I am constantly creating new resources to help travelers explore India.
-              Reach out to me!
+            <p className="text-black-300 mb-5">
+            "I’m always creating new resources to help travelers explore the beauty and diversity of India. Whether you need tips, suggestions, or just want to talk travel-feel free to reach out. I’d love to connect!
             </p>
             
           </div>
