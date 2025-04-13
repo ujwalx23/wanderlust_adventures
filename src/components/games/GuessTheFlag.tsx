@@ -16,9 +16,9 @@ const GuessTheFlag = () => {
   // Sample questions - in a real app, we'd have more and better images
   const questions = [
     {
-      flag: "https://placehold.co/300x200/F93822/FFFFFF?text=Indian+Flag",
-      country: "India",
-      options: ["India", "Pakistan", "Bangladesh", "Sri Lanka"]
+      flag: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEDbtRz0cZVLaaG7c7sk7M_nzFEqLTfZe3gQ&s",
+      country: "Brazil",
+      options: ["Brazil", "Pakistan", "Bangladesh", "Argentina"]
     },
     {
       flag: "https://placehold.co/300x200/00247D/FFFFFF?text=Japanese+Flag",
