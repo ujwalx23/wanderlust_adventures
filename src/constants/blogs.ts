@@ -36,7 +36,7 @@ export const blogs: Blog[] = [
     date: "March 22, 2024",
     category: "Spiritual",
     excerpt: "A personal journey into the yoga capital of the world, exploring the ashrams, spiritual practices, and natural beauty of Rishikesh.",
-    image: "https://images.unsplash.com/photo-1608021488795-1d3de42105cb?q=80&w=1000&auto=format&fit=crop",
+    image: "https://s7ap1.scene7.com/is/image/incredibleindia/lakshman-jhula-bridge-rishikesh-uttrakhand-city-1-hero?qlt=82&ts=1726646259495",
     content: [
       "Rishikesh—where the sacred Ganges emerges from the Himalayas—has been a pilgrimage site for spiritual seekers for thousands of years. My month-long stay in this yoga capital of the world began with uncertainty and ended with a transformation I hadn't anticipated.",
       "Arriving in Rishikesh, I was immediately struck by the contrast between the bustling markets of Tapovan and the serene ashrams dotting the riverbank. I had booked myself into a traditional ashram with basic accommodations—a simple room with a bed, a desk, and a small bathroom. Luxury was not the point here; inner exploration was.",
@@ -55,7 +55,7 @@ export const blogs: Blog[] = [
     date: "February 10, 2024",
     category: "Culinary",
     excerpt: "Floating through Kerala's iconic backwaters while exploring the unique cuisine, spice gardens, and cooking traditions of God's Own Country.",
-    image: "https://images.unsplash.com/photo-1602550031670-d9e8d89c4f7d?q=80&w=1000&auto=format&fit=crop",
+    image: "https://i.assetzen.net/i/NMMAO4tn46cT/w:1200/h:808/q:70.jpg",
     content: [
       "\"Food is not rational. Food is culture, habit, craving, and identity.\" These words from Jonathan Safran Foer resonated with me as I embarked on a culinary journey through Kerala's backwaters—a network of lakes, canals, and rivers stretching parallel to the Arabian Sea coast.",
       "My adventure began in Alappuzha (Alleppey), where I boarded a traditional kettuvallam (houseboat)—once used to transport rice and spices, now converted into floating accommodations. The boat's design remained true to tradition, with thatched roof covers over wooden hulls, but was equipped with modern amenities including a kitchen where magic would happen over the next three days.",
