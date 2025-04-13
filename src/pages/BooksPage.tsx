@@ -9,7 +9,7 @@ const BooksPage = () => {
       id: 1,
       title: "The Time Machine",
       author: "H.G. Wells",
-      image: "https://www.ombooksinternational.com/wp-content/uploads/2023/11/9789384225445_1.jpg",
+      image: "https://m.media-amazon.com/images/I/81dCSKtvF4L._AC_UF1000,1000_QL80_.jpg",
       description: "A Victorian inventor travels far into the future using a time machine.There, he discovers a divided world and unsettling truths about humanity’s fate.",
       link: "https://www.gutenberg.org/cache/epub/35/pg35-images.html"
     },
@@ -25,7 +25,7 @@ const BooksPage = () => {
       id: 3,
       title: "The Adventures of Sherlock Holmes",
       author: "Arthur Conan Doyle",
-      image: "https://m.media-amazon.com/images/I/71XRBP0JvPL._AC_UF1000,1000_QL80_.jpg",
+      image: "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2020/08/Sherlock-Holmes-RDJ.jpg",
       description: "Detective Sherlock Holmes, with the help of his loyal friend Dr. Watson, solves a series of intriguing and baffling cases in Victorian London. Using his sharp intellect and keen observation, Holmes unravels mysteries that seem impossible to solve.",
       link: "https://www.gutenberg.org/cache/epub/1661/pg1661-images.html"
     },
@@ -41,7 +41,7 @@ const BooksPage = () => {
       id: 5,
       title: "The Art of Happiness",
       author: "Dalai Lama & Howard C. Cutler",
-      image: "https://images.unsplash.com/photo-1474314170901-f351b68f544f?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3",
+      image: "https://www.greatideasgreatlife.com/blog/wp-content/uploads/2022/10/16048499478278-51.png",
       description: "A book that presents the Dalai Lama's philosophical approach to achieving true happiness through developing inner peace.",
       link: "https://www.gutenberg.org/ebooks/search/?query=happiness&submit_search=Go%21"
     },
@@ -49,7 +49,7 @@ const BooksPage = () => {
       id: 6,
       title: "Wild: From Lost to Found on the Pacific Crest Trail",
       author: "Cheryl Strayed",
-      image: "https://images.unsplash.com/photo-1604275689235-fdc521556c4a?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3",
+      image: "https://www.news-journalonline.com/gcdn/authoring/2014/12/21/NDNJ/ghows-LK-b46f516f-c016-40b0-aceb-d2618b2f26ae-967034aa.jpeg?width=1200&disable=upscale&format=pjpg&auto=webp",
       description: "A memoir of the author's 1,100-mile solo hike on the Pacific Crest Trail following personal trauma and loss.",
       link: "https://www.gutenberg.org/ebooks/search/?query=wild&submit_search=Go%21"
     },
@@ -73,7 +73,7 @@ const BooksPage = () => {
       id: 9,
       title: "Seven Years in Tibet",
       author: "Heinrich Harrer",
-      image: "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3",
+      image: "https://m.media-amazon.com/images/M/MV5BNDZmMmRhZWYtMGM1MC00YWQyLTk2NWYtMjllOGNiYTRkZmExXkEyXkFqcGc@._V1_.jpg",
       description: "An adventurous memoir recounting the author's experiences in Tibet during WWII and his relationship with the young Dalai Lama.",
       link: "https://www.gutenberg.org/ebooks/search/?query=tibet&submit_search=Go%21"
     },
@@ -97,7 +97,7 @@ const BooksPage = () => {
       id: 12,
       title: "The Lost City of Z",
       author: "David Grann",
-      image: "https://images.unsplash.com/photo-1518845048752-d105299617b4?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvQ_k190hFsdutVpa38DIZqX6e2-00kJoHtw&s",
       description: "A non-fiction account of the author's journey into the Amazon to uncover the fate of explorer Percy Fawcett, who disappeared while searching for an ancient lost city.",
       link: "https://www.gutenberg.org/ebooks/search/?query=adventure&submit_search=Go%21"
     }
