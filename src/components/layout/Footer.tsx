@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Facebook, Instagram, Twitter, Youtube, Mail, MapPin, MessageCircle, Linkedin, X } from 'lucide-react';
+import { Facebook, Instagram, Twitter, Youtube, Mail, MapPin, MessageCircle, Linkedin, X, Search } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Footer = () => {
