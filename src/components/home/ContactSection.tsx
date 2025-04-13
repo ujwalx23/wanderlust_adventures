@@ -27,13 +27,10 @@ const ContactSection = () => {
                 href="https://mail.google.com/mail/?view=cm&fs=1&to=ujwalsingh164@gmail.com" 
                 className="text-blue-100 hover:text-india-saffron transition-colors"
               >
-                ujwalsingh164@gmail.com
               </a>
             </div>
             
-            
-          
-          <Link to="/contact">
+            <Link to="/contact">
             <Button 
               className="bg-india-green hover:bg-india-marigold text-white font-medium px-8 py-6 h-auto text-lg"
             >
@@ -42,7 +39,7 @@ const ContactSection = () => {
           </Link>
           
           <p className="text-blue-200 text-sm mt-6">
-            We'll get back to you within 24 hours
+            We'll get back to you within 48 hours 💕
           </p>
         </div>
       </div>
