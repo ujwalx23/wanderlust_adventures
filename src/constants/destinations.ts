@@ -34,7 +34,7 @@ export const destinations: Destination[] = [
     howToReach: "Agra is well-connected by air, train and road. The nearest airport is Agra Airport, about 10 km from the Taj Mahal. You can also take a train to Agra Cantt Railway Station or drive from Delhi (230 km).",
     latitude: 27.1751,
     longitude: 78.0421,
-    suitableFor: "All"
+    suitableFor: "Couple"
   },
   {
     id: "2",
@@ -52,7 +52,7 @@ export const destinations: Destination[] = [
     howToReach: "Varanasi is accessible by air (Lal Bahadur Shastri Airport), train (Varanasi Junction), and road. Several domestic flights connect Varanasi to major Indian cities.",
     latitude: 25.3176,
     longitude: 83.0062,
-    suitableFor: "All"
+    suitableFor: "Family"
   },
   {
     id: "3",
