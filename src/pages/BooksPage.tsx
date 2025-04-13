@@ -7,11 +7,11 @@ const BooksPage = () => {
   const books = [
     {
       id: 1,
-      title: "Vagabonding: An Uncommon Guide to the Art of Long-Term World Travel",
-      author: "Rolf Potts",
-      image: "https://images.unsplash.com/photo-1589829085413-56de8ae18c73?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3",
-      description: "A practical and philosophical guide to long-term world travel. Perfect for those looking to take an extended break from normal life to explore the world.",
-      link: "https://www.gutenberg.org/ebooks/search/?query=travel&submit_search=Go%21"
+      title: "The Time Machine",
+      author: "H.G. Wells",
+      image: "https://rukminim2.flixcart.com/image/850/1000/kqjtd3k0/book/b/w/b/the-time-machine-original-imag4gup6yafwyjb.jpeg?q=90&crop=false",
+      description: "A Victorian inventor travels far into the future using a time machine.There, he discovers a divided world and unsettling truths about humanity’s fate.",
+      link: "https://www.gutenberg.org/cache/epub/35/pg35-images.html"
     },
     {
       id: 2,
