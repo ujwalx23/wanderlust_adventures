@@ -18,7 +18,7 @@ const DownloadPage = () => {
   const [isOpen, setIsOpen] = useState(false);
   
   const handleDownload = () => {
-    window.open("https://drive.google.com/file/d/1F_fFpQHujUeM5s2vM4OHnlvIXu8gKu4S/view?usp=sharing", "_blank");
+    window.open("https://drive.google.com/file/d/1MVvUsLDiI96mr3b-fnTytaJ9iShFA8py/view?usp=drive_link");
     setIsOpen(false);
   };
   
