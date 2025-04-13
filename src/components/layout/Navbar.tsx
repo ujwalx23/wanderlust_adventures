@@ -46,17 +46,16 @@ const Navbar = () => {
                   <SheetContent side="right" className="w-[85%] sm:w-[385px]">
                     <nav className="flex flex-col space-y-4 mt-6">
                       <Link to="/" className="text-lg font-medium hover:text-india-saffron">Home</Link>
-                      <Link to="/featured" className="text-lg font-medium hover:text-india-saffron">Featured</Link>
                       <Link to="/about" className="text-lg font-medium hover:text-india-saffron">About</Link>
+                      <Link to="/featured" className="text-lg font-medium hover:text-india-saffron">Featured</Link>
                       <Link to="/books" className="text-lg font-medium hover:text-india-saffron">Books</Link>
                       <Link to="/blog" className="text-lg font-medium hover:text-india-saffron">Blog</Link>
                       <Link to="/travel-quiz" className="text-lg font-medium hover:text-india-saffron">Quiz</Link>
                       <Link to="/games" className="text-lg font-medium hover:text-india-saffron">Games</Link>
                       <Link to="/music" className="text-lg font-medium hover:text-india-saffron">Music</Link>
-                      <Link to="/movies" className="text-lg font-medium hover:text-india-saffron">Movies</Link>
-                      <Link to="/gallery" className="text-lg font-medium hover:text-india-saffron">Gallery</Link>
                       <Link to="/download" className="text-lg font-medium hover:text-india-saffron">Download PDF</Link>
                       <Link to="/faq" className="text-lg font-medium hover:text-india-saffron">FAQ</Link>
+                      <Link to="/gallery" className="text-lg font-medium hover:text-india-saffron">Gallery</Link>
                       <Link to="/contact" className="text-lg font-medium hover:text-india-saffron">Contact</Link>
                     </nav>
                   </SheetContent>
@@ -67,17 +66,16 @@ const Navbar = () => {
             <div className="flex items-center space-x-8">
               <nav className="flex items-center space-x-6">
                 <Link to="/" className="font-medium text-gray-700 hover:text-india-saffron">Home</Link>
-                <Link to="/featured" className="font-medium text-gray-700 hover:text-india-saffron">Featured</Link>
                 <Link to="/about" className="font-medium text-gray-700 hover:text-india-saffron">About</Link>
+                <Link to="/featured" className="font-medium text-gray-700 hover:text-india-saffron">Featured</Link>
                 <Link to="/books" className="font-medium text-gray-700 hover:text-india-saffron">Books</Link>
                 <Link to="/blog" className="font-medium text-gray-700 hover:text-india-saffron">Blog</Link>
                 <Link to="/travel-quiz" className="font-medium text-gray-700 hover:text-india-saffron">Quiz</Link>
                 <Link to="/games" className="font-medium text-gray-700 hover:text-india-saffron">Games</Link>
                 <Link to="/music" className="font-medium text-gray-700 hover:text-india-saffron">Music</Link>
-                <Link to="/movies" className="font-medium text-gray-700 hover:text-india-saffron">Movies</Link>
-                <Link to="/gallery" className="font-medium text-gray-700 hover:text-india-saffron">Gallery</Link>
                 <Link to="/download" className="font-medium text-gray-700 hover:text-india-saffron">Download PDF</Link>
                 <Link to="/faq" className="font-medium text-gray-700 hover:text-india-saffron">FAQ</Link>
+                <Link to="/gallery" className="font-medium text-gray-700 hover:text-india-saffron">Gallery</Link>
                 <Link to="/contact" className="font-medium text-gray-700 hover:text-india-saffron">Contact</Link>
               </nav>
               <div className="flex items-center space-x-2">
