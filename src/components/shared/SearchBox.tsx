@@ -23,7 +23,7 @@ interface SearchBoxProps {
   className?: string;
 }
 
-// Mock blog posts for searching
+// Comprehensive collection of content for searching
 const blogPosts = [
   {
     id: "1",
@@ -37,9 +37,21 @@ const blogPosts = [
     excerpt: "Explore the vibrant street food scene of North India",
     image: "https://images.unsplash.com/photo-1517244683847-7456b63c5969?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW5kaWFuJTIwZm9vZHxlbnwwfHwwfHx8MA%3D",
   },
+  {
+    id: "3",
+    title: "Monsoon Magic: Best Places to Visit During Rainy Season",
+    excerpt: "Experience the beauty of India during the monsoon season",
+    image: "https://images.unsplash.com/photo-1536195892759-c8a3c8e1945e?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3",
+  },
+  {
+    id: "4",
+    title: "Sacred Rivers of India: A Spiritual Journey",
+    excerpt: "Explore the holy rivers that have shaped India's cultural landscape",
+    image: "https://images.unsplash.com/photo-1600100882863-5a1a6b081f49?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3",
+  },
 ];
 
-// Mock gallery images for searching
+// Expanded gallery items for searching
 const galleryItems = [
   {
     id: "1",
@@ -53,9 +65,21 @@ const galleryItems = [
     category: "Beaches",
     image: "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z29hJTIwYmVhY2h8ZW58MHx8MHx8fDA%3D",
   },
+  {
+    id: "3",
+    title: "Varanasi Ghats",
+    category: "Spiritual",
+    image: "https://images.unsplash.com/photo-1561361058-c24daad92558?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3",
+  },
+  {
+    id: "4",
+    title: "Spice Market in Kerala",
+    category: "Culture",
+    image: "https://images.unsplash.com/photo-1625294047464-fa12baa068a7?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3",
+  },
 ];
 
-// Mock songs for searching
+// Expanded list of songs for searching
 const songItems = [
   {
     id: "1",
@@ -71,9 +95,30 @@ const songItems = [
     album: "Dil Se",
     image: "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3",
   },
+  {
+    id: "3",
+    title: "Kabira",
+    artist: "Arijit Singh",
+    album: "Yeh Jawaani Hai Deewani",
+    image: "https://images.unsplash.com/photo-1528283648649-33347faa5d9e?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3",
+  },
+  {
+    id: "4",
+    title: "Tum Hi Ho",
+    artist: "Arijit Singh",
+    album: "Aashiqui 2",
+    image: "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3",
+  },
+  {
+    id: "5",
+    title: "Raabta",
+    artist: "Pritam, Arijit Singh",
+    album: "Agent Vinod",
+    image: "https://images.unsplash.com/photo-1458560871784-56d23406c091?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3",
+  },
 ];
 
-// Mock movies for searching
+// Expanded list of movies for searching
 const movieItems = [
   {
     id: "1",
@@ -87,9 +132,27 @@ const movieItems = [
     director: "Rajkumar Hirani",
     image: "https://images.unsplash.com/photo-1485846234645-a62644f84728?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3",
   },
+  {
+    id: "3",
+    title: "Dilwale Dulhania Le Jayenge",
+    director: "Aditya Chopra",
+    image: "https://images.unsplash.com/photo-1518676590629-3dcbd9c5a5c9?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3",
+  },
+  {
+    id: "4",
+    title: "Dangal",
+    director: "Nitesh Tiwari",
+    image: "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3",
+  },
+  {
+    id: "5",
+    title: "PK",
+    director: "Rajkumar Hirani",
+    image: "https://images.unsplash.com/photo-1478720568477-152d9b164e26?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3",
+  },
 ];
 
-// Mock books for searching
+// Expanded list of books for searching
 const bookItems = [
   {
     id: "1",
@@ -102,6 +165,24 @@ const bookItems = [
     title: "A Suitable Boy",
     author: "Vikram Seth",
     image: "https://images.unsplash.com/photo-1512820790803-83ca734da794?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3",
+  },
+  {
+    id: "3",
+    title: "The God of Small Things",
+    author: "Arundhati Roy",
+    image: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3",
+  },
+  {
+    id: "4",
+    title: "Midnight's Children",
+    author: "Salman Rushdie",
+    image: "https://images.unsplash.com/photo-1495446815901-a7297e633e8d?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3",
+  },
+  {
+    id: "5",
+    title: "The Namesake",
+    author: "Jhumpa Lahiri",
+    image: "https://images.unsplash.com/photo-1543002588-bfa74002ed7e?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3",
   },
 ];
 
@@ -320,9 +401,9 @@ const SearchBox: React.FC<SearchBoxProps> = ({ onClose, className }) => {
         )}
       </div>
 
-      {/* Search Results */}
+      {/* Search Results - Increased result box size */}
       {showResults && searchResults.length > 0 && (
-        <div className="absolute top-full left-0 right-0 mt-2 bg-white rounded-md shadow-lg z-50 max-h-[60vh] overflow-hidden flex flex-col">
+        <div className="absolute top-full left-0 right-0 mt-2 bg-white rounded-md shadow-lg z-50 max-h-[70vh] overflow-hidden flex flex-col">
           {/* Tabs */}
           <div className="flex items-center border-b border-gray-100 px-2 overflow-x-auto">
             <Button 
@@ -413,23 +494,23 @@ const SearchBox: React.FC<SearchBoxProps> = ({ onClose, className }) => {
           </div>
           
           {/* Results List - increased visible results without scrolling */}
-          <div className="overflow-y-auto max-h-[400px]">
+          <div className="overflow-y-auto max-h-[500px]">
             {filteredResults.length > 0 ? (
               <div className="p-2">
                 {filteredResults.map(result => (
                   <div 
                     key={`${result.type}-${result.id}`}
-                    className="flex items-center p-2 cursor-pointer hover:bg-gray-50 rounded-md"
+                    className="flex items-center p-3 cursor-pointer hover:bg-gray-50 rounded-md"
                     onClick={() => handleSelectResult(result)}
                   >
                     {result.image ? (
                       <img 
                         src={result.image} 
                         alt={result.title}
-                        className="w-12 h-12 object-cover rounded-md mr-3"
+                        className="w-16 h-16 object-cover rounded-md mr-4"
                       />
                     ) : (
-                      <div className="w-12 h-12 bg-gray-100 rounded-md flex items-center justify-center mr-3">
+                      <div className="w-16 h-16 bg-gray-100 rounded-md flex items-center justify-center mr-4">
                         {getTypeIcon(result.type)}
                       </div>
                     )}
@@ -440,9 +521,9 @@ const SearchBox: React.FC<SearchBoxProps> = ({ onClose, className }) => {
                           {result.type.charAt(0).toUpperCase() + result.type.slice(1)}
                         </span>
                       </div>
-                      <p className="font-medium text-gray-800">{result.title}</p>
+                      <p className="font-medium text-gray-800 text-lg">{result.title}</p>
                       {result.subtitle && (
-                        <p className="text-sm text-gray-500 line-clamp-1">{result.subtitle}</p>
+                        <p className="text-sm text-gray-500 line-clamp-2">{result.subtitle}</p>
                       )}
                     </div>
                   </div>

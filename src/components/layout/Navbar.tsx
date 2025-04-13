@@ -57,6 +57,7 @@ const Navbar = () => {
                       <Link to="/gallery" className="text-lg font-medium hover:text-india-saffron">Gallery</Link>
                       <Link to="/download" className="text-lg font-medium hover:text-india-saffron">Download PDF</Link>
                       <Link to="/faq" className="text-lg font-medium hover:text-india-saffron">FAQ</Link>
+                      <Link to="/contact" className="text-lg font-medium hover:text-india-saffron">Contact</Link>
                     </nav>
                   </SheetContent>
                 </Sheet>
@@ -77,6 +78,7 @@ const Navbar = () => {
                 <Link to="/gallery" className="font-medium text-gray-700 hover:text-india-saffron">Gallery</Link>
                 <Link to="/download" className="font-medium text-gray-700 hover:text-india-saffron">Download PDF</Link>
                 <Link to="/faq" className="font-medium text-gray-700 hover:text-india-saffron">FAQ</Link>
+                <Link to="/contact" className="font-medium text-gray-700 hover:text-india-saffron">Contact</Link>
               </nav>
               <div className="flex items-center space-x-2">
                 <Button 

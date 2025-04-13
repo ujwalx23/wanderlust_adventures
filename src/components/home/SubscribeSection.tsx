@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { useToast } from '@/hooks/use-toast';
+import { Link } from 'react-router-dom';
 
 const SubscribeSection = () => {
   const [email, setEmail] = useState('');
@@ -84,9 +85,14 @@ const SubscribeSection = () => {
             </Button>
           </form>
           
-          <p className="text-blue-200 text-sm mt-4">
-            We respect your privacy. Unsubscribe at any time.
-          </p>
+          <div className="mt-6">
+            <p className="text-blue-200 text-sm mb-2">
+              We respect your privacy. Unsubscribe at any time.
+            </p>
+            <p className="text-blue-200 text-sm">
+              Have questions? <Link to="/contact" className="text-india-saffron hover:text-india-marigold underline">Contact us</Link> for assistance.
+            </p>
+          </div>
         </div>
       </div>
     </section>

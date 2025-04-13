@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Facebook, Instagram, Twitter, Youtube, Mail, MapPin, MessageCircle, Linkedin, X, Search } from 'lucide-react';
+import { Twitter, Youtube, Mail, MapPin, MessageCircle, Linkedin, X, Search } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Footer = () => {
@@ -57,7 +57,7 @@ const Footer = () => {
       } else if (lowerCaseMessage.includes('books') || lowerCaseMessage.includes('read')) {
         response = "Check out our book recommendations page for great travel and adventure related books!";
       } else if (lowerCaseMessage.includes('contact') || lowerCaseMessage.includes('reach')) {
-        response = "You can contact us at ujwalsingh164@gmail.com.";
+        response = "You can contact us through our contact page. Visit the Contact Us section to submit your inquiry.";
       } else if (lowerCaseMessage.includes('about')) {
         response = "Wanderlust Adventures is your ultimate guide to exploring India's diverse landscapes and rich cultural heritage.";
       }
@@ -94,12 +94,6 @@ const Footer = () => {
               Discover the rich cultural heritage and breathtaking landscapes of incredible India with our curated travel experiences.
             </p>
             <div className="flex space-x-4">
-              <a href="https://www.linkedin.com/in/ujwalsingh23" target="_blank" rel="noopener noreferrer" className="text-white hover:text-india-saffron transition-colors">
-                <Facebook size={20} />
-              </a>
-              <a href="https://www.linkedin.com/in/ujwalsingh23" target="_blank" rel="noopener noreferrer" className="text-white hover:text-india-saffron transition-colors">
-                <Instagram size={20} />
-              </a>
               <a href="https://www.linkedin.com/in/ujwalsingh23" target="_blank" rel="noopener noreferrer" className="text-white hover:text-india-saffron transition-colors">
                 <Twitter size={20} />
               </a>
@@ -148,6 +142,9 @@ const Footer = () => {
               </li>
               <li>
                 <Link to="/faq" className="text-gray-300 hover:text-india-saffron transition-colors">FAQs</Link>
+              </li>
+              <li>
+                <Link to="/contact" className="text-gray-300 hover:text-india-saffron transition-colors">Contact Us</Link>
               </li>
             </ul>
           </div>
@@ -199,6 +196,12 @@ const Footer = () => {
                   <Linkedin className="mr-2 flex-shrink-0" size={18} />
                   Connect on LinkedIn
                 </a>
+              </li>
+              <li className="flex items-center mt-4">
+                <Link to="/contact" className="flex items-center text-gray-300 hover:text-india-saffron transition-colors">
+                  <Mail className="mr-2 flex-shrink-0" size={18} />
+                  Contact Form
+                </Link>
               </li>
             </ul>
           </div>
