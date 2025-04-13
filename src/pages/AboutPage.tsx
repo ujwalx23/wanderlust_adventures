@@ -27,8 +27,7 @@ const AboutPage = () => {
                 </Link>
               </div>
               <div className="h-60 md:h-auto bg-white flex items-center justify-center p-4">
-               <img src="https://github.com/morningstarluci23/wanderlust-adventures-matt/blob/main/public/lovable-uploads/WA.jpg?raw=true" alt="Wanderlust Adventures Image">
-
+               <img src="/lovable-uploads/8b1902a9-0732-4915-b409-5a6f610d3a26.png" 
                   alt="Wanderlust Logo" 
                   className="max-h-full w-auto object-contain"
                 />
