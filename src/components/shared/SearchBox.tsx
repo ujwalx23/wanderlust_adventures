@@ -7,7 +7,7 @@ import { Button } from '@/components/ui/button';
 import { destinations, faqs } from '@/constants/destinations';
 
 // Define search result types
-type SearchResultType = 'destination' | 'faq' | 'blog' | 'gallery' | 'music' | 'movie' | 'book';
+type SearchResultType = 'destination' | 'faq' | 'blog' | 'gallery' | 'music' | 'book';
 
 interface SearchResult {
   id: string;
