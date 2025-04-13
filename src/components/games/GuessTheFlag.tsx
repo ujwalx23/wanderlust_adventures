@@ -16,42 +16,42 @@ const GuessTheFlag = () => {
   // Sample questions - in a real app, we'd have more and better images
   const questions = [
     {
-      flag: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEDbtRz0cZVLaaG7c7sk7M_nzFEqLTfZe3gQ&s",
-      country: "Brazil",
-      options: ["Brazil", "Pakistan", "Bangladesh", "Argentina"]
+      flag: "https://img.freepik.com/premium-photo/republic-south-africa-national-flag-3d-illustration-close-up-view_509581-390.jpg",
+      country: "South Africa",
+      options: ["South Africa", "Tanzania", "Madagascar", "Argentina"]
     },
     {
-      flag: "https://placehold.co/300x200/00247D/FFFFFF?text=Japanese+Flag",
+      flag: "https://upload.wikimedia.org/wikipedia/en/thumb/9/9e/Flag_of_Japan.svg/1200px-Flag_of_Japan.svg.png",
       country: "Japan",
       options: ["China", "Japan", "South Korea", "Vietnam"]
     },
     {
-      flag: "https://placehold.co/300x200/009F3D/FFFFFF?text=Italian+Flag",
+      flag: "https://upload.wikimedia.org/wikipedia/en/thumb/0/03/Flag_of_Italy.svg/330px-Flag_of_Italy.svg.png",
       country: "Italy",
       options: ["France", "Italy", "Spain", "Germany"]
     },
     {
-      flag: "https://placehold.co/300x200/003580/FFFFFF?text=Brazilian+Flag",
+      flag: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEDbtRz0cZVLaaG7c7sk7M_nzFEqLTfZe3gQ&s",
       country: "Brazil",
       options: ["Argentina", "Brazil", "Colombia", "Peru"]
     },
     {
-      flag: "https://placehold.co/300x200/EF2B2D/FFFFFF?text=Canadian+Flag",
+      flag: "https://www.thoughtco.com/thmb/ecXwD0oYdJEzLh6da-ouWm5HsqY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/national-flag-canada-lge2-56a0e57f5f9b58eba4b4f422.jpg",
       country: "Canada",
       options: ["USA", "Canada", "Russia", "Australia"]
     },
     {
-      flag: "https://placehold.co/300x200/009E60/FFFFFF?text=Egyptian+Flag",
+      flag: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBPu8fbYRu7NK3KqXxS2mGuELUOZKKi1HE9g&s",
       country: "Egypt",
       options: ["Egypt", "Algeria", "Morocco", "Tunisia"]
     },
     {
-      flag: "https://placehold.co/300x200/002654/FFFFFF?text=Thai+Flag",
+      flag: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZbeF0JhXCRRuNz93BW9MUEgFnVkzdmQZfnQ&s",
       country: "Thailand",
       options: ["Malaysia", "Indonesia", "Singapore", "Thailand"]
     },
     {
-      flag: "https://placehold.co/300x200/c60b1e/FFFFFF?text=Turkish+Flag",
+      flag: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFATPIlLk_HfI-OTWotJALFMXl8KJVQzn9gw&s",
       country: "Turkey",
       options: ["Greece", "Turkey", "Cyprus", "Lebanon"]
     }
