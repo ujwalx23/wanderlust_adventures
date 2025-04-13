@@ -15,10 +15,10 @@ const AboutPage = () => {
               <div className="p-8 md:p-12 flex flex-col justify-center">
                 <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">About Wanderlust Adventures</h1>
                 <p className="text-white/80 text-lg mb-6">
-                  Driven by passion, I’m dedicated to helping travelers uncover the incredible beauty and rich cultural heritage of India.
+                Driven by passion, I’m dedicated to helping travelers uncover the incredible beauty and rich cultural heritage of India
                 </p>
                 <p className="text-white/80 mb-8">
-                  My mission is clear: to connect travelers with authentic experiences that highlight the best of India’s diverse landscapes, vibrant cultures, and timeless traditions.
+                 My mission is clear: to connect travelers with authentic experiences that highlight the best of India’s diverse landscapes, vibrant cultures, and timeless traditions
                 </p>
                 <Link to="/contact">
                   <Button className="bg-white text-india-blue hover:bg-white/90">
@@ -38,16 +38,16 @@ const AboutPage = () => {
           
           {/* Our Story */}
           <div className="max-w-4xl mx-auto mb-16">
-            <h2 className="text-2xl md:text-3xl font-bold text-center text-india-blue mb-8">My Story</h2>
+            <h2 className="text-2xl md:text-3xl font-bold text-center text-india-blue mb-8">Our Story</h2>
             <div className="prose prose-lg max-w-none text-gray-700">
               <p>
                 Wanderlust Adventures was born from a deep love for India's diverse landscapes and rich cultural tapestry. What began as a passion project has evolved into a dedicated travel advisory service with a mission to showcase the authentic side of India to travelers from around the world.
               </p>
               <p>
-                Unlike traditional travel agencies, I don't book your tickets or accommodations. Instead, I focus on what I do best: providing expert recommendations, detailed destination insights, and personalized travel advice to help you plan the perfect Indian adventure.
+                Unlike traditional travel agencies, we don't book your tickets or accommodations. Instead, we focus on what we do best: providing expert recommendations, detailed destination insights, and personalized travel advice to help you plan the perfect Indian adventure.
               </p>
               <p>
-                Having personally explored every region I recommend, from the snow-capped Himalayas to the tropical beaches of Goa, from bustling metropolises to serene villages, I offer genuine advice tailored to your preferences and travel style.
+                Our team of travel enthusiasts has personally explored every region we recommend, from the snow-capped Himalayas to the tropical beaches of Goa, from bustling metropolises to serene villages. This firsthand experience allows us to offer genuine advice tailored to your preferences and travel style.
               </p>
             </div>
           </div>
@@ -55,7 +55,7 @@ const AboutPage = () => {
           {/* Meet the Founder */}
           <div className="bg-white rounded-xl shadow-sm p-8 mb-16">
             <div className="max-w-4xl mx-auto">
-              <h2 className="text-2xl md:text-3xl font-bold text-center text-india-blue mb-8">Meet the Founder</h2>
+              <h2 className="text-2xl md:text-3xl font-bold text-center text-india-blue mb-8">Meet Our Founder</h2>
               
               <div className="flex flex-col md:flex-row items-center gap-8">
                 <div className="md:w-1/3">
@@ -73,7 +73,7 @@ const AboutPage = () => {
                   <p className="text-gray-600 mb-4">Founder & Nature Enthusiast</p>
                   
                   <p className="text-gray-700 mb-6">
-                    With over a decade of exploring India's diverse landscapes and cultures, I founded Wanderlust Adventures with a vision to help travelers discover the authentic essence of India. My expertise in Indian tourism and passion for sustainable travel has shaped the company's commitment to providing authentic travel experiences.
+                    With over a decade of exploring India's diverse landscapes and cultures, Ujwal founded Wanderlust Adventures with a vision to help travelers discover the authentic essence of India. His expertise in Indian tourism and passion for sustainable travel has shaped the company's commitment to providing authentic travel experiences.
                   </p>
                   
                   <div className="flex justify-center md:justify-start space-x-4">
@@ -99,9 +99,9 @@ const AboutPage = () => {
             </div>
           </div>
           
-          {/* My Approach */}
+          {/* Our Approach */}
           <div className="max-w-4xl mx-auto mb-16">
-            <h2 className="text-2xl md:text-3xl font-bold text-center text-india-blue mb-8">My Approach</h2>
+            <h2 className="text-2xl md:text-3xl font-bold text-center text-india-blue mb-8">Our Approach</h2>
             
             <div className="grid md:grid-cols-3 gap-8">
               <div className="bg-white p-6 rounded-lg shadow-sm text-center">
@@ -113,7 +113,7 @@ const AboutPage = () => {
                 </div>
                 <h3 className="text-lg font-semibold mb-2">Local Expertise</h3>
                 <p className="text-gray-600">
-                  I provide insights and recommendations based on authentic local knowledge and firsthand experience.
+                  We provide insights and recommendations based on authentic local knowledge and firsthand experience.
                 </p>
               </div>
               
@@ -127,7 +127,7 @@ const AboutPage = () => {
                 </div>
                 <h3 className="text-lg font-semibold mb-2">Cultural Immersion</h3>
                 <p className="text-gray-600">
-                  I emphasize authentic cultural experiences that connect travelers with local communities and traditions.
+                  We emphasize authentic cultural experiences that connect travelers with local communities and traditions.
                 </p>
               </div>
               
@@ -141,17 +141,17 @@ const AboutPage = () => {
                 </div>
                 <h3 className="text-lg font-semibold mb-2">Personalized Guidance</h3>
                 <p className="text-gray-600">
-                  I understand that each traveler is unique, so I tailor my recommendations to suit individual preferences.
+                  We understand that each traveler is unique, so we tailor our recommendations to suit individual preferences.
                 </p>
               </div>
             </div>
           </div>
           
-          {/* Connect With Me */}
+          {/* Connect With Us */}
           <div className="bg-india-saffron/10 rounded-xl p-8 text-center">
-            <h2 className="text-2xl md:text-3xl font-bold text-india-blue mb-4">Connect With Me</h2>
+            <h2 className="text-2xl md:text-3xl font-bold text-india-blue mb-4">Connect With Us</h2>
             <p className="text-gray-700 mb-8 max-w-2xl mx-auto">
-              Have questions or want personalized travel suggestions? I'd love to hear from you! Connect with me on social media or reach out directly.
+              Have questions or want personalized travel suggestions? We'd love to hear from you! Connect with us on social media or reach out directly.
             </p>
             
             <div className="flex flex-wrap justify-center gap-4">
@@ -169,7 +169,7 @@ const AboutPage = () => {
                 className="inline-flex items-center px-6 py-3 bg-white rounded-md shadow-sm hover:bg-india-saffron hover:text-white transition-colors"
               >
                 <Mail size={20} className="mr-2" />
-                Email Me
+                Email Us
               </a>
             </div>
           </div>
