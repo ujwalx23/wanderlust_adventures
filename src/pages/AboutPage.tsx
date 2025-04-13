@@ -27,7 +27,7 @@ const AboutPage = () => {
                 </Link>
               </div>
               <div className="h-60 md:h-auto bg-white flex items-center justify-center p-4">
-               <img src="/lovable-uploads/8b1902a9-0732-4915-b409-5a6f610d3a26.png" 
+               <img src="/lovable-uploads/6197a3de-efa5-4123-a99f-fc3bbc2e0d2f.png" 
                   alt="Wanderlust Logo" 
                   className="max-h-full w-auto object-contain"
                 />
@@ -46,8 +46,7 @@ const AboutPage = () => {
                 Unlike traditional travel agencies, we don't book your tickets or accommodations. Instead, we focus on what we do best: providing expert recommendations, detailed destination insights, and personalized travel advice to help you plan the perfect Indian adventure.
               </p>
               <p>
-                Our team of travel enthusiasts has personally explored every region we recommend, from the snow-capped Himalayas to the tropical beaches of Goa, from bustling metropolises to serene villages. This firsthand experience allows us to offer genuine advice tailored to your preferences and travel style.
-              </p>
+                I provide genuine advice and recommendations tailored to your preferences and travel style, highlighting the best of India's diverse landscapes and cultures.
             </div>
           </div>
           
