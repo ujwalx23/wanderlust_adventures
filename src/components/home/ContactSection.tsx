@@ -17,11 +17,11 @@ const ContactSection = () => {
 
           <div className="grid grid-cols-1 gap-6 mb-8">
             {/* Email */}
-            <div className="bg-white/10 rounded-lg p-6 text-center">
-              <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-india-white text-black mb-4">
-                <Mail className="h-6 w-6" />
+            <div className="bg-white/10 rounded-lg p-4 w-64 mx-auto text-center">
+              <div className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-india-white text-black mb-2">
+                <Mail className="h-5 w-5" />
               </div>
-              <h3 className="text-white font-medium mb-2">Email Me</h3>
+              <h3 className="text-white font-medium mb-1">Email Me</h3>
               <a 
                 href="https://mail.google.com/mail/?view=cm&fs=1&to=ujwalsingh164@gmail.com" 
                 className="text-blue-100 hover:text-india-saffron transition-colors"
@@ -33,7 +33,7 @@ const ContactSection = () => {
 
           <Link to="/contact">
             <Button 
-              className="bg-india-green hover:bg-india-light green text-white font-medium px-8 py-6 h-auto text-lg"
+              className="bg-india-green hover:bg-india-light-green text-white font-medium px-8 py-6 h-auto text-lg"
             >
               Contact  
             </Button>
@@ -49,3 +49,4 @@ const ContactSection = () => {
 };
 
 export default ContactSection;
+
