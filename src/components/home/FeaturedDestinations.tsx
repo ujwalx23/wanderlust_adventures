@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import DestinationCard from '@/components/featured/DestinationCard';
@@ -15,7 +14,7 @@ const FeaturedDestinations: React.FC<FeaturedDestinationsProps> = ({
   destinations, 
   limit = 3 
 }) => {
-  // Show limited destinations (3 on homepage, customizable via props)
+  // Limit destinations (default 3 for homepage, customizable via props)
   const featuredDestinations = destinations?.slice(0, limit) || [
     {
       id: '1',
@@ -24,7 +23,7 @@ const FeaturedDestinations: React.FC<FeaturedDestinationsProps> = ({
       image: 'https://cdn.pixabay.com/photo/2020/06/05/21/09/cultural-tourism-5264542_1280.jpg',
       description: 'Explore the iconic symbol of eternal love, a UNESCO World Heritage site and one of the Seven Wonders of the World.',
       suitableFor: 'Historical and Romantic',
-      category: 'Roamntic',
+      category: 'Romantic', // Corrected typo
       rating: 4.4,
       bestTimeToVisit: 'October to March',
     },
@@ -34,7 +33,7 @@ const FeaturedDestinations: React.FC<FeaturedDestinationsProps> = ({
       location: 'Varanasi',
       image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2Hsc_YmmRPFc8ger-NODvUMr0cFG8z8oSBg&s',
       description: 'Experience spiritual awakening at the ancient ghats along the sacred Ganges River with traditional evening ceremonies.',
-      suitableFor: 'Family(All)',
+      suitableFor: 'Family (All)',
       category: 'Spiritual',
       rating: 4.9,
       bestTimeToVisit: 'September to March',
@@ -44,7 +43,7 @@ const FeaturedDestinations: React.FC<FeaturedDestinationsProps> = ({
       name: 'Jaipur City Tour',
       location: 'Jaipur',
       image: 'https://assets.vogue.in/photos/5ce41ea8b803113d138f5cd2/16:9/w_1920,h_1080,c_limit/Jaipur-Travel-Shopping-Restaurants.jpg',
-      description: 'Discover the Pink City's majestic palaces, vibrant bazaars, and rich cultural heritage in the heart of Rajasthan.',
+      description: 'Discover the Pink City\'s majestic palaces, vibrant bazaars, and rich cultural heritage in the heart of Rajasthan.',
       suitableFor: 'All',
       category: 'Cultural',
       rating: 4.6,
