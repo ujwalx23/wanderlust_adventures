@@ -59,13 +59,13 @@ const galleryImages = [
   },
   {
     id: "9",
-    src: "https://images.unsplash.com/photo-1611242320536-f12d3541249b?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dmFyYW5hc2klMjByaXZlcnxlbnwwfHwwfHx8MA%3D",
+    src: "https://www.flamingotravels.net/_next/image?url=https%3A%2F%2Fimgcdn.flamingotravels.co.in%2FImages%2FCity%2FGanga-Aarti1.jpg&w=1920&q=90",
     caption: "Evening prayers by the Ganges, Varanasi",
     category: "People"
   },
   {
     id: "10",
-    src: "https://images.unsplash.com/photo-1477587458883-47145ed94245?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW5kaWFuJTIwd2VkZGluZ3xlbnwwfHwwfHx8MA%3D",
+    src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2tqEfW7rNdwfBCKeLQM2H6v5vzYojvyccOg&s",
     caption: "Traditional Indian wedding",
     category: "Festivals"
   },
@@ -83,37 +83,37 @@ const galleryImages = [
   },
   {
     id: "13",
-    src: "https://images.unsplash.com/photo-1573480813647-552e9b7b5394?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8ZWxlcGhhbnQlMjBpbmRpYXxlbnwwfHwwfHx8MA%3D",
+    src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSbPohF994Osb2uw3Ou83MGf_SHi5FqRqXog&s",
     caption: "Elephants at Periyar Wildlife Sanctuary",
     category: "Wildlife"
   },
   {
     id: "14",
-    src: "https://images.unsplash.com/photo-1514222788835-3a1a1d5b32f8?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW5kaWFuJTIwbWFya2V0fGVufDB8fDB8fHww",
+    src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmF6qoAuY7YuFcYfUZKtX-ZLLhwRgtQTUk1A&s",
     caption: "Colorful spice market",
     category: "Food"
   },
   {
     id: "15",
-    src: "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW5kaWFuJTIwb2xkJTIwd29tYW58ZW58MHx8MHx8fDA%3D",
-    caption: "Elderly woman in Rajasthan",
+    src: "https://img.etimg.com/thumb/msid-59822323,width-640,height-480,imgsize-437093,resizemode-4/jim-corbett-national-park-uttarakhand.jpg",
+    caption: "National park Tigers",
     category: "People"
   },
   {
     id: "16",
-    src: "https://images.unsplash.com/photo-1592985684811-6c0f98adb014?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8a29udGhpbWFsYXklMjB0ZW1wbGV8ZW58MHx8MHx8fDA%3D",
+    src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzDdtYHN1i97LlPYwkIoVDmR16rhs0fxHgcw&s",
     caption: "Ancient temple in Tamil Nadu",
     category: "Temples"
   },
   {
     id: "17",
-    src: "https://images.unsplash.com/photo-1470115636492-6d2b56f9146d?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YW5kYW1hbiUyMGJlYWNofGVufDB8fDB8fHww",
+    src: "https://media-cdn.tripadvisor.com/media/photo-s/13/ec/67/d4/crystal-clear-water-with.jpg",
     caption: "Crystal clear waters of Andaman Islands",
     category: "Beaches"
   },
   {
     id: "18",
-    src: "https://images.unsplash.com/photo-1590674899484-d5640e854abe?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aW5kaWFuJTIwZGl5YXxlbnwwfHwwfHx8MA%3D",
+    src: "https://www.jagranimages.com/images/newimg/09112023/09_11_2023-sdgg_31_23576554.jpg",
     caption: "Diwali celebrations with oil lamps",
     category: "Festivals"
   }
