@@ -23,25 +23,25 @@ const galleryImages = [
   },
   {
     id: "3",
-    src: "https://images.unsplash.com/photo-1589738576592-c0d0e2b029f6?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Z29sZGVuJTIwdGVtcGxlfGVufDB8fDB8fHww",
+    src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOIrDhhIsppPo920zIAA16jSLuU0NvXZ74kJb7LqUudTcGYrgc77-You4_IAk7bQSUJNg&usqp=CAU",
     caption: "Golden Temple, Amritsar",
     category: "Temples"
   },
   {
     id: "4",
-    src: "https://images.unsplash.com/photo-1598238536523-f1a806394705?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8aGltYWxheWFzfGVufDB8fDB8fHww",
+    src: "https://www.shutterstock.com/shutterstock/videos/1010566124/thumb/6.jpg?ip=x480",
     caption: "Majestic Himalayan peaks",
     category: "Mountains"
   },
   {
     id: "5",
-    src: "https://images.unsplash.com/photo-1598838073192-05c942ede858?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmVuZ2FsJTIwdGlnZXJ8ZW58MHx8MHx8fDA%3D",
-    caption: "Bengal Tiger at Ranthambore",
+    src: "https://cdn.britannica.com/20/189820-050-D650A54D/Red-Fort-Old-Delhi-India.jpg",
+    caption: "Red Fort",
     category: "Wildlife"
   },
   {
     id: "6",
-    src: "https://images.unsplash.com/photo-1517244683847-7456b63c5969?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW5kaWFuJTIwZm9vZHxlbnwwfHwwfHx8MA%3D",
+    src: "https://i.pinimg.com/736x/e8/d5/79/e8d57967fdd746057713d1f92009973e.jpg",
     caption: "Colorful Indian thali",
     category: "Food"
   },
