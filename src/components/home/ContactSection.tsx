@@ -19,38 +19,23 @@ const ContactSection = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
             <div className="bg-white/10 rounded-lg p-6 text-center">
-              <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-india-saffron text-white mb-4">
+              <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-india-white text-black mb-4">
                 <Mail className="h-6 w-6" />
               </div>
               <h3 className="text-white font-medium mb-2">Email Us</h3>
               <a 
-                href="mailto:ujwalsingh164@gmail.com" 
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=ujwalsingh164@gmail.com" 
                 className="text-blue-100 hover:text-india-saffron transition-colors"
               >
                 ujwalsingh164@gmail.com
               </a>
             </div>
             
-            <div className="bg-white/10 rounded-lg p-6 text-center">
-              <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-india-saffron text-white mb-4">
-                <Phone className="h-6 w-6" />
-              </div>
-              <h3 className="text-white font-medium mb-2">Call Us</h3>
-              <p className="text-blue-100">+91 98765 43210</p>
-            </div>
             
-            <div className="bg-white/10 rounded-lg p-6 text-center">
-              <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-india-saffron text-white mb-4">
-                <MapPin className="h-6 w-6" />
-              </div>
-              <h3 className="text-white font-medium mb-2">Visit Us</h3>
-              <p className="text-blue-100">42 Travel House, MG Road<br />Bangalore - 560001</p>
-            </div>
-          </div>
           
           <Link to="/contact">
             <Button 
-              className="bg-india-saffron hover:bg-india-marigold text-white font-medium px-8 py-6 h-auto text-lg"
+              className="bg-india-green hover:bg-india-marigold text-white font-medium px-8 py-6 h-auto text-lg"
             >
               Contact Us Now
             </Button>
