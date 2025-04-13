@@ -30,11 +30,11 @@ const MusicPage = () => {
       region: "Himalayas"
     },
     {
-      title: "Safarnama",
-      artist: "Lucky Ali (Tamasha)",
-      description: "A melodious track that beautifully narrates the journey of self-discovery through travel.",
-      youtubeUrl: "https://www.youtube.com/watch?v=zLv0XEIBdmM",
-      region: "Corsica, France"
+      title: "King in the North",
+      artist: "Ramin Djawadi ( Game of Thrones)",
+      description: "A melodious track of the king in the north coronation.",
+      youtubeUrl: "https://youtu.be/LGFX4Nccq9U?si=Uf4seCGq1UA_Qj7c",
+      region: "Winterfell,Westoros"
     },
     {
       title: "Khaabon Ke Parinday",
