@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { Mail, MapPin, Phone } from 'lucide-react';
+import { Mail } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const ContactSection = () => {
@@ -12,11 +12,10 @@ const ContactSection = () => {
             Contact Me
           </h2>
           <p className="text-blue-100 mb-8">
-            Have questions about your travel plans? Want to suggest improvements, share feedback, or report issues?
-            I’m here to help you plan your perfect Indian adventure!
+            Have questions, suggestions, or feedback? I’d love to hear from you and help you explore more of Incredible India!
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+          <div className="grid grid-cols-1 gap-6 mb-8">
             {/* Email */}
             <div className="bg-white/10 rounded-lg p-6 text-center">
               <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-india-white text-black mb-4">
@@ -29,24 +28,6 @@ const ContactSection = () => {
               >
                 ujwalsingh164@gmail.com
               </a>
-            </div>
-
-            {/* Phone */}
-            <div className="bg-white/10 rounded-lg p-6 text-center">
-              <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-india-white text-black mb-4">
-                <Phone className="h-6 w-6" />
-              </div>
-              <h3 className="text-white font-medium mb-2">Call Me</h3>
-              <p className="text-blue-100">+91 12345 67890</p>
-            </div>
-
-            {/* Location */}
-            <div className="bg-white/10 rounded-lg p-6 text-center">
-              <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-india-white text-black mb-4">
-                <MapPin className="h-6 w-6" />
-              </div>
-              <h3 className="text-white font-medium mb-2">Location</h3>
-              <p className="text-blue-100">India (Remote)</p>
             </div>
           </div>
 
