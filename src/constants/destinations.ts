@@ -326,7 +326,7 @@ export const destinations: Destination[] = [
     name: "Kanyakumari",
     location: "Tamil Nadu",
     description: "Stand at the southernmost tip of mainland India where three oceans meet, and witness spectacular sunrise and sunset views.",
-    image: "https://hikerwolf.com/wp-content/uploads/2020/09/vivekananda-rock-memorial.jpg.webp,
+    image: "https://hikerwolf.com/wp-content/uploads/2020/09/vivekananda-rock-memorial.jpg.webp",
     price: "₹1,800",
     rating: 4.5,
     category: "Cultural",
