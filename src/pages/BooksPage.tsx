@@ -9,25 +9,25 @@ const BooksPage = () => {
       id: 1,
       title: "The Time Machine",
       author: "H.G. Wells",
-      image: "https://rukminim2.flixcart.com/image/850/1000/kqjtd3k0/book/b/w/b/the-time-machine-original-imag4gup6yafwyjb.jpeg?q=90&crop=false",
+      image: "https://www.ombooksinternational.com/wp-content/uploads/2023/11/9789384225445_1.jpg",
       description: "A Victorian inventor travels far into the future using a time machine.There, he discovers a divided world and unsettling truths about humanity’s fate.",
       link: "https://www.gutenberg.org/cache/epub/35/pg35-images.html"
     },
     {
       id: 2,
-      title: "The Alchemist",
-      author: "Paulo Coelho",
-      image: "https://images.unsplash.com/photo-1544947950-fa07a98d237f?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3",
-      description: "A philosophical novel about following your dreams and finding your destiny. The journey of a shepherd boy who travels from Spain to Egypt in search of treasure.",
-      link: "https://www.gutenberg.org/ebooks/search/?query=alchemist&submit_search=Go%21"
+      title: "Around the World in Eighty Days",
+      author: "Jules Verne",
+      image: "https://i.ytimg.com/vi/40qFo2lKn0g/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDHM9ieKjzBticcWtAl2QTcNg3CNw",
+      description: "Phileas Fogg, a wealthy and precise Englishman, bets that he can circumnavigate the globe in 80 days. With his resourceful servant Passepartout, he faces unexpected challenges and thrilling adventures in a race against time.",
+      link: "https://www.gutenberg.org/cache/epub/103/pg103-images.html"
     },
     {
       id: 3,
-      title: "Eat, Pray, Love",
-      author: "Elizabeth Gilbert",
-      image: "https://images.unsplash.com/photo-1518112166137-85f9979a43aa?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3",
-      description: "A memoir of the author's trip around the world after her divorce. She spent time in Italy, India, and Indonesia, discovering pleasure, spirituality, and balance.",
-      link: "https://www.gutenberg.org/ebooks/search/?query=love&submit_search=Go%21"
+      title: "The Adventures of Sherlock Holmes",
+      author: "Arthur Conan Doyle",
+      image: "https://m.media-amazon.com/images/I/71XRBP0JvPL._AC_UF1000,1000_QL80_.jpg",
+      description: "Detective Sherlock Holmes, with the help of his loyal friend Dr. Watson, solves a series of intriguing and baffling cases in Victorian London. Using his sharp intellect and keen observation, Holmes unravels mysteries that seem impossible to solve.",
+      link: "https://www.gutenberg.org/cache/epub/1661/pg1661-images.html"
     },
     {
       id: 4,
