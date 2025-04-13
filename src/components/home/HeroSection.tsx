@@ -13,7 +13,7 @@ const HeroSection = () => {
       {/* Hero Background with Overlay */}
       <div className="absolute inset-0 bg-cover bg-center" 
         style={{
-          backgroundImage: "url('https://theunitedindian.com/images/tourism-07-04-24-E-hero.webp')",
+          backgroundImage: "url('https://www.ftd.travel/blog/wp-content/uploads/2013/04/16travel-580x480.jpg')",
           backgroundPosition: "center",
         }}>
         <div className="absolute inset-0 bg-black/50"></div>
