@@ -32,7 +32,7 @@ const HeroSection = () => {
           <div className="flex flex-wrap justify-center gap-4">
             <Link to="/featured">
               <Button size={isMobile ? "default" : "lg"} className="bg-india-saffron hover:bg-india-marigold text-white">
-                Explore Destination
+                Explore Destinations
                 <ArrowRight size={18} className="ml-2" />
               </Button>
             </Link>
