@@ -53,7 +53,7 @@ const galleryImages = [
   },
   {
     id: "8",
-    src: "https://images.unsplash.com/photo-1604868189265-219ba7bf7ea3?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aG9saXxlbnwwfHwwfHx8MA%3D",
+    src: "https://cdn.prod.website-files.com/66fee39c7a83b5fc8632159d/672decef813bfc2d1dabbff0_celebrating-colors-exploring-the-festival-of-holi-in-india.webp",
     caption: "Celebrating Holi festival",
     category: "Festivals"
   },
