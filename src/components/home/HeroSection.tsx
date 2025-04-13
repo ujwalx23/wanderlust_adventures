@@ -13,7 +13,7 @@ const HeroSection = () => {
       {/* Hero Background with Overlay */}
       <div className="absolute inset-0 bg-cover bg-center" 
         style={{
-          backgroundImage: "url('https://entrepreneuronemedia.com/wp-content/uploads/2022/04/blog-cover1.jpg')",
+          backgroundImage: "url('https://www.k1travels.com/wp-content/uploads/2023/04/1440x810_cmsv2_6187d843-7037-5073-92f1-c3a894a93ba2-5368390.jpg')",
           backgroundPosition: "center",
         }}>
         <div className="absolute inset-0 bg-black/50"></div>
