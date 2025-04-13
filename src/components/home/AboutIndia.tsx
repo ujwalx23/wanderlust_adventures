@@ -28,7 +28,7 @@ const AboutIndia = () => {
                 className="rounded-lg shadow-md w-full h-48 object-cover"
               />
               <img 
-                src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.oyorooms.com%2Fblog%2Fmountain-ranges-in-india%2F&psig=AOvVaw2VwU1dT6SS46CzAoJspfbU&ust=1744637773352000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKCF1aeQ1YwDFQAAAAAdAAAAABAE" 
+                src="https://i1.wp.com/www.zingbus.com/blog/wp-content/uploads/2023/03/The-Himalayas-1024x683.jpg?ssl=1" 
                 alt="Himalayan Mountains" 
                 className="rounded-lg shadow-md w-full h-40 object-cover"
               />
