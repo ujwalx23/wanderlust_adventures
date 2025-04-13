@@ -181,14 +181,14 @@ const Footer = () => {
               <li className="flex items-start">
                 <MapPin className="mr-2 flex-shrink-0 mt-1" size={18} />
                 <span className="text-gray-300">
-                  42 Travel House, MG Road, 
-                  <br />Bangalore - 560001, Karnataka
+                  Mumbai, Maharashtra
+      
                 </span>
               </li>
               <li className="flex items-center">
                 <Mail className="mr-2 flex-shrink-0" size={18} />
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ujwalsingh164@gmail.com" className="text-gray-300 hover:text-india-saffron transition-colors">
-                  ujwalsingh164@gmail.com
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ujwalsingh164@gmail.com/?view=cm&fs=1&to=ujwalsingh164@gmail.com" className="text-gray-300 hover:text-india-saffron transition-colors">
+                  Email (Click here)
                 </a>
               </li>
               <li className="flex items-center mt-4">
