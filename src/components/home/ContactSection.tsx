@@ -33,7 +33,7 @@ const ContactSection = () => {
 
           <Link to="/contact">
             <Button 
-              className="bg-india-green hover:bg-india-light-green text-white font-medium px-8 py-6 h-auto text-lg"
+              className="bg-india-green hover:bg-india-light-green text-white font-medium px-6 py-2 h-auto text-lg"
             >
               Contact  
             </Button>
