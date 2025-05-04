@@ -6,7 +6,7 @@ import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { destinations, faqs } from '@/constants/destinations';
 
-// Define search result types
+// Define search result types - updated 'movie' to 'movies' for consistency
 type SearchResultType = 'destination' | 'faq' | 'blog' | 'gallery' | 'movies' | 'music' | 'book';
 
 interface SearchResult {
@@ -280,7 +280,7 @@ const SearchBox: React.FC<SearchBoxProps> = ({ onClose, className }) => {
         url: `/music`
       }));
     
-    // Search movies
+    // Search movies - fixed the type to 'movies'
     const movieResults: SearchResult[] = movieItems
       .filter(movie => 
         movie.title.toLowerCase().includes(term) || 
@@ -291,7 +291,7 @@ const SearchBox: React.FC<SearchBoxProps> = ({ onClose, className }) => {
         title: movie.title,
         subtitle: `Director: ${movie.director}`,
         image: movie.image,
-        type: 'movie',
+        type: 'movies',
         url: `/movies`
       }));
     
@@ -349,7 +349,7 @@ const SearchBox: React.FC<SearchBoxProps> = ({ onClose, className }) => {
     blog: searchResults.filter(r => r.type === 'blog').length,
     gallery: searchResults.filter(r => r.type === 'gallery').length,
     music: searchResults.filter(r => r.type === 'music').length,
-    movie: searchResults.filter(r => r.type === 'movie').length,
+    movies: searchResults.filter(r => r.type === 'movies').length, // Changed 'movie' to 'movies' to match type definition
     book: searchResults.filter(r => r.type === 'book').length,
   };
 
@@ -366,7 +366,7 @@ const SearchBox: React.FC<SearchBoxProps> = ({ onClose, className }) => {
         return <Bookmark size={16} className="mr-1 text-purple-500" />;
       case 'music':
         return <Music size={16} className="mr-1 text-pink-500" />;
-      case 'movie':
+      case 'movies': // Updated case from 'movie' to 'movies'
         return <Film size={16} className="mr-1 text-amber-500" />;
       case 'book':
         return <Book size={16} className="mr-1 text-emerald-500" />;
@@ -469,15 +469,15 @@ const SearchBox: React.FC<SearchBoxProps> = ({ onClose, className }) => {
                 Music ({resultCounts.music})
               </Button>
             )}
-            {resultCounts.movie > 0 && (
+            {resultCounts.movies > 0 && ( // Updated from 'movie' to 'movies'
               <Button 
                 variant="ghost" 
                 size="sm" 
-                className={`flex items-center ${activeTab === 'movie' ? 'text-india-blue font-medium' : 'text-gray-500'}`}
-                onClick={() => setActiveTab('movie')}
+                className={`flex items-center ${activeTab === 'movies' ? 'text-india-blue font-medium' : 'text-gray-500'}`}
+                onClick={() => setActiveTab('movies')} // Updated from 'movie' to 'movies'
               >
                 <Film size={16} className="mr-1" />
-                Movies ({resultCounts.movie})
+                Movies ({resultCounts.movies}) {/* Updated from movie to movies */}
               </Button>
             )}
             {resultCounts.book > 0 && (
