@@ -4,7 +4,7 @@ import Layout from '@/components/layout/Layout';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import MemoryMatch from '@/components/games/MemoryMatch';
 import GuessTheNumber from '@/components/games/GuessTheNumber';
-import EmojiPuzzle from '@/components/games/EmojiPuzzle';
+import TileTap from '@/components/games/TileTap';
 
 const MoreGamesPage = () => {
   return (
@@ -23,7 +23,7 @@ const MoreGamesPage = () => {
           <TabsList className="grid w-full grid-cols-3 mb-8">
             <TabsTrigger value="memory-match">Memory Match</TabsTrigger>
             <TabsTrigger value="guess-number">Guess the Number</TabsTrigger>
-            <TabsTrigger value="emoji-puzzle">Emoji Puzzle</TabsTrigger>
+            <TabsTrigger value="tile-tap">Tile Tap</TabsTrigger>
           </TabsList>
           
           <TabsContent value="memory-match">
@@ -34,8 +34,8 @@ const MoreGamesPage = () => {
             <GuessTheNumber />
           </TabsContent>
           
-          <TabsContent value="emoji-puzzle">
-            <EmojiPuzzle />
+          <TabsContent value="tile-tap">
+            <TileTap />
           </TabsContent>
         </Tabs>
       </div>
