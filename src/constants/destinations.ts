@@ -59,7 +59,7 @@ export const destinations: Destination[] = [
     name: "Jaipur City Tour",
     location: "Jaipur, Rajasthan",
     description: "Discover the Pink City's majestic palaces, vibrant bazaars, and rich cultural heritage in the heart of Rajasthan.",
-    image: "https://lh6.googleusercontent.com/proxy/oKPPjIReQQjxPWIRZzXZ2LBPWpAEc4RUimaBbqZvhdqB2E_1FZZP8sZbEnznYMkB-6PMd1fsxi3h8XXPS7iP",
+    image: "https://static.toiimg.com/img/115224983/Master.jpg",
     price: "₹1,800",
     rating: 4.4,
     category: "Cultural",
