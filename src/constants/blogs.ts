@@ -96,24 +96,16 @@ export const blogs: Blog[] = [
     category: "Adventure",
     excerpt: "Braving sub-zero temperatures to walk on the frozen Zanskar River in Ladakh, one of India's most challenging and visually stunning winter adventures.",
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTngOPOq1iqsFA0WrI7TWI5PQOhcCt73Cxa3w&s",
-    content: ["Leh in January does not wait for you to catch your breath. The moment I stepped off the plane, the chill in the air took hold of my lungs. The Himalayas stood still and ancient around me, their silence broken only by the crunch of boots on snow. This was Ladakh in the heart of winter, and I was here for the Chadar Trek, a journey across the frozen Zanskar River."
-
+    content: [
+"Leh in January does not wait for you to catch your breath. The moment I stepped off the plane, the chill in the air took hold of my lungs. The Himalayas stood still and ancient around me, their silence broken only by the crunch of boots on snow. This was Ladakh in the heart of winter, and I was here for the Chadar Trek, a journey across the frozen Zanskar River."
 "My guide, Tashi, greeted me with a nod and a thermos of butter tea. 'You will feel the cold,' he said, smiling, 'but you will never forget this trail.' We spent two days in Leh to acclimatize. The city moved slowly, wrapped in frost. In tiny kitchens, locals huddled around wood stoves, and prayers echoed from distant monasteries that clung to the mountains like thoughts to memory."
-
 "From Leh, we drove to a place called Chilling. The road snaked through barren valleys, past frozen waterfalls and sharp ridgelines. At the riverbank, I saw the chadar for the first time — a frozen ribbon of ice winding through deep gorges. It looked fragile yet firm, cold yet glowing under the pale sun."
-
 "Walking on the frozen river was like stepping into a dream. The surface cracked and groaned underfoot, alive with whispers from beneath. Some sections were smooth as glass, reflecting the cliffs above. Others were jagged or slushy, demanding each step to be careful and conscious. Tashi walked with quiet confidence, pointing out places where the ice was new or thin."
-
 "At night, we camped beside the river or sheltered in caves blackened by smoke. Temperatures dropped below minus twenty, and even the river slept without sound. We wrapped ourselves in thick sleeping bags and listened to the wind howl through the valley. A simple bowl of hot soup tasted like a feast in that frozen world."
-
 "Mornings came with golden light and aching fingers. We packed up quickly and walked again. Along the way, we passed Zanskari villagers making their way to Leh with supplies and stories. Some smiled, others nodded in recognition of a shared path. There was no network, no noise, only the rhythm of breath and boot."
-
 "There were moments when the silence was complete. No birds. No trees. Just the sound of my heartbeat and the crunch of ice. A frozen waterfall glistened like sculpture. Sunlight refracted through icicles. In those moments, I forgot the cold and felt part of something ancient and untouched."
-
 "On the final day, as we reached Nerak village, prayer flags fluttered in the wind. Children ran barefoot in snow, laughing. Monks watched us from monastery windows with curious eyes. We had walked for days through ice, and now, warmth greeted us not just in fire but in faces."
-
 "That night, I sat by the river under a thousand stars. The chadar shimmered in the moonlight like a path between two worlds. In that frozen silence, I understood something Tashi had said back on the first day. 'The chadar tests your body, but it opens your heart.' It is not just a trek. It is a journey into the raw edge of nature and into the stillness we all carry inside."
-
 ]
   },
   {
@@ -124,24 +116,16 @@ export const blogs: Blog[] = [
     category: "Adventure",
     excerpt: "Experiencing the magic of Rajasthan's Thar Desert through camel safaris, dune camping, and the vibrant culture of the desert communities.",
     image: "https://images.unsplash.com/photo-1477587458883-47145ed94245?q=80&w=1000&auto=format&fit=crop",
-    content: ["Rajasthan welcomed me with golden light and dry wind. As I stepped off the train in Jaisalmer, the city shimmered like a mirage rising from the desert. Known as the Golden City, Jaisalmer sits on the edge of the vast Thar Desert, its sandstone fort and intricate havelis glowing under the afternoon sun. This was my gateway to a land of sand dunes, camels, and stories older than the desert itself."
-
+    content: [
+      "Rajasthan welcomed me with golden light and dry wind. As I stepped off the train in Jaisalmer, the city shimmered like a mirage rising from the desert. Known as the Golden City, Jaisalmer sits on the edge of the vast Thar Desert, its sandstone fort and intricate havelis glowing under the afternoon sun. This was my gateway to a land of sand dunes, camels, and stories older than the desert itself."
 "My guide, Salim, met me with a handshake and a turban the color of flame. 'The desert is quiet during the day,' he said, 'but it comes alive at night.' We set out in the late afternoon, camel hooves padding softly on sunbaked ground. The ride was gentle and rhythmic, the desert unfolding slowly before us like an ancient scroll."
-
 "As we moved deeper into the dunes, the city faded behind us and silence took its place. The sky stretched endlessly above. Occasionally we passed desert settlements — clusters of mud homes, grazing goats, and children who ran barefoot to wave at us. The wind carried the scent of sand, firewood, and distant cooking fires."
-
 "By sunset, we reached our campsite — a soft bowl of golden dunes encircled by silence. Our camels were unburdened and fed. A few local musicians sat by a flickering fire, tuning their instruments. Salim handed me a steaming cup of chai as the first stars began to appear. 'This is your palace tonight,' he said, gesturing to the open sky."
-
 "Dinner was cooked over open flame — spicy dal, fresh roti, and fire-roasted vegetables. We sat cross-legged on rugs, eating with our hands, laughter rising with the sparks. Music filled the night. The sounds of the desert came alive — the deep voice of the sarangi, the rhythmic clap of the khartal, and the soulful songs of a land that has endured sun, silence, and time."
-
 "Later, wrapped in blankets and warmth, I lay on a cot under a blanket of stars. There were no walls, no roofs, only the sound of the wind brushing the dunes. The Milky Way shimmered above me. The desert, which had seemed so vast and dry by day, now felt intimate and alive."
-
 "In the morning, I woke to the first blush of pink light and the distant call of peacocks. A pot of chai simmered on the fire. Our camels rested quietly nearby, their silhouettes rising like sculptures against the dunes. I climbed to the top of a nearby ridge to watch the sun rise — the sands turning from cool gray to golden amber with each passing second."
-
 "Before heading back to the city, we visited a desert village. Women in colorful ghagras drew water from deep wells. Men tended to animals and invited us for sweet tea and stories. Their lives seemed simple, yet full — grounded in tradition, resilience, and quiet pride. 'The desert teaches patience,' one elder told me. 'It gives back to those who wait and listen.'"
-
 "That evening, back in the bustle of Jaisalmer, I looked out over the ramparts of the fort at the dunes beyond. The desert had not just shown me its surface. It had invited me into its heart — warm, wild, and whispering secrets in the wind."
-
 ]
   },
   {
