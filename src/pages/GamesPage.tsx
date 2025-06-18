@@ -2,6 +2,9 @@
 import React from 'react';
 import Layout from '@/components/layout/Layout';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Button } from '@/components/ui/button';
+import { ChevronRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import GuessTheFlag from '@/components/games/GuessTheFlag';
 import GuessTheLanguage from '@/components/games/GuessTheLanguage';
 import WouldYouRather from '@/components/games/WouldYouRather';
@@ -14,9 +17,15 @@ const GamesPage = () => {
           <h1 className="text-3xl md:text-4xl font-bold text-india-blue mb-4">
             Fun Travel Games
           </h1>
-          <p className="text-gray-600">
+          <p className="text-gray-600 mb-6">
             Enjoy these travel-themed games and test your knowledge about different destinations around the world.
           </p>
+          <Link to="/more-games">
+            <Button className="bg-india-saffron hover:bg-india-marigold text-white">
+              More Games
+              <ChevronRight size={16} />
+            </Button>
+          </Link>
         </div>
         
         <Tabs defaultValue="would-you-rather" className="w-full max-w-4xl mx-auto">

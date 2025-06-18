@@ -22,6 +22,7 @@ import MoviesPage from "./pages/MoviesPage";
 import MusicPage from "./pages/MusicPage";
 import BlogDetailPage from "./pages/BlogDetailPage";
 import GamesPage from "./pages/GamesPage";
+import MoreGamesPage from "./pages/MoreGamesPage";
 import DownloadPage from "./pages/DownloadPage";
 import BooksPage from "./pages/BooksPage";
 import AdminSubscribersPage from "./pages/AdminSubscribersPage";
@@ -49,6 +50,7 @@ const App = () => (
           <Route path="/movies" element={<MoviesPage />} />
           <Route path="/music" element={<MusicPage />} />
           <Route path="/games" element={<GamesPage />} />
+          <Route path="/more-games" element={<MoreGamesPage />} />
           <Route path="/download" element={<DownloadPage />} />
           <Route path="/books" element={<BooksPage />} />
           <Route path="/gallery" element={<GalleryPage />} />
