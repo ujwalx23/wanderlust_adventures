@@ -62,10 +62,10 @@ const ContactPage = () => {
                     <Phone className="text-india-green" size={24} />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-gray-800 mb-1">Discord</h3>
+                    <h3 className="font-semibold text-gray-800 mb-1">Phone</h3>
                     <p className="text-gray-600">
                       <a href="https://discordapp.com/users/1243952128272371764" className="hover:text-india-saffron transition-colors">
-                        morningstar_23.
+                        7977339435
                       </a>
                     </p>
                   </div>
