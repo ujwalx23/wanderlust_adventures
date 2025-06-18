@@ -136,20 +136,14 @@ export const blogs: Blog[] = [
     category: "Beach",
     excerpt: "Discovering secluded shores, pristine coral reefs, and indigenous communities in the less explored corners of the Andaman archipelago.",
     image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1000&auto=format&fit=crop",
-    content: ["The moment I stepped off the ferry at Neil Island, the world slowed down. The air was salt-laced and still. Palm trees swayed with practiced grace, and the sea shimmered in endless shades of turquoise. The Andaman Islands — a scattered necklace in the Bay of Bengal — had already begun to work their quiet magic. I had come in search of places less seen, to discover the untouched corners where land meets sea with reverence."
-
+    content: [
+      "The moment I stepped off the ferry at Neil Island, the world slowed down. The air was salt-laced and still. Palm trees swayed with practiced grace, and the sea shimmered in endless shades of turquoise. The Andaman Islands — a scattered necklace in the Bay of Bengal — had already begun to work their quiet magic. I had come in search of places less seen, to discover the untouched corners where land meets sea with reverence."
 "My host, Ayaan, welcomed me with a shell necklace and a smile that seemed shaped by the sea. 'You will not find Wi-Fi here,' he said, almost proudly. 'But you will find peace.' We rode together on a scooter through narrow paths flanked by thick jungle, mango trees, and the occasional glimpse of the ocean peeking through the greenery."
-
 "At Bharatpur Beach, I watched fishermen prepare their boats as the tide receded slowly, revealing shallow lagoons teeming with life. Children ran across the wet sand, chasing crabs and laughter. The coral here had not yet faded. In the shallow water, sea anemones pulsed gently beside clusters of staghorn and brain coral — a living kaleidoscope under the sun."
-
 "Later, we visited a remote reef known only to locals. We traveled there by wooden boat, its motor humming softly as we cut across still waters. I dove in with a mask and fins, and for long minutes, the world was only water and color and silence. Schools of parrotfish, clownfish, and angelfish darted around me like confetti in slow motion. Every movement felt like a secret whispered by the sea."
-
 "At sunset, we reached a small settlement of the Nicobari tribe. The elders sat on handwoven mats, weaving stories and baskets alike. Children peeked out shyly from bamboo homes raised on stilts. Ayaan spoke softly in their dialect and was met with nods and laughter. I was invited to share a meal — fish roasted in banana leaf, wild greens, and rice. The fire crackled as stars began to take their places above."
-
 "The next day we hiked to a viewpoint on Little Andaman. The jungle was thick and damp, echoing with the calls of hornbills and the soft rustle of hidden life. At the top, the world opened up. Endless blue met endless green. It was easy to forget the world beyond — easy to believe that this untouched edge of India had somehow stayed suspended in time."
-
 "On our final evening, I sat on the sand at Sitapur Beach, where the land ends abruptly and the sea stretches into forever. The waves rolled in with soft insistence. There were no other tourists. Just me, the sky turning violet, and the quiet rhythm of the ocean breathing in and out."
-
 "In those moments, I realized the Andamans are not just islands. They are echoes. Of ancient tribes and forgotten reefs. Of a slower way of life. Of how the world might still be — if we listened more, took less, and let nature lead. It was not just an escape. It felt like a return."]
   },
   {
@@ -160,22 +154,15 @@ export const blogs: Blog[] = [
     category: "Nature",
     excerpt: "Embracing the monsoon season in Kerala, when waterfalls surge, rice paddies turn emerald green, and ancient Ayurvedic traditions come alive.",
     image: "https://images.unsplash.com/photo-1467377791767-c929b5dc9a23?q=80&w=1000&auto=format&fit=crop",
-    content: ["The rain met me before the land did. As my plane descended over Kerala, the clouds parted just enough to reveal a mosaic of green — rivers snaking through coconut groves, hills wrapped in mist, and endless stretches of rice paddies shimmering in the soft light. It was the heart of monsoon season, and I had arrived to witness how Kerala breathes during the rains."
-
+    content: [
+      "The rain met me before the land did. As my plane descended over Kerala, the clouds parted just enough to reveal a mosaic of green — rivers snaking through coconut groves, hills wrapped in mist, and endless stretches of rice paddies shimmering in the soft light. It was the heart of monsoon season, and I had arrived to witness how Kerala breathes during the rains."
 "My host, Devika, welcomed me with warm tea and jasmine in her hair. 'You came at the right time,' she smiled. 'This is when the soul of Kerala wakes up.' From her homestay in a small village near Kumarakom, we set off along narrow roads lined with banana trees and sleepy canals overflowing with fresh rain. The scent of wet earth, mango leaves, and spice filled the air like a forgotten memory."
-
 "Everywhere I looked, water moved. It poured from the sky, gathered in fields, and cascaded down the hills. At Athirappilly Falls, the water thundered with primal force. Mist clung to my skin as I stood on a mossy rock, watching the river leap from the cliffs, wild and alive. Locals say the falls are the jungle's breath during monsoon, and I believed them."
-
 "In the hills of Wayanad, the world felt wrapped in a green silence. Paddy fields stretched like velvet, interrupted only by grazing cattle and the rhythmic splash of barefoot farmers tending their crop. Frogs sang in ditches. Trees dripped endlessly. The monsoon was not just a season here — it was a presence, constant and comforting."
-
 "One morning, Devika took me to an Ayurvedic retreat tucked deep in the backwaters. The doctor, dressed in white, checked my pulse and nodded thoughtfully. 'This is the season of cleansing,' he said. 'The body is soft. The spirit is open.' I was given a series of treatments — warm oil massages, herbal steam baths, and kashayam that tasted bitter but grounded me in a strange, earthy way. Time slowed down, as if the rain itself was urging me to pause."
-
 "In Alleppey, I boarded a wooden houseboat with a thatched roof and drifted gently through the flooded world. Villages floated by. Children waved from doorways. Women washed clothes at the riverbank as kingfishers darted above the water. It rained without rush, steady and soothing. Inside, the scent of cardamom rice and coconut curry drifted from the kitchen. I read, I wrote, I listened to the rain — and somehow, I felt healed."
-
 "Evenings brought chai and stories. Devika’s grandfather told me how the monsoon used to be greeted with rituals, songs, and prayers. 'We never feared the rain,' he said. 'It fed us. It made us who we are.' I understood then that the monsoon was not an interruption — it was the rhythm of life itself."
-
 "On my final morning, I stood under a tamarind tree watching droplets form and fall. Everything was washed clean. The leaves were brighter. The world was quieter. And within that stillness, I carried a peace I had not known I needed. The rains in Kerala do not ask for your attention. They simply arrive, reminding you to surrender and begin again."
-
 ]
   },
   {
@@ -186,22 +173,15 @@ export const blogs: Blog[] = [
     category: "Nature",
     excerpt: "Hiking through the cloud-covered hills of Northeast India to witness ingenious living architecture created by the Khasi tribe over generations.",
     image: "https://images.unsplash.com/photo-1604537529428-15bcbeecfe4d?q=80&w=1000&auto=format&fit=crop",
-    content: ["The clouds hung low like breath over the hills as I arrived in Cherrapunji, one of the wettest places on Earth. Mist curled through the trees, veiling the world in a kind of gentle mystery. This was the land of waterfalls, echoing valleys, and ancient paths carved into green hillsides. I had come to see something both natural and manmade — the living root bridges grown, not built, by the Khasi people over generations."
-
+    content: [
+      "The clouds hung low like breath over the hills as I arrived in Cherrapunji, one of the wettest places on Earth. Mist curled through the trees, veiling the world in a kind of gentle mystery. This was the land of waterfalls, echoing valleys, and ancient paths carved into green hillsides. I had come to see something both natural and manmade — the living root bridges grown, not built, by the Khasi people over generations."
 "My guide, Ribor, a quiet man with kind eyes and years of stories etched into his face, met me at dawn. 'The bridges are not just structures,' he said, adjusting his shawl. 'They are alive. Like us.' We began our trek through thick jungle, descending slippery stone steps that wound deep into the valley. Rain tapped on the canopy above, the trees shedding drops with every passing breeze."
-
 "The path was steep, cut by hand and worn by time. We passed small villages tucked into the hillsides, where children waved from bamboo porches and women carried baskets with calm precision. As we climbed and descended, the clouds followed — sometimes ahead, sometimes behind — cloaking the trail in a dreamy stillness broken only by the rush of distant waterfalls."
-
 "After nearly two hours of hiking, we reached our first root bridge. I stood still, humbled. It stretched over a stream swollen with monsoon water, the bridge formed from thick, tangled aerial roots of the ancient rubber tree, lovingly guided over time to grow into something useful, beautiful, and strong. Moss clung to every part of it. The roots had fused together so tightly that it felt like walking on braided stone."
-
 "Ribor told me that some of these bridges take decades to form, shaped by the elders and tended to by their children. 'We do not make them fast,' he said. 'We grow them slowly. So they last.' He placed his hand on the roots as if greeting an old friend. I followed suit and felt the rough warmth of life beneath my fingers."
-
 "Further ahead lay the double-decker bridge of Nongriat — a marvel of patience and community. Two living bridges layered above one another, swaying slightly in the breeze, suspended over a forest stream that danced with light. Villagers nearby offered tea in leaf-wrapped cups, and a small girl with curious eyes proudly pointed out the orchids growing along the railings."
-
 "As we rested near the water, I realized these structures were not just crossings — they were quiet symbols of harmony with nature. Not forced, not conquered, but co-created. Where the world races to build higher and faster, the Khasi have chosen to grow slowly and wisely, letting nature lead."
-
 "The trek back was harder with tired legs, but the mist had lifted, revealing vast stretches of emerald hills and distant ridgelines. As we reached the final steps, Ribor turned to me and said, 'These bridges — they will outlive us. If we care for them.' In that moment, I felt what it truly meant to build something not just for today, but for generations."
-
 ]
   },
   {
@@ -212,22 +192,15 @@ export const blogs: Blog[] = [
     category: "Culinary",
     excerpt: "Exploring the regional cuisines of India, from Kashmir's saffron-infused delicacies to Tamil Nadu's fiery chettinad curries.",
     image: "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?q=80&w=1000&auto=format&fit=crop",
-    content: ["The flavors of India do not whisper. They sing, they dance, they embrace you with spice and story. My journey began in the cold valleys of Kashmir, where food is slow-cooked like poetry. At a family home near Dal Lake, I was invited to a traditional Wazwan feast. Saffron colored the rice like a soft sunrise, and tender lamb rogan josh melted with warmth against the chill in the air. The aroma of fennel and dry ginger lingered long after the last spoonful. Here, food is not just sustenance — it is ceremony."
-
+    content: [
+      "The flavors of India do not whisper. They sing, they dance, they embrace you with spice and story. My journey began in the cold valleys of Kashmir, where food is slow-cooked like poetry. At a family home near Dal Lake, I was invited to a traditional Wazwan feast. Saffron colored the rice like a soft sunrise, and tender lamb rogan josh melted with warmth against the chill in the air. The aroma of fennel and dry ginger lingered long after the last spoonful. Here, food is not just sustenance — it is ceremony."
 "From the north, I traveled eastward to Bengal. Kolkata welcomed me with a cloud of incense and the scent of mustard oil. At a small kitchen tucked behind an old bookshop, I tasted shorshe ilish — hilsa fish steamed with pungent mustard paste and green chilies. The flavors were bold yet delicate, like a well-tuned sitar. For dessert, I had mishti doi, thick sweet yogurt served in a clay pot. Even the spoonful felt sacred."
-
 "Crossing into the heartland, I arrived in Lucknow, where the air seemed steeped in centuries of spice and subtlety. I watched a kebab master turn minced meat into silk with nothing but his hands and a secret blend of over thirty spices. Galouti kebabs, paired with roomali roti so thin it floated, told stories of Nawabs and kitchens that once served kings. Even the biryani here spoke in soft, perfumed tones."
-
 "Further south, the Deccan heat gave way to the fiery magic of Andhra and Telangana. At a roadside dhaba outside Hyderabad, I burned my tongue joyfully on mirchi bajji — chilies stuffed, battered, and fried — before diving into a plate of gongura mutton that danced with tamarind leaves and heat. It was not just food. It was resilience. A declaration of place."
-
 "In Tamil Nadu, the sun was sharp and so was the food. In Karaikudi, a woman named Radha invited me into her ancestral kitchen, where clay pots simmered over wood fires and curry leaves crackled in hot oil. Chettinad cuisine was a revelation. Black pepper, star anise, and stone-ground spices came together in a chicken curry so fiery and complex, it felt like tasting a memory passed down through generations."
-
 "Kerala offered contrast — gentler, but no less layered. In a backwater village near Alleppey, I sat cross-legged on the floor of a tiled courtyard as a banana leaf was unfurled in front of me. What followed was a Sadya — a vegetarian feast of twenty or more dishes, each with its own flavor note, from the creamy coconut stew of olan to the sharp tang of tamarind rasam. Every bite was balanced. Every dish, an offering."
-
 "My last stop was Gujarat, where sweetness weaves its way even into savory dishes. In Ahmedabad, I joined a family for dinner and was served dhokla, the perfect sponge of fermented rice and lentils, along with undhiyu — a winter vegetable medley cooked underground in clay pots. It was earthy, festive, and filling in a way only home food can be."
-
 "As I moved across states and seasons, I realized that Indian cuisine is not one story. It is a thousand languages of taste, shaped by geography, faith, history, and love. It is served with hands, not cutlery. It demands patience, and it rewards attention. To eat across India is to understand her soul — one spice at a time."
-
 ]
   },
   {
@@ -238,20 +211,14 @@ export const blogs: Blog[] = [
     category: "Nature",
     excerpt: "Venturing into lesser-known national parks and wildlife reserves to encounter India's magnificent tigers, sloth bears, and diverse bird species.",
     image: "https://india-tours.com/wildlife/images/wildlife/national-parks/ranthambore-national-park.jpg",
-    content: ["The forest greeted me not with a roar, but with a hush. At dawn, in the buffer zone of Satpura National Park, the sky blushed softly above a curtain of sal trees. The jeep rumbled quietly along a dirt path still damp with dew. I wasn’t in one of India’s postcard-famous parks — no massive crowds, no cameras flashing. This was the quieter side of the wild, and it felt more intimate. Here, you listen more than you look."
-
+    content: [
+      "The forest greeted me not with a roar, but with a hush. At dawn, in the buffer zone of Satpura National Park, the sky blushed softly above a curtain of sal trees. The jeep rumbled quietly along a dirt path still damp with dew. I wasn’t in one of India’s postcard-famous parks — no massive crowds, no cameras flashing. This was the quieter side of the wild, and it felt more intimate. Here, you listen more than you look."
 "My guide, Neelesh, had spent his whole life with the forest. 'The animals here are shy,' he whispered, scanning the undergrowth. 'They prefer the silence.' We paused by a clearing, and for a moment, it felt as if the world held its breath. Then, a soft rustle — a sloth bear lumbered out, nose to the ground, fur glistening in the morning light. There was no drama. Just presence. And in that moment, awe."
-
 "Further south in Bhadra Wildlife Sanctuary, I stayed in a small eco-lodge perched on the edge of a river where elephants had come to bathe the evening before. One morning, while kayaking gently along the bank, a flash of orange and black caught my eye. A tiger, poised and regal, stood watching me from the shore before melting back into the forest. It lasted less than five seconds — but it stayed with me forever. In these lesser-known reserves, sightings feel like secrets shared between the jungle and you."
-
 "In the grasslands of Tal Chhapar, the air was different — open, dry, and full of birdsong. Harriers circled in lazy spirals. Blackbucks darted through golden grass like dancers in motion. I met a young conservationist who had devoted his life to tracking migratory birds. 'You don’t need to look for the big five,' he said, handing me binoculars. 'Look up. Listen. There is a whole world in the skies too.'"
-
 "In the dense forests of Dampa in Mizoram, I walked with local rangers along trails rarely marked on maps. The jungle here was ancient, tangled, and alive with sound. We spotted hornbills soaring above us and macaques swinging noisily through the canopy. Even without a tiger or leopard in sight, the energy of the wild felt complete — like a symphony that never stops playing, even if you don’t always see the musicians."
-
 "At night, the jungle never slept. In the buffer zones around Odisha’s Satkosia reserve, the calls of jackals echoed into the dark. Under the glow of a lantern, I sat with forest guards who spoke of rare crocodiles, disappearing trails, and the delicate work of protecting what remains. 'These are the places people forget,' one of them said, 'but the animals remember. So we stay.'"
-
 "Across these parks — far from crowds, untouched by safari fame — I found something rare. A sense that the forest was not putting on a show. That I was not a visitor, but a listener. India’s wilderness is not always loud. Sometimes it’s a paw print in the dust, the flutter of wings in the branches, the glint of eyes at dusk. And if you are patient, it reveals its magic — one quiet breath at a time."
-
 ]
   },
   {
@@ -262,16 +229,12 @@ export const blogs: Blog[] = [
     category: "Cultural",
     excerpt: "Discovering the vibrant cultural scene of the City of Joy, from historic coffee houses to contemporary art galleries and bustling book markets.",
     image: "https://images.unsplash.com/photo-1558431382-27e303142255?q=80&w=1000&auto=format&fit=crop",
-    content: ["Kolkata greets you like an old friend with a thousand stories. From the moment I stepped onto College Street, the scent of old books, strong coffee, and monsoon-drenched pavement filled the air. The street buzzed with the soft rustle of pages, the clink of tea glasses, and the eager chatter of students and dreamers. This was not just a market. It was a movement. Stalls overflowed with everything from rare Bengali poetry to modern political thought, and vendors knew their stock like curators in an open-air library."
-
+    content: [
+      "Kolkata greets you like an old friend with a thousand stories. From the moment I stepped onto College Street, the scent of old books, strong coffee, and monsoon-drenched pavement filled the air. The street buzzed with the soft rustle of pages, the clink of tea glasses, and the eager chatter of students and dreamers. This was not just a market. It was a movement. Stalls overflowed with everything from rare Bengali poetry to modern political thought, and vendors knew their stock like curators in an open-air library."
 "I stopped at Indian Coffee House, its high ceilings and colonial charm untouched by time. Intellectuals in crumpled kurtas debated over cups of watery coffee and plates of fish cutlets. The waiters moved with unhurried grace, as if they, too, were part of the city’s narrative. Across the room, someone read Tagore aloud, and no one seemed surprised. In Kolkata, art is not a performance. It is the rhythm of daily life."
-
 "Later that afternoon, I wandered into the modern galleries tucked behind the chaos — the Harrington Street Arts Centre, CIMA, and small pop-ups in crumbling heritage buildings. Each space hummed with youthful energy and experimentation. One gallery showcased political cartoons that made you laugh and ache in the same breath. Another held an installation made entirely of jute and river mud. A young artist told me, 'We carry history, but we don’t fear it. We turn it into something new.'"
-
 "In the evenings, the streets came alive with culture layered like the pages of a Bengali novel. Theatre troupes rehearsed in narrow lanes. Rabindra Sangeet drifted from homes with open windows. Street painters lined the sidewalks near Kalighat, their fingers stained with ink and ambition. Near Nandan, the city’s beloved film and culture hub, couples argued passionately about Satyajit Ray over plates of egg rolls. Every corner felt like a canvas. Every passerby, a storyteller."
-
 "At night, I returned to the banks of the Hooghly, where colonial relics glowed in soft golden light. Across the river, the Vidyasagar Setu shimmered like a modern promise. Kolkata held both the past and future in balance — never rushing, always revealing. It did not demand attention. It earned it, slowly, deliberately, like a novel that refuses to be skimmed."
-
 ]
   }
 ];
