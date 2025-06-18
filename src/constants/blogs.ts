@@ -75,7 +75,7 @@ export const blogs: Blog[] = [
     date: "January 15, 2024",
     category: "Cultural",
     excerpt: "Experiencing the daily rhythms, ancient rituals, and spiritual energy of India's oldest living city along the sacred Ganges River.",
-    image: "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?q=80&w=1000&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1561361058-c24cecae35ca?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8dmFyYW5hc2l8ZW58MHx8MHx8fDA%3D",
     content: [
       "Varanasi doesn't introduce itself gently. As I stepped off the train at 4:30 AM, the city already pulsed with energy—temple bells ringing, vendors setting up chai stalls, and pilgrims making their way toward the sacred Ganges. This is India's oldest living city, continuously inhabited for over 3,000 years, where daily life and death rituals unfold in plain view along the riverbanks.",
       "My guide, Sanjay, a lifelong resident of the old city, met me with a warm smile. \"To understand Varanasi,\" he said, \"you must see it awaken with the sun.\" We navigated narrow alleyways barely wider than my shoulders, passing ancient temples, flower sellers preparing marigold garlands, and sacred cows that commanded right of way.",
