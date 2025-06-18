@@ -25,28 +25,26 @@ const GuessTheLanguage = () => {
       language: "Hindi",
       options: ["Hindi", "Nepali", "Bengali", "Malayalam"]
     },
-   {
-  phrase: "Ciao",
-  language: "Italian",
-  options: ["Italian", "Spanish", "French", "Portuguese"]
-}
-
+    {
+      phrase: "Ciao",
+      language: "Italian",
+      options: ["Italian", "Spanish", "French", "Portuguese"]
+    },
     {
       phrase: "Nǐ hǎo",
       language: "Mandarin Chinese",
       options: ["Cantonese", "Japanese", "Korean", "Mandarin Chinese"]
     },
-   {
-  phrase: "Nomoskar",
-  language: "Bengali",
-  options: ["Bengali", "Hindi", "Odia", "Assamese"]
-},
-{
-  phrase: "Vanakkam",
-  language: "Tamil",
-  options: ["Tamil", "Telugu", "Kannada", "Malayalam"]
-}
-
+    {
+      phrase: "Nomoskar",
+      language: "Bengali",
+      options: ["Bengali", "Hindi", "Odia", "Assamese"]
+    },
+    {
+      phrase: "Vanakkam",
+      language: "Tamil",
+      options: ["Tamil", "Telugu", "Kannada", "Malayalam"]
+    },
     {
       phrase: "Konnichiwa",
       language: "Japanese",
