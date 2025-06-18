@@ -49,7 +49,7 @@ const BooksPage = () => {
       id: 6,
       title: "Wild: From Lost to Found on the Pacific Crest Trail",
       author: "Cheryl Strayed",
-      image: "https://www.news-journalonline.com/gcdn/authoring/2014/12/21/NDNJ/ghows-LK-b46f516f-c016-40b0-aceb-d2618b2f26ae-967034aa.jpeg?width=1200&disable=upscale&format=pjpg&auto=webp",
+      image: "https://rebeccabradleycrime.com/wp-content/uploads/2017/06/wild.jpg",
       description: "A memoir of the author's 1,100-mile solo hike on the Pacific Crest Trail following personal trauma and loss.",
       link: "https://www.gutenberg.org/ebooks/search/?query=wild&submit_search=Go%21"
     },
