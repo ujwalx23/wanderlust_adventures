@@ -19,7 +19,7 @@ const MemoryMatch = () => {
   const [moves, setMoves] = useState(0);
   const [gameWon, setGameWon] = useState(false);
   
-  const emojis = ['🐱', '🐶', '🐼', '🦊', '🐸', '🐯', '🐨', '🐰'];
+  const emojis = ['🌄', '🌈', '🎯', '⭐', '📸', '🧩', '🎁', '🐱'];
   
   const initializeGame = () => {
     const shuffledEmojis = [...emojis, ...emojis]
