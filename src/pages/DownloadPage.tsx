@@ -30,7 +30,7 @@ const DownloadPage = () => {
             Download Travel Resources
           </h1>
           <p className="text-gray-600 mb-12 max-w-2xl mx-auto">
-            Access our comprehensive travel guides, destination checklists, and planning tools to make your Indian adventure perfect.
+            Access our comprehensive travel guides, destination checklists, and planning tools to make your Indian adventure perfect.💜
           </p>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
