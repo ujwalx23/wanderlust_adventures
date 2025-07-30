@@ -132,7 +132,7 @@ const AboutPage = () => {
 
           {/* Connect With Us */}
           <div className="bg-india-saffron/10 rounded-xl p-8 text-center">
-            <h2 className="text-2xl md:text-3xl font-bold text-india-blue mb-4">Connect With Us</h2>
+            <h2 className="text-2xl md:text-3xl font-bold text-india-blue mb-4">Connect With Us 💜</h2>
             <p className="text-gray-700 mb-8 max-w-2xl mx-auto">
               Have questions or want personalized travel suggestions? I'd love to hear from you! Connect with me on social media or reach out directly.
             </p>
