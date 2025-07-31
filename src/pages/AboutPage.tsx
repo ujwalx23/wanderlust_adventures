@@ -28,7 +28,7 @@ const AboutPage = () => {
               </div>
               <div className="h-60 md:h-auto bg-white flex items-center justify-center p-4">
                 <img
-                  src="/lovable-uploads/6197a3de-efa5-4123-a99f-fc3bbc2e0d2f.png"
+                  src="/lovable-uploads/bharat img.jpg"
                   alt="Wanderlust Logo"
                   className="max-h-full w-auto object-contain"
                 />
