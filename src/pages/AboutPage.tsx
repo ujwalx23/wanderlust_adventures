@@ -28,7 +28,7 @@ const AboutPage = () => {
               </div>
               <div className="h-60 md:h-auto bg-white flex items-center justify-center p-4">
                 <img
-                  src="/lovable-uploads/bharat img.jpg"
+                  src="/lovable-uploads/14bb8d58-375d-4255-b8ec-c9aabf0dd567.png"
                   alt="Wanderlust Logo"
                   className="max-h-full w-auto object-contain"
                 />
@@ -60,7 +60,7 @@ const AboutPage = () => {
                 <div className="md:w-1/3">
                   <div className="rounded-full overflow-hidden w-48 h-48 mx-auto border-4 border-india-saffron">
                     <img
-                      src="/lovable-uploads/ea89fa20-831f-420b-b00b-b8079603df6e.png"
+                      src="/lovable-uploads/bharat img.jpg"
                       alt="Ujwal Singh"
                       className="w-full h-full object-cover"
                     />
