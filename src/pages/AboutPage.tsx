@@ -60,7 +60,7 @@ const AboutPage = () => {
                 <div className="md:w-1/3">
                   <div className="rounded-full overflow-hidden w-48 h-48 mx-auto border-4 border-india-saffron">
                     <img
-                      src="/lovable-uploads/bharat img.jpg"
+                      src="/lovable-uploads/bharat image.jpg"
                       alt="Ujwal Singh"
                       className="w-full h-full object-cover"
                     />
