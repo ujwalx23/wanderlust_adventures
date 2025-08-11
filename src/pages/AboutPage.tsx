@@ -60,7 +60,7 @@ const AboutPage = () => {
                 <div className="md:w-1/3">
                   <div className="rounded-full overflow-hidden w-48 h-48 mx-auto border-4 border-india-saffron">
                     <img
-                      src="/lovable-uploads/chotu.jpg"
+                      src="/lovable-uploads/public/lovable-uploads/ea89fa20-831f-420b-b00b-b8079603df6e.png"
                       alt="Ujwal Singh"
                       className="w-full h-full object-cover"
                     />
@@ -68,7 +68,7 @@ const AboutPage = () => {
                 </div>
 
                 <div className="md:w-2/3 text-center md:text-left">
-                  <h3 className="text-xl font-semibold mb-2">Bharat Jangid</h3>
+                  <h3 className="text-xl font-semibold mb-2">UJWAL SINGH</h3>
                   <p className="text-gray-600 mb-4">Founder & Nature Enthusiast</p>
                   <p className="text-gray-700 mb-6">
                     As the founder of Wanderlust Adventures, I am passionate about providing authentic experiences that celebrate India's rich diversity and heritage, ensuring every journey is meaningful and personal
