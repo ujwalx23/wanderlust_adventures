@@ -237,5 +237,21 @@ export const blogs: Blog[] = [
       "In the evenings, the streets came alive with culture layered like the pages of a Bengali novel. Theatre troupes rehearsed in narrow lanes. Rabindra Sangeet drifted from homes with open windows. Street painters lined the sidewalks near Kalighat, their fingers stained with ink and ambition. Near Nandan, the city's beloved film and culture hub, couples argued passionately about Satyajit Ray over plates of egg rolls. Every corner felt like a canvas. Every passerby, a storyteller.",
       "At night, I returned to the banks of the Hooghly, where colonial relics glowed in soft golden light. Across the river, the Vidyasagar Setu shimmered like a modern promise. Kolkata held both the past and future in balance — never rushing, always revealing. It did not demand attention. It earned it, slowly, deliberately, like a novel that refuses to be skimmed."
     ]
+  },
+  {
+    id: 13,
+    title: "Life Doesn’t Feel Real Anymore And I Don’t Know Why",
+    author: "Ujwal Singh",
+    date: "April 15, 2025",
+    category: "Philosophical",
+    excerpt: "Discovering the vibrant cultural scene of the City of Joy, from historic coffee houses to contemporary art galleries and bustling book markets.",
+    image: "https://media.licdn.com/dms/image/v2/D4D12AQHU5D3H6rl_cQ/article-cover_image-shrink_720_1280/B4DZY50HlxGkAQ-/0/1744726687085?e=1761782400&v=beta&t=l53OtCShxJGZ-uIe4mvLck81dNcJ3qWA0c5D7M91THY",
+    content: [
+      "Kolkata greets you like an old friend with a thousand stories. From the moment I stepped onto College Street, the scent of old books, strong coffee, and monsoon-drenched pavement filled the air. The street buzzed with the soft rustle of pages, the clink of tea glasses, and the eager chatter of students and dreamers. This was not just a market. It was a movement. Stalls overflowed with everything from rare Bengali poetry to modern political thought, and vendors knew their stock like curators in an open-air library.",
+      "I stopped at Indian Coffee House, its high ceilings and colonial charm untouched by time. Intellectuals in crumpled kurtas debated over cups of watery coffee and plates of fish cutlets. The waiters moved with unhurried grace, as if they, too, were part of the city's narrative. Across the room, someone read Tagore aloud, and no one seemed surprised. In Kolkata, art is not a performance. It is the rhythm of daily life.",
+      "Later that afternoon, I wandered into the modern galleries tucked behind the chaos — the Harrington Street Arts Centre, CIMA, and small pop-ups in crumbling heritage buildings. Each space hummed with youthful energy and experimentation. One gallery showcased political cartoons that made you laugh and ache in the same breath. Another held an installation made entirely of jute and river mud. A young artist told me, 'We carry history, but we don't fear it. We turn it into something new.'",
+      "In the evenings, the streets came alive with culture layered like the pages of a Bengali novel. Theatre troupes rehearsed in narrow lanes. Rabindra Sangeet drifted from homes with open windows. Street painters lined the sidewalks near Kalighat, their fingers stained with ink and ambition. Near Nandan, the city's beloved film and culture hub, couples argued passionately about Satyajit Ray over plates of egg rolls. Every corner felt like a canvas. Every passerby, a storyteller.",
+      "At night, I returned to the banks of the Hooghly, where colonial relics glowed in soft golden light. Across the river, the Vidyasagar Setu shimmered like a modern promise. Kolkata held both the past and future in balance — never rushing, always revealing. It did not demand attention. It earned it, slowly, deliberately, like a novel that refuses to be skimmed."
+    ]
   }
 ];
