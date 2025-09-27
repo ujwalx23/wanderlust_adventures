@@ -244,7 +244,7 @@ export const blogs: Blog[] = [
     author: "Ujwal Singh",
     date: "April 15, 2025",
     category: "Philosophical",
-    excerpt: "Discovering the vibrant cultural scene of the City of Joy, from historic coffee houses to contemporary art galleries and bustling book markets.",
+    excerpt: "Exploring the quiet disconnection of modern life, from endless digital loops to the fading spark of presence in our everyday moments.",
     image: "https://media.licdn.com/dms/image/v2/D4D12AQHU5D3H6rl_cQ/article-cover_image-shrink_720_1280/B4DZY50HlxGkAQ-/0/1744726687085?e=1761782400&v=beta&t=l53OtCShxJGZ-uIe4mvLck81dNcJ3qWA0c5D7M91THY",
     content: [
       "Kolkata greets you like an old friend with a thousand stories. From the moment I stepped onto College Street, the scent of old books, strong coffee, and monsoon-drenched pavement filled the air. The street buzzed with the soft rustle of pages, the clink of tea glasses, and the eager chatter of students and dreamers. This was not just a market. It was a movement. Stalls overflowed with everything from rare Bengali poetry to modern political thought, and vendors knew their stock like curators in an open-air library.",
