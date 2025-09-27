@@ -241,23 +241,21 @@ export const blogs: Blog[] = [
     ]
   },
   {
-    id: 13,
-    title: "Life Doesn’t Feel Real Anymore And I Don’t Know Why",
-    author: "Ujwal Singh",
-    date: "April 15, 2025",
-    category: "Philosophical",
-    excerpt: "Exploring the quiet disconnection of modern life, from endless digital loops to the fading spark of presence in our everyday moments.",
-    image: "https://media.licdn.com/dms/image/v2/D4D12AQHU5D3H6rl_cQ/article-cover_image-shrink_720_1280/B4DZY50HlxGkAQ-/0/1744726687085?e=1761782400&v=beta&t=l53OtCShxJGZ-uIe4mvLck81dNcJ3qWA0c5D7M91THY",
+   id: 13,
+    title: "The Magnificent Taj Mahal: A Journey Through Time",
+    author: "Priya Sharma",
+    date: "April 15, 2024",
+    category: "Historical",
+    excerpt: "Exploring the beauty and history of India's most iconic monument, the Taj Mahal, and discovering the secrets behind its perfect symmetry.",
+    image: "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?q=80&w=1000&auto=format&fit=crop",
     content: [
-  "It’s hard to explain this feeling. But I’ve felt it, and maybe you have too. I go through the day — talk to people, finish tasks, laugh, reply, scroll, sleep. And yet, something feels off. It’s like I’m watching myself live, not really living.",
-  "The world is still spinning. Life is still happening. But it doesn’t feel solid anymore. It’s as if I’m floating through it all, slightly disconnected, like reality has become a blur I can’t quite hold on to.",
-  "We attend classes, go to work, hang out. From the outside, it looks like we’re present. But inside, half of our attention is always pulled away. Notifications buzz, group chats blink, thoughts race. We’ve become experts at being partially present — always there, but never fully here.",
-  "Remember when doing nothing meant just… nothing? Now, even a minute of stillness feels impossible. We reach for our phones. One app. Then the next. Then back again. Reels, shorts, stories, feeds. Loops without end. Moments get replaced by cycles of distraction, and in escaping the present, we stop feeling it.",
-  "After COVID, life shifted online — not just physically, but mentally. Zoom replaced classrooms, DMs replaced meetups. We learned how to live through screens, and part of us never returned. Even now, surrounded by real life, many of us still feel stuck in its digital shadow.",
-  "Life once felt real in firsts — first trips, first conversations, spontaneous plans. That spark of newness made us alive. But now, routine and repetition dull everything. The internet makes all things instant. Fewer firsts. Fewer surprises. Less wonder. More sameness, day after day.",
-  "It doesn’t always mean depression — sometimes it’s just disconnection. We’re so used to noise that silence feels unsettling. So used to distraction that stillness feels heavy. So used to stimulation that real life feels… flat. Disconnected from ourselves, from others, from the moment, everything feels unreal.",
-  "But there are small ways back. Be bored on purpose for a few minutes. Walk outside without your phone. Do one thing — really do it. Sit with silence, let it be full. Talk to someone without multitasking. These little pauses can anchor us again.",
-  "If life feels like a blur, maybe it’s because we stopped noticing. The real world isn’t gone — it’s waiting for us to return. When was the last time you truly felt present in your own life?"
-]
+      "Standing before the Taj Mahal as the first rays of sunlight touch its pristine white marble is an experience that transcends words. This magnificent mausoleum, built by Emperor Shah Jahan in memory of his beloved wife Mumtaz Mahal, is not merely a structure—it's a poem etched in stone, a testament to undying love.",
+      "My journey to Agra began in the early hours of the morning. The city was still waking up as our guide led us through the imposing entrance gate. \"Look down until you reach the perfect spot,\" he advised with a knowing smile. Following his instructions, I kept my gaze on the intricate sandstone pathway until he gently tapped my shoulder. Looking up, the Taj Mahal revealed itself in perfect framing—a moment that will forever be etched in my memory.",
+      "The architecture of the Taj Mahal represents the finest example of Mughal design. Its perfect symmetry is no accident—it was meticulously planned to represent harmony and paradise on Earth. The four identical faces of the Taj create a mesmerizing effect as you walk around the monument. What's particularly fascinating is how the marble appears to change colors throughout the day—pinkish in the morning, brilliant white at noon, and golden at sunset.",
+      "Inside the mausoleum, the cenotaphs of Shah Jahan and Mumtaz Mahal lie side by side. The real sarcophagi are in a chamber below, hidden from public view. The interior walls are adorned with intricate inlay work featuring semi-precious stones that form floral patterns—a technique called pietra dura that reached its zenith in this masterpiece.",
+      "Beyond the main structure, the gardens (charbagh) deserve special attention. Divided into four parts by water channels that symbolize the four rivers of paradise in Islamic tradition, they enhance the overall spiritual experience. Standing by the reflecting pool, watching the Taj mirror perfectly in the still waters, I understood why this wonder has captivated travelers for centuries.",
+      "No matter how many photographs you've seen, nothing prepares you for the emotional impact of witnessing the Taj Mahal in person. It's not just its architectural perfection that moves you—it's the love story behind it, the 22 years of dedicated craftsmanship, and the cultural significance it holds for India and humanity.",
+      "As I left the complex, watching the monument once more from across the Yamuna River at sunset, I realized that the Taj Mahal isn't just a destination to check off a bucket list—it's a profound experience that changes something within you, connecting you to both history and timelessness in a single moment."
+    ]
   }
 ];
