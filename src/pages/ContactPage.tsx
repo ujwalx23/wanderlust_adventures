@@ -79,7 +79,7 @@ const ContactPage = () => {
                     <h3 className="font-semibold text-gray-800 mb-1">Email</h3>
                     <p className="text-gray-600">
                       <a href="mailto:bharatjangid23@gmail.com" className="hover:text-india-saffron transition-colors">
-                        bharatjangid1732@gmail.com
+                        ujwalsingh164@gmail.com
                       </a>
                     </p>
                   </div>
