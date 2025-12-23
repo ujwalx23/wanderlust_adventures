@@ -71,7 +71,7 @@ const AboutPage = () => {
                   <h3 className="text-xl font-semibold mb-2">UJWAL SINGH</h3>
                   <p className="text-gray-600 mb-4">Founder & Nature Enthusiast</p>
                   <p className="text-gray-700 mb-6">
-                    As the founder of Wanderlust Adventures, I am passionate about providing authentic experiences that celebrate India's rich diversity and heritage, ensuring every journey is meaningful and personal
+                    As the founder of Wanderlust Adventures, I am passionate about providing authentic experiences that celebrate India's rich diversity and heritage, ensuring every journey is meaningful and personal.
                   </p>
                   <div className="flex justify-center md:justify-start space-x-4">
                     <a
