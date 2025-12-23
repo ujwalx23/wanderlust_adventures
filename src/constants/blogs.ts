@@ -18,7 +18,7 @@ export const blogs: Blog[] = [
     date: "April 15, 2025",
     category: "Philosophical",
     excerpt: "Exploring the quiet disconnection of modern life, from endless digital loops to the fading spark of presence in our everyday moments.",
-    image: "https://media.licdn.com/dms/image/v2/D4D12AQHU5D3H6rl_cQ/article-cover_image-shrink_720_1280/B4DZY50HlxGkAQ-/0/1744726687085?e=1761782400&v=beta&t=l53OtCShxJGZ-uIe4mvLck81dNcJ3qWA0c5D7M91THY",
+    image: "https://www.dpmanual.com/wp-content/uploads/2017/07/How-Do-I-Feel-Real-Again.jpg",
     content: [
   "It’s hard to explain this feeling. But I’ve felt it, and maybe you have too. I go through the day and talk to people, finish tasks, laugh, reply, scroll, sleep. And yet, something feels off. It’s like I’m watching myself live, not really living.",
   "The world is still spinning. Life is still happening. But it doesn’t feel solid anymore. It’s as if I’m floating through it all, slightly disconnected, like reality has become a blur I can’t quite hold on to.",
